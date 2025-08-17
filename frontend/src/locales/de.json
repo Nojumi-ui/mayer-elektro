@@ -1,0 +1,590 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "bewerber": "Für Bewerber",
+    "kunden": "Für Kunden",
+    "ueber_uns": "Über Uns",
+    "kontakt": "Kontakt",
+    "bewerbung": "Bewerbung",
+    "jobs": "Jobs",
+    "news": "News",
+    "services": "Leistungen",
+    "stellenangebote": "Stellenangebote",
+    "initiativbewerbung": "Initiativbewerbung",
+    "bewerbungsablauf": "Bewerbungsablauf",
+    "ausbildung": "Ausbildung",
+    "qualifizierung": "Qualifizierungsangebote",
+    "fachkraefte": "Fachkräfte",
+    "vorteile": "Unsere Vorteile",
+    "automatisierung": "Automatisierungstechnik",
+    "instandhaltung": "Instandhaltung",
+    "elektroinstallation": "Elektroinstallation",
+    "personaldienstleistungen": "Personaldienstleistungen"
+  },
+  "home": {
+    "headline": "Mayer Elektro – Ihr Partner für Elektroinstallation und Automatisierung",
+    "intro": "Wir bieten moderne Lösungen für Industrie, Gewerbe und Privatkunden.",
+    "welcome": "MAYER ELEKTRO",
+    "subtitle": "Elektroinstallation • Automatisierung • Fachkräfte",
+    "cta": "Mehr erfahren",
+    "service_title": "ELEKTROINSTALLATION",
+    "premium_partner": "Ihr Premium-Partner",
+    "for_innovative": "für innovative",
+    "electrotechnology": "Elektrotechnik",
+    "intelligent": "intelligente",
+    "automation": "Automatisierung",
+    "and_modern": "und moderne",
+    "building_technology": "Gebäudetechnik",
+    "for_applicants": "Für Bewerber",
+    "for_customers": "Für Kunden"
+  },
+  "theme": {
+    "toggle": "Design wechseln",
+    "light": "Heller Modus",
+    "dark": "Dunkler Modus",
+    "system": "System"
+  },
+  "language": {
+    "toggle": "Sprache wechseln",
+    "german": "Deutsch",
+    "english": "English"
+  },
+  "services": {
+    "title": "Leistungen",
+    "electrical_installation": "Elektroinstallation",
+    "electrical_desc": "Moderne Lösungen für Gewerbe & Industrie.",
+    "automation_technology": "Automatisierungstechnik",
+    "automation_desc": "Effizienz durch smarte Systeme.",
+    "maintenance": "Instandhaltung",
+    "maintenance_desc": "Zuverlässige Wartung für maximale Sicherheit."
+  },
+  "jobs": {
+    "title": "Aktuelle Stellenausschreibungen",
+    "subtitle": "Werden Sie Teil unseres Teams und gestalten Sie die Zukunft der Elektrotechnik mit.",
+    "electrician": "Elektroniker (m/w/d)",
+    "electrician_desc": "Für Energie- und Gebäudetechnik mit Erfahrung in Industrie- und Gewerbeprojekten.",
+    "automation_technician": "Automatisierungstechniker (m/w/d)",
+    "automation_technician_desc": "SPS-Programmierung und Inbetriebnahme von Automatisierungsanlagen.",
+    "service_technician": "Servicetechniker (m/w/d)",
+    "service_technician_desc": "Wartung und Instandhaltung elektrischer Anlagen im Außendienst.",
+    "apprentice": "Auszubildende (m/w/d)",
+    "apprentice_desc": "Elektroniker für Energie- und Gebäudetechnik - Start September 2025.",
+    "apply_now": "Jetzt bewerben",
+    "full_time": "Vollzeit",
+    "part_time": "Teilzeit",
+    "apprenticeship": "Ausbildung",
+    "initiative_title": "Initiativbewerbung",
+    "initiative_subtitle": "Sie haben Ihren Traumjob nicht gefunden? Bewerben Sie sich initiativ!",
+    "initiative_description": "Wir sind immer auf der Suche nach qualifizierten Fachkräften in der Elektrotechnik. Senden Sie uns Ihre Bewerbungsunterlagen und wir melden uns bei passenden Positionen.",
+    "initiative_button": "Initiativ bewerben",
+    "process_title": "Bewerbungsablauf",
+    "process_step1_title": "Bewerbung senden",
+    "process_step1_desc": "Senden Sie uns Ihre vollständigen Bewerbungsunterlagen per E-Mail oder über unser Online-Portal.",
+    "process_step2_title": "Prüfung & Rückmeldung",
+    "process_step2_desc": "Wir prüfen Ihre Unterlagen sorgfältig und melden uns innerhalb von 5 Werktagen bei Ihnen zurück.",
+    "process_step3_title": "Vorstellungsgespräch",
+    "process_step3_desc": "Bei gegenseitigem Interesse laden wir Sie zu einem persönlichen Gespräch in unsere Räumlichkeiten ein.",
+    "process_step4_title": "Vertragsabschluss",
+    "process_step4_desc": "Nach erfolgreicher Bewerbung erstellen wir Ihnen ein attraktives Angebot und freuen uns auf die Zusammenarbeit.",
+    "view_all_jobs": "Alle Stellenangebote anzeigen"
+  },
+  "clients": {
+    "title": "Für Kunden",
+    "subtitle": "Professionelle Elektroinstallationen und Automatisierungslösungen für Privat- und Geschäftskunden.",
+    "automation": {
+      "title": "Automatisierungstechnik & Schaltanlagenbau",
+      "description": "Von der Planung bis zur Inbetriebnahme - wir realisieren komplette Automatisierungslösungen für Industrie und Gewerbe. Unsere Expertise umfasst moderne SPS-Systeme und maßgeschneiderte Schaltanlagen.",
+      "switchgear_title": "Schaltanlagenbau",
+      "automation_title": "Automatisierung",
+      "low_voltage": "Niederspannungsschaltanlagen",
+      "medium_voltage": "Mittelspannungsschaltanlagen",
+      "control_cabinet": "Schaltschrankbau",
+      "distribution_cabinet": "Verteilerschränke",
+      "plc_programming": "SPS-Programmierung",
+      "hmi_systems": "HMI-Systeme",
+      "process_visualization": "Prozessvisualisierung",
+      "remote_maintenance": "Fernwartung",
+      "planning_title": "Planung & Engineering",
+      "planning_desc": "Detaillierte Projektplanung und technische Auslegung nach aktuellen Normen und Vorschriften.",
+      "installation_title": "Montage & Installation",
+      "installation_desc": "Fachgerechte Montage und Installation durch qualifizierte Elektrofachkräfte vor Ort.",
+      "service_title": "Inbetriebnahme & Service",
+      "service_desc": "Komplette Inbetriebnahme mit Funktionsprüfung und langfristige Servicebetreuung."
+    },
+    "maintenance": {
+      "title": "Instandhaltung",
+      "subtitle": "Vorbeugende Instandhaltung",
+      "description": "Minimieren Sie Ausfallzeiten und verlängern Sie die Lebensdauer Ihrer Anlagen durch professionelle Wartung und Instandhaltung.",
+      "inspection_title": "Inspektion",
+      "inspection_desc": "Regelmäßige Überprüfung aller elektrischen Komponenten und Systeme.",
+      "maintenance_title": "Wartung",
+      "maintenance_desc": "Planmäßige Wartungsarbeiten zur Erhaltung der Betriebssicherheit.",
+      "repair_title": "Instandsetzung",
+      "repair_desc": "Schnelle Reparatur bei Störungen und Ausfällen - auch im Notdienst."
+    },
+    "electrical": {
+      "title": "Elektroinstallation",
+      "residential_title": "Wohngebäude",
+      "residential_desc": "Komplette Elektroinstallation für Neubauten, Sanierungen und Modernisierungen.",
+      "commercial_title": "Gewerbe & Industrie",
+      "commercial_desc": "Professionelle Lösungen für Bürogebäude, Produktionsstätten und Industrieanlagen.",
+      "special_title": "Sonderanlagen",
+      "special_desc": "Spezialisierte Installationen für besondere Anforderungen und Technologien.",
+      "house_installations": "Hausinstallationen",
+      "smart_home": "Smart Home Systeme",
+      "lighting_concepts": "Beleuchtungskonzepte",
+      "security_tech": "Sicherheitstechnik",
+      "industrial_installations": "Industrieinstallationen",
+      "machine_connection": "Maschinenanbindung",
+      "lighting_systems": "Beleuchtungsanlagen",
+      "emergency_power": "Notstromversorgung",
+      "photovoltaic": "Photovoltaik-Anlagen",
+      "e_mobility": "E-Mobilität Ladestationen",
+      "fire_alarm": "Brandmeldeanlagen",
+      "lightning_protection": "Blitzschutzanlagen"
+    },
+    "personnel": {
+      "title": "Personaldienstleistungen",
+      "subtitle": "Flexibilisierung Ihrer Personalplanung",
+      "description": "Wir unterstützen Sie mit qualifizierten Fachkräften für temporäre Projekte oder langfristige Personalvermittlung in der Elektrotechnik.",
+      "temporary_title": "Zeitarbeit",
+      "placement_title": "Personalvermittlung",
+      "short_projects": "Kurzfristige Projekte",
+      "vacation_cover": "Urlaubsvertretung",
+      "peak_orders": "Auftragsspitzen",
+      "flexible_assignments": "Flexible Einsätze",
+      "permanent_positions": "Festanstellungen",
+      "specialist_matching": "Fachkräfte-Matching",
+      "long_partnerships": "Langfristige Partnerschaften",
+      "quality_assurance": "Qualitätssicherung",
+      "recruitment": "Rekrutierung",
+      "preselection": "Vorauswahl",
+      "aftercare": "Nachbetreuung"
+    },
+    "references": {
+      "title": "Unsere Referenzen",
+      "satisfied_customers": "Zufriedene Kunden",
+      "years_experience": "Jahre Erfahrung",
+      "projects_completed": "Projekte realisiert",
+      "emergency_service": "Notdienst"
+    }
+  },
+  "contact": {
+    "name_placeholder": "Ihr Name",
+    "email_placeholder": "Ihre E-Mail",
+    "message_placeholder": "Ihre Nachricht",
+    "send_button": "Nachricht senden"
+  },
+  "newsletter": {
+    "title": "Newsletter abonnieren",
+    "description": "Verpassen Sie keine Neuigkeiten! Abonnieren Sie unseren Newsletter und bleiben Sie über aktuelle Projekte, Technologien und Stellenausschreibungen informiert.",
+    "email_placeholder": "Ihre E-Mail-Adresse",
+    "subscribe_button": "Anmelden",
+    "privacy_note": "Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben."
+  },
+  "footer": {
+    "company_description": "Professionelle Elektroinstallationen und Automatisierungslösungen seit über 15 Jahren.",
+    "quick_links": "Quick Links",
+    "copyright": "© 2024 Mayer Elektro GmbH. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutz",
+    "imprint": "Impressum"
+  },
+  "about": {
+    "title": "Über Uns",
+    "description1": "Wir sind ein erfahrenes Team im Bereich Elektrotechnik, Automatisierung und Fachkräftevermittlung. Unser Anspruch ist höchste Qualität und Kundenzufriedenheit.",
+    "description2": "Mit über 20 Jahren Erfahrung betreuen wir sowohl kleine als auch große Unternehmen."
+  },
+  "applicants": {
+    "title": "Für Bewerber",
+    "subtitle": "Starten Sie Ihre Karriere bei Mayer Elektro! Wir bieten spannende Möglichkeiten für Fachkräfte und Quereinsteiger.",
+    "training": {
+      "title": "Ausbildung",
+      "subtitle": "Elektroniker für Energie- und Gebäudetechnik",
+      "description": "Unsere 3,5-jährige Ausbildung bietet Ihnen eine solide Grundlage für eine erfolgreiche Karriere in der Elektrotechnik. Sie lernen alle Aspekte der modernen Elektroinstallation kennen.",
+      "practical_training": "Praxisnahe Ausbildung",
+      "practical_desc": "Arbeiten Sie von Anfang an an echten Projekten mit erfahrenen Fachkräften.",
+      "job_guarantee": "Übernahmegarantie",
+      "job_guarantee_desc": "Bei erfolgreichem Abschluss garantieren wir Ihnen eine Festanstellung.",
+      "modern_equipment": "Moderne Ausstattung",
+      "modern_equipment_desc": "Lernen Sie mit neuester Technik und modernsten Werkzeugen."
+    },
+    "qualification": {
+      "title": "Qualifizierungsangebote",
+      "continuing_education": "Weiterbildungsprogramme",
+      "continuing_education_desc": "Regelmäßige Schulungen zu neuen Technologien und Normen in der Elektrotechnik.",
+      "certifications": "Zertifizierungen",
+      "certifications_desc": "Unterstützung bei der Erlangung wichtiger Zertifikate und Qualifikationen.",
+      "mentoring": "Mentoring-Programm",
+      "mentoring_desc": "Erfahrene Kollegen begleiten Sie bei Ihrer beruflichen Entwicklung."
+    },
+    "professionals": {
+      "title": "Fachkräfte gesucht",
+      "subtitle": "Wir suchen qualifizierte Fachkräfte in verschiedenen Bereichen der Elektrotechnik und Automatisierung.",
+      "electrical": {
+        "title": "Elektrotechnik",
+        "description": "Elektroinstallateure, Elektroniker für Energie- und Gebäudetechnik, Betriebselektriker"
+      },
+      "automation": {
+        "title": "Automatisierungstechnik",
+        "description": "SPS-Programmierer, Automatisierungstechniker, MSR-Techniker"
+      },
+      "maintenance": {
+        "title": "Instandhaltung",
+        "description": "Servicetechniker, Wartungstechniker, Instandhaltungsmechaniker"
+      },
+      "switchgear": {
+        "title": "Schaltanlagenbau",
+        "description": "Schaltanlagenbauer, Schaltschrankbauer, Verdrahtungstechniker"
+      }
+    },
+    "benefits": {
+      "title": "Warum Mayer Elektro?",
+      "subtitle": "Unsere Vorteile",
+      "permanent_position": "Unbefristetes Arbeitsverhältnis",
+      "permanent_position_desc": "in einem innovativen und zukunftsorientierten Umfeld",
+      "exciting_projects": "Spannende Projekte",
+      "exciting_projects_desc": "bei denen Sie aktiv mitgestalten und Verantwortung übernehmen können",
+      "appreciative_cooperation": "Wertschätzendes Miteinander",
+      "appreciative_cooperation_desc": "Ihre Meinung zählt und wird gehört",
+      "room_for_initiative": "Viel Raum für Eigeninitiative",
+      "room_for_initiative_desc": "und die Umsetzung eigener Ideen",
+      "attractive_compensation": "Attraktive Vergütung",
+      "attractive_compensation_desc": "nach Tarif plus Zusatzleistungen (z. B. betriebliche Altersvorsorge, Corporate Benefits, Firmen-Events)",
+      "strong_team": "Ein starkes Team",
+      "strong_team_desc": "das zusammenhält und gemeinsam wächst",
+      "vacation_days": "30 Tage Jahresurlaub",
+      "vacation_days_desc": "sowie zusätzliche Sonderurlaubstage für Ihre Erholung",
+      "application_title": "Bewerbung",
+      "application_desc": "Nutzen Sie unser Online-Bewerbungsformular für eine schnelle und einfache Bewerbung. Laden Sie Ihre Unterlagen direkt hoch und senden Sie uns Ihre Bewerbung mit nur einem Klick!",
+      "apply_now": "Jetzt bewerben"
+    },
+    "positions": {
+      "title": "Fachkräfte gesucht",
+      "electrical_engineering": "Elektrotechnik",
+      "electrical_engineering_desc": "Elektroinstallateure, Elektroniker für Energie- und Gebäudetechnik, Betriebselektriker",
+      "automation_technology": "Automatisierungstechnik",
+      "automation_technology_desc": "SPS-Programmierer, Automatisierungstechniker, MSR-Techniker",
+      "maintenance": "Instandhaltung",
+      "maintenance_desc": "Servicetechniker, Wartungstechniker, Instandhaltungsmechaniker",
+      "switchgear_construction": "Schaltanlagenbau",
+      "switchgear_construction_desc": "Schaltanlagenbauer, Schaltschrankbauer, Verdrahtungstechniker"
+    },
+    "benefits": {
+      "title": "Warum Mayer Elektro?",
+      "competitive_salary": "Attraktive Vergütung",
+      "flexible_hours": "Flexible Arbeitszeiten",
+      "company_car": "Firmenwagen",
+      "training_opportunities": "Weiterbildungsmöglichkeiten",
+      "team_events": "Teamevents",
+      "modern_workplace": "Moderner Arbeitsplatz"
+    },
+    "application": {
+      "title": "Bewerbung",
+      "description": "Senden Sie uns Ihre vollständigen Bewerbungsunterlagen per E-Mail oder Post. Wir freuen uns auf Ihre Bewerbung!",
+      "email": "E-Mail:",
+      "phone": "Telefon:"
+    }
+  },
+  "customers": {
+    "title": "Für Kunden",
+    "subtitle": "Professionelle Elektroinstallationen und Automatisierungslösungen für Privat- und Geschäftskunden.",
+    "automation": {
+      "title": "Automatisierungstechnik & Schaltanlagenbau",
+      "services_title": "Unser Leistungsspektrum",
+      "services_desc": "Von der Planung bis zur Inbetriebnahme - wir realisieren komplette Automatisierungslösungen für Industrie und Gewerbe. Unsere Expertise umfasst moderne SPS-Systeme und maßgeschneiderte Schaltanlagen.",
+      "switchgear_construction": "Schaltanlagenbau",
+      "low_voltage": "Niederspannungsschaltanlagen",
+      "medium_voltage": "Mittelspannungsschaltanlagen",
+      "control_cabinet": "Schaltschrankbau",
+      "distribution_boards": "Verteilerschränke",
+      "automation": "Automatisierung",
+      "plc_programming": "SPS-Programmierung",
+      "hmi_systems": "HMI-Systeme",
+      "process_visualization": "Prozessvisualisierung",
+      "remote_maintenance": "Fernwartung",
+      "planning_engineering": "Planung & Engineering",
+      "planning_desc": "Detaillierte Projektplanung und technische Auslegung nach aktuellen Normen und Vorschriften.",
+      "assembly_installation": "Montage & Installation",
+      "assembly_desc": "Fachgerechte Montage und Installation durch qualifizierte Elektrofachkräfte vor Ort.",
+      "commissioning_service": "Inbetriebnahme & Service",
+      "commissioning_desc": "Komplette Inbetriebnahme mit Funktionsprüfung und langfristige Servicebetreuung."
+    },
+    "maintenance": {
+      "title": "Instandhaltung",
+      "preventive_title": "Vorbeugende Instandhaltung",
+      "preventive_desc": "Minimieren Sie Ausfallzeiten und verlängern Sie die Lebensdauer Ihrer Anlagen durch professionelle Wartung und Instandhaltung.",
+      "inspection": "Inspektion",
+      "inspection_desc": "Regelmäßige Überprüfung aller elektrischen Komponenten und Systeme.",
+      "maintenance": "Wartung",
+      "maintenance_desc": "Planmäßige Wartungsarbeiten zur Erhaltung der Betriebssicherheit.",
+      "repair": "Instandsetzung",
+      "repair_desc": "Schnelle Reparatur bei Störungen und Ausfällen - auch im Notdienst."
+    },
+    "electrical_installation": {
+      "title": "Elektroinstallation",
+      "residential": "Wohngebäude",
+      "residential_desc": "Komplette Elektroinstallation für Neubauten, Sanierungen und Modernisierungen.",
+      "house_installations": "Hausinstallationen",
+      "smart_home": "Smart Home Systeme",
+      "lighting_concepts": "Beleuchtungskonzepte",
+      "security_technology": "Sicherheitstechnik",
+      "commercial_industrial": "Gewerbe & Industrie",
+      "commercial_desc": "Professionelle Lösungen für Bürogebäude, Produktionsstätten und Industrieanlagen.",
+      "industrial_installations": "Industrieinstallationen",
+      "machine_connection": "Maschinenanbindung",
+      "lighting_systems": "Beleuchtungsanlagen",
+      "emergency_power": "Notstromversorgung",
+      "special_systems": "Sonderanlagen",
+      "special_desc": "Spezialisierte Installationen für besondere Anforderungen und Technologien.",
+      "photovoltaic": "Photovoltaik-Anlagen",
+      "e_mobility": "E-Mobilität Ladestationen",
+      "fire_alarm": "Brandmeldeanlagen",
+      "lightning_protection": "Blitzschutzanlagen"
+    },
+    "personnel_services": {
+      "title": "Personaldienstleistungen",
+      "flexibility_title": "Flexibilisierung Ihrer Personalplanung",
+      "flexibility_desc": "Wir unterstützen Sie mit qualifizierten Fachkräften für temporäre Projekte oder langfristige Personalvermittlung in der Elektrotechnik.",
+      "temporary_work": "Zeitarbeit",
+      "short_term_projects": "Kurzfristige Projekte",
+      "vacation_replacement": "Urlaubsvertretung",
+      "order_peaks": "Auftragsspitzen",
+      "flexible_assignments": "Flexible Einsätze",
+      "personnel_placement": "Personalvermittlung",
+      "permanent_positions": "Festanstellungen",
+      "specialist_search": "Fachkräftesuche",
+      "candidate_selection": "Kandidatenauswahl",
+      "long_term_cooperation": "Langfristige Zusammenarbeit"
+    },
+    "references": {
+      "title": "Unsere Referenzen",
+      "satisfied_customers": "Zufriedene Kunden",
+      "years_experience": "Jahre Erfahrung",
+      "projects_completed": "Projekte realisiert",
+      "emergency_service": "Notdienst"
+    }
+  },
+  "news": {
+    "title": "News & Aktuelles",
+    "subtitle": "Bleiben Sie auf dem Laufenden über Neuigkeiten, Projekte und Entwicklungen bei Mayer Elektro.",
+    "read_more": "Mehr lesen",
+    "apply_now": "Jetzt bewerben",
+    "learn_more": "Mehr erfahren",
+    "discover_trends": "Trends entdecken",
+    "contact_emergency": "Notdienst kontaktieren",
+    "view_certificate": "Zertifikat ansehen",
+    "article1": {
+      "date": "15. Dezember 2024",
+      "title": "Neues Bürogebäude erfolgreich elektrifiziert",
+      "description": "Wir haben die komplette Elektroinstallation für das neue Bürogebäude der Firma TechCorp abgeschlossen. Das Projekt umfasste moderne Smart-Building-Technologien."
+    },
+    "article2": {
+      "date": "8. Dezember 2024",
+      "title": "Neue Ausbildungsplätze für 2025",
+      "description": "Ab September 2025 bieten wir wieder Ausbildungsplätze zum Elektroniker für Energie- und Gebäudetechnik an. Bewerbungen sind ab sofort möglich."
+    },
+    "article3": {
+      "date": "1. Dezember 2024",
+      "title": "Industrie 4.0 Zertifizierung erhalten",
+      "description": "Unsere Automatisierungsabteilung wurde erfolgreich nach Industrie 4.0 Standards zertifiziert. Dies bestätigt unsere Kompetenz in modernen Fertigungstechnologien."
+    },
+    "article4": {
+      "date": "25. November 2024",
+      "title": "Smart Home Trends 2025",
+      "description": "Entdecken Sie die neuesten Smart Home Trends für 2025. Von intelligenter Beleuchtung bis zur vollautomatischen Haussteuerung - wir zeigen Ihnen die Möglichkeiten."
+    },
+    "article5": {
+      "date": "18. November 2024",
+      "title": "24/7 Notdienst jetzt verfügbar",
+      "description": "Ab sofort bieten wir unseren Notdienst rund um die Uhr an. Bei Stromausfällen oder anderen elektrischen Notfällen sind wir jederzeit für Sie da."
+    },
+    "article6": {
+      "date": "10. November 2024",
+      "title": "ISO 9001 Qualitätszertifikat erneuert",
+      "description": "Wir haben erfolgreich unser ISO 9001 Qualitätszertifikat erneuert. Dies bestätigt unseren hohen Qualitätsstandard in allen Bereichen unserer Arbeit."
+    },
+    "archive_title": "Ältere Nachrichten",
+    "archive_description": "Suchen Sie nach älteren Nachrichten oder möchten Sie unser komplettes Archiv durchstöbern?",
+    "view_archive": "Zum Archiv"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "name_placeholder": "Ihr Name",
+    "email_placeholder": "Ihre E-Mail",
+    "message_placeholder": "Ihre Nachricht",
+    "send_message": "Nachricht senden",
+    "send_button": "Senden"
+  },
+  "jobs": {
+    "title": "Stellenangebote",
+    "subtitle": "Entdecken Sie spannende Karrieremöglichkeiten bei Mayer Elektro und werden Sie Teil unseres erfolgreichen Teams.",
+    "electrician": "Elektroniker (m/w/d)",
+    "electrician_desc": "Für Elektroinstallationen und Wartungsarbeiten in Hamburg und Umgebung.",
+    "automation_technician": "Automatisierungstechniker (m/w/d)",
+    "automation_technician_desc": "Spezialist für SPS-Programmierung und Prozessautomatisierung.",
+    "project_manager": "Projektleiter Elektrotechnik (m/w/d)",
+    "project_manager_desc": "Leitung von Elektroprojekten von der Planung bis zur Umsetzung.",
+    "apprentice": "Auszubildender Elektroniker (m/w/d)",
+    "apprentice_desc": "Starte deine Karriere mit einer fundierten Ausbildung bei uns.",
+    "service_technician": "Servicetechniker (m/w/d)",
+    "service_technician_desc": "Wartung und Reparatur von elektrischen Anlagen beim Kunden vor Ort.",
+    "full_time": "Vollzeit",
+    "part_time": "Teilzeit",
+    "apprenticeship": "Ausbildung",
+    "apply_now": "Jetzt bewerben",
+    "view_all_jobs": "Alle Stellenangebote anzeigen",
+    "initiative_title": "Initiativbewerbung",
+    "initiative_subtitle": "Sie finden keine passende Stelle?",
+    "initiative_description": "Senden Sie uns gerne eine Initiativbewerbung. Wir sind immer auf der Suche nach talentierten Fachkräften und freuen uns über Ihr Interesse an unserem Unternehmen.",
+    "initiative_button": "Initiativbewerbung senden",
+    "process_title": "Bewerbungsablauf",
+    "process_step1_title": "Bewerbung einreichen",
+    "process_step1_desc": "Senden Sie uns Ihre vollständigen Unterlagen per E-Mail oder über unser Online-Formular.",
+    "process_step2_title": "Erstgespräch",
+    "process_step2_desc": "Nach Prüfung Ihrer Unterlagen laden wir Sie zu einem persönlichen Gespräch ein.",
+    "process_step3_title": "Fachgespräch",
+    "process_step3_desc": "In einem zweiten Termin lernen Sie Ihr zukünftiges Team und Ihre Aufgaben kennen.",
+    "process_step4_title": "Vertragsangebot",
+    "process_step4_desc": "Bei gegenseitigem Interesse erhalten Sie von uns ein konkretes Vertragsangebot."
+  },
+  "applicants": {
+    "title": "Für Bewerber",
+    "subtitle": "Starten Sie Ihre Karriere bei Mayer Elektro! Wir bieten spannende Möglichkeiten für Fachkräfte und Quereinsteiger.",
+    "training": {
+      "title": "Ausbildung",
+      "subtitle": "Elektroniker für Energie- und Gebäudetechnik",
+      "description": "Unsere 3,5-jährige Ausbildung bietet Ihnen eine solide Grundlage für eine erfolgreiche Karriere in der Elektrotechnik. Sie lernen alle Aspekte der modernen Elektroinstallation kennen.",
+      "practical_training": "Praxisnahe Ausbildung",
+      "practical_desc": "Arbeiten Sie von Anfang an an echten Projekten mit erfahrenen Fachkräften.",
+      "job_guarantee": "Übernahmegarantie",
+      "job_guarantee_desc": "Bei erfolgreichem Abschluss garantieren wir Ihnen eine Festanstellung.",
+      "modern_equipment": "Moderne Ausstattung",
+      "modern_equipment_desc": "Lernen Sie mit neuester Technik und modernsten Werkzeugen."
+    },
+    "qualification": {
+      "title": "Qualifizierungsangebote",
+      "continuing_education": "Weiterbildungsprogramme",
+      "continuing_education_desc": "Regelmäßige Schulungen zu neuen Technologien und Normen in der Elektrotechnik.",
+      "certifications": "Zertifizierungen",
+      "certifications_desc": "Unterstützung bei der Erlangung wichtiger Zertifikate und Qualifikationen.",
+      "mentoring": "Mentoring-Programm",
+      "mentoring_desc": "Erfahrene Kollegen begleiten Sie bei Ihrer beruflichen Entwicklung."
+    },
+    "professionals": {
+      "title": "Fachkräfte gesucht",
+      "subtitle": "Wir suchen qualifizierte Fachkräfte in verschiedenen Bereichen der Elektrotechnik und Automatisierung.",
+      "electrical": {
+        "title": "Elektrotechnik",
+        "description": "Elektroinstallateure, Elektroniker für Energie- und Gebäudetechnik, Betriebselektriker"
+      },
+      "automation": {
+        "title": "Automatisierungstechnik",
+        "description": "SPS-Programmierer, Automatisierungstechniker, MSR-Techniker"
+      },
+      "maintenance": {
+        "title": "Instandhaltung",
+        "description": "Servicetechniker, Wartungstechniker, Instandhaltungsmechaniker"
+      },
+      "switchgear": {
+        "title": "Schaltanlagenbau",
+        "description": "Schaltanlagenbauer, Schaltschrankbauer, Verdrahtungstechniker"
+      }
+    },
+    "benefits": {
+      "title": "Warum Mayer Elektro?",
+      "subtitle": "Unsere Vorteile",
+      "permanent_position": "Unbefristetes Arbeitsverhältnis",
+      "permanent_position_desc": "in einem innovativen und zukunftsorientierten Umfeld",
+      "exciting_projects": "Spannende Projekte",
+      "exciting_projects_desc": "bei denen Sie aktiv mitgestalten und Verantwortung übernehmen können",
+      "appreciative_cooperation": "Wertschätzendes Miteinander",
+      "appreciative_cooperation_desc": "Ihre Meinung zählt und wird gehört",
+      "room_for_initiative": "Viel Raum für Eigeninitiative",
+      "room_for_initiative_desc": "und die Umsetzung eigener Ideen",
+      "attractive_compensation": "Attraktive Vergütung",
+      "attractive_compensation_desc": "nach Tarif plus Zusatzleistungen (z. B. betriebliche Altersvorsorge, Corporate Benefits, Firmen-Events)",
+      "strong_team": "Ein starkes Team",
+      "strong_team_desc": "das zusammenhält und gemeinsam wächst",
+      "vacation_days": "30 Tage Jahresurlaub",
+      "vacation_days_desc": "sowie zusätzliche Sonderurlaubstage für Ihre Erholung",
+      "application_title": "Bewerbung",
+      "application_desc": "Nutzen Sie unser Online-Bewerbungsformular für eine schnelle und einfache Bewerbung. Laden Sie Ihre Unterlagen direkt hoch und senden Sie uns Ihre Bewerbung mit nur einem Klick!",
+      "apply_now": "Jetzt bewerben"
+    }
+  },
+  "newsletter": {
+    "title": "Newsletter abonnieren",
+    "description": "Verpassen Sie keine wichtigen Neuigkeiten und erhalten Sie regelmäßige Updates direkt in Ihr Postfach.",
+    "email_placeholder": "Ihre E-Mail-Adresse",
+    "subscribe_button": "Abonnieren",
+    "privacy_note": "Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben."
+  },
+  "about": {
+    "title": "Über Uns",
+    "description1": "Wir sind ein erfahrenes Team im Bereich Elektrotechnik, Automatisierung und Fachkräftevermittlung. Unser Anspruch ist höchste Qualität und Kundenzufriedenheit.",
+    "description2": "Mit über 20 Jahren Erfahrung betreuen wir sowohl kleine als auch große Unternehmen."
+  },
+  "footer": {
+    "company_description": "Professionelle Elektroinstallationen und Automatisierungslösungen seit über 15 Jahren.",
+    "quick_links": "Quick Links",
+    "contact_info": "Kontakt",
+    "company_name": "Mayer Elektro GmbH",
+    "address_line1": "Musterstraße 123",
+    "address_line2": "12345 Hamburg",
+    "copyright": "Alle Rechte vorbehalten.",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "terms": "AGB"
+  },
+  "application": {
+    "title": "Bewerbungsformular",
+    "subtitle": "Werden Sie Teil unseres Teams! Senden Sie uns Ihre Bewerbung und starten Sie Ihre Karriere bei Mayer Elektro.",
+    "back_to_home": "Zurück zur Hauptseite",
+    "first_name": "Vorname",
+    "first_name_placeholder": "Ihr Vorname",
+    "last_name": "Nachname",
+    "last_name_placeholder": "Ihr Nachname",
+    "email": "E-Mail-Adresse",
+    "email_placeholder": "ihre.email@beispiel.de",
+    "phone": "Telefonnummer",
+    "phone_placeholder": "+49 123 456 789",
+    "address": "Straße und Hausnummer",
+    "address_placeholder": "Musterstraße 123",
+    "postal_code": "PLZ",
+    "postal_code_placeholder": "12345",
+    "city": "Stadt",
+    "city_placeholder": "Hamburg",
+    "country": "Land",
+    "other": "Andere",
+    "position": "Gewünschte Position",
+    "select_position": "Position auswählen",
+    "positions": {
+      "electrician": "Elektroniker für Energie- und Gebäudetechnik",
+      "automation_technician": "Automatisierungstechniker",
+      "project_manager": "Projektleiter",
+      "apprentice": "Auszubildender",
+      "unsolicited": "Initiativbewerbung"
+    },
+    "availability": "Verfügbar ab",
+    "salary_expectation": "Gehaltsvorstellung",
+    "salary_placeholder": "z.B. 45.000 € p.a.",
+    "cover_letter": "Anschreiben",
+    "cover_letter_placeholder": "Erzählen Sie uns, warum Sie zu Mayer Elektro passen...",
+    "documents": "Bewerbungsunterlagen",
+    "cv": "Lebenslauf",
+    "upload_cv": "Lebenslauf hochladen",
+    "additional_documents": "Weitere Dokumente",
+    "upload_documents": "Weitere Dokumente hochladen",
+    "documents_info": "Zeugnisse, Zertifikate, etc. (PDF, DOC, DOCX, JPG, PNG - max. 5MB pro Datei)",
+    "add_more_documents": "Weitere Dokumente hinzufügen",
+    "privacy_text": "Ich stimme der Verarbeitung meiner Daten gemäß der",
+    "privacy_policy": "Datenschutzerklärung",
+    "submit": "Bewerbung absenden",
+    "submitting": "Wird gesendet...",
+    "success_title": "Bewerbung erfolgreich gesendet!",
+    "success_message": "Vielen Dank für Ihre Bewerbung. Wir werden uns in Kürze bei Ihnen melden.",
+    "error_message": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "file_too_large": "Die Datei ist zu groß. Maximale Dateigröße: 5MB",
+    "some_files_too_large": "Einige Dateien waren zu groß und wurden nicht hochgeladen."
+  }
+}
