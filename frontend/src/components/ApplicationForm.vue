@@ -225,7 +225,7 @@
                   class="hidden"
                   required
                 >
-                <div v-if="!form.files.cv" @click="$refs.cvInput.click()" class="cursor-pointer">
+                <div v-if="!form.files.cv" @click="cvInput.click()" class="cursor-pointer">
                   <svg class="w-12 h-12 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                   </svg>
@@ -262,7 +262,7 @@
                   multiple
                   class="hidden"
                 >
-                <div v-if="form.files.documents.length === 0" @click="$refs.documentsInput.click()" class="cursor-pointer">
+                <div v-if="form.files.documents.length === 0" @click="documentsInput.click()" class="cursor-pointer">
                   <svg class="w-12 h-12 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                   </svg>
@@ -283,7 +283,7 @@
                       </svg>
                     </button>
                   </div>
-                  <button type="button" @click="$refs.documentsInput.click()" class="text-[#0097b2] hover:underline text-sm">
+                  <button type="button" @click="documentsInput.click()" class="text-[#0097b2] hover:underline text-sm">
                     {{ t('application.add_more_documents') }}
                   </button>
                 </div>
@@ -361,6 +361,8 @@ const router = useRouter()
 
 const isSubmitting = ref(false)
 const showSuccessModal = ref(false)
+const cvInput = ref(null)
+const documentsInput = ref(null)
 
 const form = reactive({
   firstName: '',
