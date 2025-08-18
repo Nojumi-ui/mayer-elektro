@@ -7,7 +7,7 @@
           <img 
             src="/favicon-muster-transparent-blau.png" 
             alt="Mayer Elektro Logo" 
-            class="w-10 h-10 object-contain"
+            class="w-16 h-16 object-contain"
           />
           <div class="flex flex-col">
             <span class="text-xl font-black tracking-tight text-gray-800 dark:text-gray-200 leading-none">

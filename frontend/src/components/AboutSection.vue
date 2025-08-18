@@ -6,7 +6,7 @@
           <img 
             src="/favicon-muster-transparent-blau.png" 
             alt="Mayer Elektro Logo" 
-            class="w-12 h-12 object-contain"
+            class="w-16 h-16 object-contain"
           />
           <div class="flex flex-col">
             <h2 class="text-4xl font-bold text-gray-800 dark:text-gray-200 leading-none">{{ $t('about.title') }}</h2>
