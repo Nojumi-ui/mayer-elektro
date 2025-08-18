@@ -109,7 +109,71 @@
       "installation_title": "Assembly & Installation",
       "installation_desc": "Professional assembly and installation by qualified electrical specialists on site.",
       "service_title": "Commissioning & Service",
-      "service_desc": "Complete commissioning with functional testing and long-term service support."
+      "service_desc": "Complete commissioning with functional testing and long-term service support.",
+      "learn_more": "Learn more",
+      "planning_details": {
+        "title": "Planning & Engineering",
+        "subtitle": "Professional project planning for automation solutions",
+        "description": "Our experienced engineers develop customized automation solutions that are perfectly tailored to your requirements. From the initial idea to detailed implementation planning, we guide you through the entire planning process.",
+        "services": [
+          "Requirements analysis and feasibility studies",
+          "Technical concept development and system design",
+          "Creation of circuit diagrams and wiring diagrams",
+          "3D planning and visualization of switchgear",
+          "Standards-compliant documentation according to VDE and IEC",
+          "Project management and scheduling",
+          "Cost optimization and economic analysis",
+          "Integration into existing systems and infrastructures"
+        ],
+        "technologies": [
+          "CAD software for electrical planning (EPLAN, AutoCAD Electrical)",
+          "3D modeling and simulation",
+          "Project management tools",
+          "Standards databases and calculation software"
+        ]
+      },
+      "installation_details": {
+        "title": "Assembly & Installation",
+        "subtitle": "Professional implementation by qualified electrical specialists",
+        "description": "Our experienced assembly team implements your automation projects precisely and on schedule. We pay attention to the highest quality standards and compliance with all safety regulations.",
+        "services": [
+          "Assembly of control cabinets and distributors",
+          "Installation of PLC systems and controls",
+          "Laying and connection of cables and lines",
+          "Assembly of sensors and actuators",
+          "Installation of HMI panels and operating devices",
+          "Setup of network and communication infrastructure",
+          "Integration of safety systems",
+          "Documentation and labeling of all components"
+        ],
+        "technologies": [
+          "Siemens S7 systems (S7-1200, S7-1500)",
+          "Beckhoff TwinCAT automation",
+          "Phoenix Contact PLCnext",
+          "Profinet, Profibus, Ethernet/IP communication"
+        ]
+      },
+      "service_details": {
+        "title": "Commissioning & Service",
+        "subtitle": "Complete commissioning and long-term support",
+        "description": "After installation, we ensure smooth commissioning of your systems. Our service team is also available for long-term maintenance, updates and troubleshooting.",
+        "services": [
+          "Functional testing and system testing",
+          "Programming and parameterization",
+          "Commissioning and optimization",
+          "Training of your operating personnel",
+          "Creation of operating instructions",
+          "Maintenance contracts and preventive maintenance",
+          "24/7 emergency service and remote maintenance",
+          "Software updates and system extensions"
+        ],
+        "technologies": [
+          "Remote maintenance via VPN connections",
+          "Condition monitoring systems",
+          "Predictive maintenance solutions",
+          "Mobile service apps for technicians"
+        ]
+      }
     },
     "maintenance": {
       "title": "Maintenance",

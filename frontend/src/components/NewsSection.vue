@@ -125,7 +125,7 @@
       </div>
 
       <!-- Newsletter Anmeldung -->
-      <div class="bg-[#0097b2] text-white p-8 rounded-lg text-center">
+      <!--div class="bg-[#0097b2] text-white p-8 rounded-lg text-center">
         <h3 class="text-3xl font-bold mb-4">{{ t('newsletter.title') }}</h3>
         <p class="text-lg mb-6 max-w-2xl mx-auto">
           {{ t('newsletter.description') }}
@@ -147,7 +147,7 @@
         <p class="text-sm mt-4 opacity-80">
           {{ t('newsletter.privacy_note') }}
         </p>
-      </div>
+      </div-->
 
       <!-- Archiv -->
       <div class="mt-16 text-center">

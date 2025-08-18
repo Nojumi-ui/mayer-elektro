@@ -109,7 +109,71 @@
       "installation_title": "Montage & Installation",
       "installation_desc": "Fachgerechte Montage und Installation durch qualifizierte Elektrofachkräfte vor Ort.",
       "service_title": "Inbetriebnahme & Service",
-      "service_desc": "Komplette Inbetriebnahme mit Funktionsprüfung und langfristige Servicebetreuung."
+      "service_desc": "Komplette Inbetriebnahme mit Funktionsprüfung und langfristige Servicebetreuung.",
+      "learn_more": "Mehr erfahren",
+      "planning_details": {
+        "title": "Planung & Engineering",
+        "subtitle": "Professionelle Projektplanung für Automatisierungslösungen",
+        "description": "Unsere erfahrenen Ingenieure entwickeln maßgeschneiderte Automatisierungslösungen, die perfekt auf Ihre Anforderungen abgestimmt sind. Von der ersten Idee bis zur detaillierten Umsetzungsplanung begleiten wir Sie durch den gesamten Planungsprozess.",
+        "services": [
+          "Anforderungsanalyse und Machbarkeitsstudien",
+          "Technische Konzeptentwicklung und Systemauslegung",
+          "Erstellung von Schaltplänen und Stromlaufplänen",
+          "3D-Planung und Visualisierung von Schaltanlagen",
+          "Normgerechte Dokumentation nach VDE und IEC",
+          "Projektmanagement und Terminplanung",
+          "Kostenoptimierung und Wirtschaftlichkeitsanalyse",
+          "Integration in bestehende Systeme und Infrastrukturen"
+        ],
+        "technologies": [
+          "CAD-Software für Elektroplanung (EPLAN, AutoCAD Electrical)",
+          "3D-Modellierung und Simulation",
+          "Projektmanagement-Tools",
+          "Normendatenbanken und Berechnungssoftware"
+        ]
+      },
+      "installation_details": {
+        "title": "Montage & Installation",
+        "subtitle": "Fachgerechte Umsetzung durch qualifizierte Elektrofachkräfte",
+        "description": "Unser erfahrenes Montageteam setzt Ihre Automatisierungsprojekte präzise und termingerecht um. Dabei achten wir auf höchste Qualitätsstandards und die Einhaltung aller Sicherheitsvorschriften.",
+        "services": [
+          "Montage von Schaltschränken und Verteilern",
+          "Installation von SPS-Systemen und Steuerungen",
+          "Verlegung und Anschluss von Kabeln und Leitungen",
+          "Montage von Sensoren und Aktoren",
+          "Installation von HMI-Panels und Bediengeräten",
+          "Aufbau von Netzwerk- und Kommunikationsinfrastruktur",
+          "Integration von Sicherheitssystemen",
+          "Dokumentation und Kennzeichnung aller Komponenten"
+        ],
+        "technologies": [
+          "Siemens S7-Systeme (S7-1200, S7-1500)",
+          "Beckhoff TwinCAT Automatisierung",
+          "Phoenix Contact PLCnext",
+          "Profinet, Profibus, Ethernet/IP Kommunikation"
+        ]
+      },
+      "service_details": {
+        "title": "Inbetriebnahme & Service",
+        "subtitle": "Komplette Inbetriebnahme und langfristige Betreuung",
+        "description": "Nach der Installation sorgen wir für eine reibungslose Inbetriebnahme Ihrer Anlagen. Unser Service-Team steht Ihnen auch langfristig für Wartung, Updates und Störungsbehebung zur Verfügung.",
+        "services": [
+          "Funktionsprüfung und Systemtest",
+          "Programmierung und Parametrierung",
+          "Inbetriebnahme und Optimierung",
+          "Schulung Ihres Bedienungspersonals",
+          "Erstellung von Betriebsanleitungen",
+          "Wartungsverträge und präventive Instandhaltung",
+          "24/7 Störungsdienst und Fernwartung",
+          "Software-Updates und Systemerweiterungen"
+        ],
+        "technologies": [
+          "Fernwartung über VPN-Verbindungen",
+          "Condition Monitoring Systeme",
+          "Predictive Maintenance Lösungen",
+          "Mobile Service-Apps für Techniker"
+        ]
+      }
     },
     "maintenance": {
       "title": "Instandhaltung",
