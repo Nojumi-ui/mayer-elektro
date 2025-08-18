@@ -19,7 +19,8 @@
     "automatisierung": "Automatisierungstechnik",
     "instandhaltung": "Instandhaltung",
     "elektroinstallation": "Elektroinstallation",
-    "personaldienstleistungen": "Personaldienstleistungen"
+    "personaldienstleistungen": "Personaldienstleistungen",
+    "bewerber_info": "Informationen"
   },
   "home": {
     "headline": "Mayer Elektro – Ihr Partner für Elektroinstallation und Automatisierung",
@@ -285,20 +286,20 @@
       "title": "Fachkräfte gesucht",
       "subtitle": "Wir suchen qualifizierte Fachkräfte in verschiedenen Bereichen der Elektrotechnik und Automatisierung.",
       "electrical": {
-        "title": "Elektrotechnik",
-        "description": "Elektroinstallateure, Elektroniker für Energie- und Gebäudetechnik, Betriebselektriker"
+        "title": "Projektleiter Elektrotechnik (m/w/d)",
+        "description": "Leitung und Koordination von Elektroprojekten in Industrie und Gewerbe"
       },
       "automation": {
-        "title": "Automatisierungstechnik",
-        "description": "SPS-Programmierer, Automatisierungstechniker, MSR-Techniker"
+        "title": "Elektroniker jeglicher Richtungen",
+        "description": "Vielseitige Elektroniker für verschiedene Fachbereiche und Projekte"
       },
       "maintenance": {
-        "title": "Instandhaltung",
-        "description": "Servicetechniker, Wartungstechniker, Instandhaltungsmechaniker"
+        "title": "Elektroniker für Energie- und Gebäudetechnik (m/w/d)",
+        "description": "Installation und Wartung elektrischer Anlagen in Gebäuden und Energiesystemen"
       },
-      "switchgear": {
-        "title": "Schaltanlagenbau",
-        "description": "Schaltanlagenbauer, Schaltschrankbauer, Verdrahtungstechniker"
+      "heatpump": {
+        "title": "Monteur Wärmepumpe (m/w/d)",
+        "description": "Installation, Wartung und Service von Wärmepumpenanlagen für Privat- und Gewerbekunden"
       }
     },
     "benefits": {
@@ -469,7 +470,13 @@
     },
     "archive_title": "Ältere Nachrichten",
     "archive_description": "Suchen Sie nach älteren Nachrichten oder möchten Sie unser komplettes Archiv durchstöbern?",
-    "view_archive": "Zum Archiv"
+    "view_archive": "Zum Archiv",
+    "gallery": "Bildergalerie",
+    "key_points": "Wichtige Punkte",
+    "interested": "Interessiert?",
+    "contact_us": "Kontaktieren Sie uns für weitere Informationen oder ein unverbindliches Angebot.",
+    "contact_button": "Kontakt aufnehmen",
+    "close": "Schließen"
   },
   "contact": {
     "title": "Kontakt",
@@ -478,6 +485,39 @@
     "message_placeholder": "Ihre Nachricht",
     "send_message": "Nachricht senden",
     "send_button": "Senden"
+  },
+  "imprint": {
+    "title": "Impressum",
+    "subtitle": "Rechtliche Informationen gemäß § 5 TMG",
+    "back_home": "Zur Startseite",
+    "company_info": "Firmeninformationen",
+    "company_name": "Firmenname",
+    "address": "Anschrift",
+    "commercial_register": "Handelsregister",
+    "register_court": "Amtsgericht Hamburg",
+    "contact": "Kontakt",
+    "managing_director": "Geschäftsführer",
+    "vat_id": "Umsatzsteuer-ID",
+    "legal_info": "Rechtliche Hinweise",
+    "liability_content": "Haftung für Inhalte",
+    "liability_content_text": "Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht unter der Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
+    "liability_links": "Haftung für Links",
+    "liability_links_text": "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
+    "copyright": "Urheberrecht",
+    "copyright_text": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.",
+    "professional_info": "Berufsrechtliche Angaben",
+    "professional_title": "Berufsbezeichnung",
+    "electrical_contractor": "Elektroinstallateur / Elektrotechniker",
+    "chamber": "Zuständige Kammer",
+    "chamber_name": "Handwerkskammer Hamburg",
+    "insurance": "Berufshaftpflichtversicherung",
+    "insurance_company": "Allianz Versicherungs-AG, München",
+    "insurance_coverage": "Deckungssumme: 2.000.000 EUR",
+    "regulations": "Berufsrechtliche Regelungen",
+    "regulations_text": "Handwerksordnung (HwO), Gewerbeordnung (GewO)",
+    "dispute_resolution": "Streitschlichtung",
+    "dispute_text": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+    "eu_platform": "EU-Streitschlichtungsplattform"
   },
   "jobs": {
     "title": "Stellenangebote",
@@ -539,20 +579,20 @@
       "title": "Fachkräfte gesucht",
       "subtitle": "Wir suchen qualifizierte Fachkräfte in verschiedenen Bereichen der Elektrotechnik und Automatisierung.",
       "electrical": {
-        "title": "Elektrotechnik",
-        "description": "Elektroinstallateure, Elektroniker für Energie- und Gebäudetechnik, Betriebselektriker"
+        "title": "Projektleiter Elektrotechnik (m/w/d)",
+        "description": "Leitung und Koordination von Elektroprojekten in Industrie und Gewerbe"
       },
       "automation": {
-        "title": "Automatisierungstechnik",
-        "description": "SPS-Programmierer, Automatisierungstechniker, MSR-Techniker"
+        "title": "Elektroniker jeglicher Richtungen",
+        "description": "Vielseitige Elektroniker für verschiedene Fachbereiche und Projekte"
       },
       "maintenance": {
-        "title": "Instandhaltung",
-        "description": "Servicetechniker, Wartungstechniker, Instandhaltungsmechaniker"
+        "title": "Elektroniker für Energie- und Gebäudetechnik (m/w/d)",
+        "description": "Installation und Wartung elektrischer Anlagen in Gebäuden und Energiesystemen"
       },
-      "switchgear": {
-        "title": "Schaltanlagenbau",
-        "description": "Schaltanlagenbauer, Schaltschrankbauer, Verdrahtungstechniker"
+      "heatpump": {
+        "title": "Monteur Wärmepumpe (m/w/d)",
+        "description": "Installation, Wartung und Service von Wärmepumpenanlagen für Privat- und Gewerbekunden"
       }
     },
     "benefits": {

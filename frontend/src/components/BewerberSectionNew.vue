@@ -146,8 +146,8 @@
           <div :class="['bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition scale-in stagger-1', { visible: fachkraefteVisible }]">
             <div class="h-32 overflow-hidden rounded-lg mb-4">
               <img 
-                src="/img/electrician_3.jpg" 
-                alt="Elektrotechnik" 
+                src="/img/team.jpg" 
+                alt="Projektleiter Elektrotechnik" 
                 class="w-full h-full object-cover"
               >
             </div>
@@ -160,8 +160,8 @@
           <div :class="['bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition scale-in stagger-2', { visible: fachkraefteVisible }]">
             <div class="h-32 overflow-hidden rounded-lg mb-4">
               <img 
-                src="/img/automatisierung_3.jpg" 
-                alt="Automatisierungstechnik" 
+                src="/img/electrician.jpg" 
+                alt="Elektroniker jeglicher Richtungen" 
                 class="w-full h-full object-cover"
               >
             </div>
@@ -174,8 +174,8 @@
           <div :class="['bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition scale-in stagger-3', { visible: fachkraefteVisible }]">
             <div class="h-32 overflow-hidden rounded-lg mb-4">
               <img 
-                src="/img/instandhaltung.jpg" 
-                alt="Instandhaltung" 
+                src="/img/electrical-panel.jpg" 
+                alt="Elektroniker für Energie- und Gebäudetechnik" 
                 class="w-full h-full object-cover"
               >
             </div>
@@ -188,14 +188,14 @@
           <div :class="['bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition scale-in stagger-4', { visible: fachkraefteVisible }]">
             <div class="h-32 overflow-hidden rounded-lg mb-4">
               <img 
-                src="/img/schaltanlagenbau.jpg" 
-                alt="Schaltanlagenbau" 
+                src="/img/heat-pump.jpg" 
+                alt="Wärmepumpe Installation" 
                 class="w-full h-full object-cover"
               >
             </div>
-            <h4 class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">{{ t('applicants.professionals.switchgear.title') }}</h4>
+            <h4 class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">{{ t('applicants.professionals.heatpump.title') }}</h4>
             <p class="text-sm text-gray-600 dark:text-gray-400">
-              {{ t('applicants.professionals.switchgear.description') }}
+              {{ t('applicants.professionals.heatpump.description') }}
             </p>
           </div>
         </div>

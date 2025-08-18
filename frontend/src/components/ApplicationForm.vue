@@ -14,12 +14,12 @@
         </button>
         
         <!-- Logo -->
-        <div class="flex flex-col items-center">
-          <span class="text-lg font-black tracking-tight text-gray-800 dark:text-gray-200 leading-none">
-            <span class="bg-gradient-to-r from-gray-800 to-gray-600 dark:from-gray-200 dark:to-gray-400 bg-clip-text text-transparent">MAYER</span>
-            <span class="font-light text-gray-700 dark:text-gray-300"> ELEKTRO</span>
-          </span>
-          <span class="text-xs font-bold tracking-widest text-[#0097b2] leading-none mt-0.5">ELEKTROINSTALLATION</span>
+        <div class="flex items-center justify-center">
+          <img 
+            :src="isDark ? '/logo_transparent_white.png' : '/logo_transparent_dark.png'" 
+            alt="Mayer Elektro Logo" 
+            class="h-14 w-auto object-contain"
+          />
         </div>
         
         <div class="w-20"></div> <!-- Spacer für Zentrierung -->
@@ -354,9 +354,11 @@
 import { ref, reactive } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
+import { useTheme } from "../composables/useTheme"
 
 const { t } = useI18n()
 const router = useRouter()
+const { isDark } = useTheme()
 
 const isSubmitting = ref(false)
 const showSuccessModal = ref(false)

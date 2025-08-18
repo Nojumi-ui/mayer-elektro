@@ -19,7 +19,8 @@
     "automatisierung": "Automation Technology",
     "instandhaltung": "Maintenance",
     "elektroinstallation": "Electrical Installation",
-    "personaldienstleistungen": "Personnel Services"
+    "personaldienstleistungen": "Personnel Services",
+    "bewerber_info": "Information"
   },
   "home": {
     "headline": "Mayer Elektro – Your Partner for Electrical Installation and Automation",
@@ -285,20 +286,20 @@
       "title": "Professionals Wanted",
       "subtitle": "We are looking for qualified professionals in various areas of electrical engineering and automation.",
       "electrical": {
-        "title": "Electrical Engineering",
-        "description": "Electrical installers, electricians for energy and building technology, industrial electricians"
+        "title": "Project Manager Electrical Engineering (m/f/d)",
+        "description": "Management and coordination of electrical projects in industry and commerce"
       },
       "automation": {
-        "title": "Automation Technology",
-        "description": "PLC programmers, automation technicians, MSR technicians"
+        "title": "Electricians of all Specializations",
+        "description": "Versatile electricians for various technical fields and projects"
       },
       "maintenance": {
-        "title": "Maintenance",
-        "description": "Service technicians, maintenance technicians, maintenance mechanics"
+        "title": "Electrician for Energy and Building Technology (m/f/d)",
+        "description": "Installation and maintenance of electrical systems in buildings and energy systems"
       },
-      "switchgear": {
-        "title": "Switchgear Construction",
-        "description": "Switchgear builders, control cabinet builders, wiring technicians"
+      "heatpump": {
+        "title": "Heat Pump Installer (m/f/d)",
+        "description": "Installation, maintenance and service of heat pump systems for private and commercial customers"
       }
     },
     "benefits": {
@@ -469,7 +470,13 @@
     },
     "archive_title": "Older News",
     "archive_description": "Looking for older news or want to browse our complete archive?",
-    "view_archive": "View Archive"
+    "view_archive": "View Archive",
+    "gallery": "Image Gallery",
+    "key_points": "Key Points",
+    "interested": "Interested?",
+    "contact_us": "Contact us for more information or a non-binding quote.",
+    "contact_button": "Get in touch",
+    "close": "Close"
   },
   "contact": {
     "title": "Contact",
@@ -478,6 +485,39 @@
     "message_placeholder": "Your Message",
     "send_message": "Send Message",
     "send_button": "Send"
+  },
+  "imprint": {
+    "title": "Legal Notice",
+    "subtitle": "Legal information according to § 5 TMG",
+    "back_home": "Back to Home",
+    "company_info": "Company Information",
+    "company_name": "Company Name",
+    "address": "Address",
+    "commercial_register": "Commercial Register",
+    "register_court": "District Court Hamburg",
+    "contact": "Contact",
+    "managing_director": "Managing Director",
+    "vat_id": "VAT ID",
+    "legal_info": "Legal Information",
+    "liability_content": "Liability for Content",
+    "liability_content_text": "As a service provider, we are responsible for our own content on these pages in accordance with § 7 para. 1 TMG under general law. However, according to §§ 8 to 10 TMG, we as a service provider are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.",
+    "liability_links": "Liability for Links",
+    "liability_links_text": "Our offer contains links to external third-party websites over whose content we have no influence. Therefore, we cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages.",
+    "copyright": "Copyright",
+    "copyright_text": "The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution and any form of commercialization of such material beyond the scope of the copyright law shall require the prior written consent of its respective author or creator.",
+    "professional_info": "Professional Information",
+    "professional_title": "Professional Title",
+    "electrical_contractor": "Electrical Contractor / Electrical Engineer",
+    "chamber": "Responsible Chamber",
+    "chamber_name": "Chamber of Crafts Hamburg",
+    "insurance": "Professional Liability Insurance",
+    "insurance_company": "Allianz Insurance AG, Munich",
+    "insurance_coverage": "Coverage amount: 2,000,000 EUR",
+    "regulations": "Professional Regulations",
+    "regulations_text": "Crafts Code (HwO), Trade Regulation (GewO)",
+    "dispute_resolution": "Dispute Resolution",
+    "dispute_text": "We are not willing or obligated to participate in dispute resolution procedures before a consumer arbitration board.",
+    "eu_platform": "EU Dispute Resolution Platform"
   },
   "jobs": {
     "title": "Job Opportunities",
@@ -539,20 +579,20 @@
       "title": "Professionals Wanted",
       "subtitle": "We are looking for qualified professionals in various areas of electrical engineering and automation.",
       "electrical": {
-        "title": "Electrical Engineering",
-        "description": "Electrical installers, electricians for energy and building technology, industrial electricians"
+        "title": "Project Manager Electrical Engineering (m/f/d)",
+        "description": "Management and coordination of electrical projects in industry and commerce"
       },
       "automation": {
-        "title": "Automation Technology",
-        "description": "PLC programmers, automation technicians, MSR technicians"
+        "title": "Electricians of all Specializations",
+        "description": "Versatile electricians for various technical fields and projects"
       },
       "maintenance": {
-        "title": "Maintenance",
-        "description": "Service technicians, maintenance technicians, maintenance mechanics"
+        "title": "Electrician for Energy and Building Technology (m/f/d)",
+        "description": "Installation and maintenance of electrical systems in buildings and energy systems"
       },
-      "switchgear": {
-        "title": "Switchgear Construction",
-        "description": "Switchgear builders, control cabinet builders, wiring technicians"
+      "heatpump": {
+        "title": "Heat Pump Installer (m/f/d)",
+        "description": "Installation, maintenance and service of heat pump systems for private and commercial customers"
       }
     },
     "benefits": {

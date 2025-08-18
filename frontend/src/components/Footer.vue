@@ -6,20 +6,11 @@
         <!-- Logo & Company Info -->
         <div class="flex flex-col items-start">
           <div class="mb-4">
-            <div class="flex items-center gap-3 mb-2">
-              <img 
-                src="/favicon-muster-transparent-blau.png" 
-                alt="Mayer Elektro Logo" 
-                class="w-12 h-12 object-contain"
-              />
-              <div class="flex flex-col">
-                <span class="text-lg font-black tracking-tight leading-none">
-                  <span class="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">MAYER</span>
-                  <span class="font-light text-gray-300"> ELEKTRO</span>
-                </span>
-                <span class="text-xs font-bold tracking-widest text-[#0097b2] leading-none mt-0.5">ELEKTROINSTALLATION</span>
-              </div>
-            </div>
+            <img 
+              :src="isDark ? '/logo_transparent_white.png' : '/logo_transparent_white.png'" 
+              alt="Mayer Elektro Logo" 
+              class="h-12 w-auto object-contain"
+            />
           </div>
           <p class="text-gray-400 text-sm">
             {{ t('footer.company_description') }}
@@ -42,17 +33,17 @@
         <div>
           <h3 class="text-lg font-semibold mb-4">{{ t('nav.kontakt') }}</h3>
           <div class="space-y-2 text-sm text-gray-400">
-            <p>Mayer Elektro GmbH</p>
-            <p>Musterstraße 123</p>
-            <p>12345 Hamburg</p>
+            <p>Mayer Elektro- und Gebäudetechnik GmbH</p>
+            <p>Christoph-Probst-Weg 4</p>
+            <p>20251 Hamburg</p>
             <p class="mt-3">
               <a href="tel:+4940123456789" class="hover:text-white transition">
                 +49 (0) 40 123 456 789
               </a>
             </p>
             <p>
-              <a href="mailto:info@mayer-elektro.de" class="hover:text-white transition">
-                info@mayer-elektro.de
+              <a href="mailto:info@mayerelektro.de" class="hover:text-white transition">
+                info@mayerelektro.de
               </a>
             </p>
           </div>
@@ -74,6 +65,8 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n'
+import { useTheme } from "../composables/useTheme"
 
 const { t } = useI18n()
+const { isDark } = useTheme()
 </script>

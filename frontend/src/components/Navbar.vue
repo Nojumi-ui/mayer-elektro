@@ -3,43 +3,19 @@
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <!-- Brand with Logo -->
       <router-link to="/" class="flex items-center hover:opacity-80 transition">
-        <div class="flex items-center gap-3">
-          <img 
-            src="/favicon-muster-transparent-blau.png" 
-            alt="Mayer Elektro Logo" 
-            class="w-16 h-16 object-contain"
-          />
-          <div class="flex flex-col">
-            <span class="text-xl font-black tracking-tight text-gray-800 dark:text-gray-200 leading-none">
-              <span class="bg-gradient-to-r from-gray-800 to-gray-600 dark:from-gray-200 dark:to-gray-400 bg-clip-text text-transparent">MAYER</span>
-              <span class="font-light text-gray-700 dark:text-gray-300"> ELEKTRO</span>
-            </span>
-            <span class="text-xs font-bold tracking-widest text-[#0097b2] leading-none mt-0.5">ELEKTROINSTALLATION</span>
-          </div>
-        </div>
+        <img 
+          :src="isDark ? '/logo_transparent_white.png' : '/logo_transparent_dark.png'" 
+          alt="Mayer Elektro Logo" 
+          class="h-16 w-auto object-contain"
+        />
       </router-link>
 
       <!-- Desktop Navigation -->
       <div class="hidden md:flex items-center gap-6">
         <ul class="flex gap-6 text-gray-700 dark:text-gray-300 font-medium">
           <li><a href="#home" @click="scrollToSection('home')" class="hover:text-[#0097b2] transition">Home</a></li>
-        
-        <!-- Jobs Dropdown -->
-        <li class="relative group">
-          <a href="#jobs" @click="scrollToSection('jobs')" class="hover:text-[#0097b2] transition flex items-center">
-            {{ t('nav.jobs') }}
-            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </a>
-          <ul class="absolute top-full left-0 bg-white dark:bg-gray-800 shadow-lg rounded-lg py-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border dark:border-gray-700">
-            <li><a href="#stellenangebote" @click="scrollToSection('stellenangebote')" class="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#0097b2] transition text-gray-700 dark:text-gray-300">{{ t('nav.stellenangebote') }}</a></li>
-            <li><a href="#initiativbewerbung" @click="scrollToSection('initiativbewerbung')" class="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#0097b2] transition text-gray-700 dark:text-gray-300">{{ t('nav.initiativbewerbung') }}</a></li>
-            <li><a href="#bewerbungsablauf" @click="scrollToSection('bewerbungsablauf')" class="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#0097b2] transition text-gray-700 dark:text-gray-300">{{ t('nav.bewerbungsablauf') }}</a></li>
-          </ul>
-        </li>
 
-        <!-- Für Bewerber Dropdown -->
+        <!-- Für Bewerber Dropdown (mit Jobs integriert) -->
         <li class="relative group">
           <a href="#bewerber" @click="scrollToSection('bewerber')" class="hover:text-[#0097b2] transition flex items-center">
             {{ t('nav.bewerber') }}
@@ -48,6 +24,14 @@
             </svg>
           </a>
           <ul class="absolute top-full left-0 bg-white dark:bg-gray-800 shadow-lg rounded-lg py-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border dark:border-gray-700">
+            <!-- Jobs Sektion -->
+            <li class="px-4 py-2 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider border-b border-gray-200 dark:border-gray-600">{{ t('nav.jobs') }}</li>
+            <li><a href="#stellenangebote" @click="scrollToSection('stellenangebote')" class="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#0097b2] transition text-gray-700 dark:text-gray-300">{{ t('nav.stellenangebote') }}</a></li>
+            <li><a href="#initiativbewerbung" @click="scrollToSection('initiativbewerbung')" class="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#0097b2] transition text-gray-700 dark:text-gray-300">{{ t('nav.initiativbewerbung') }}</a></li>
+            <li><a href="#bewerbungsablauf" @click="scrollToSection('bewerbungsablauf')" class="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#0097b2] transition text-gray-700 dark:text-gray-300">{{ t('nav.bewerbungsablauf') }}</a></li>
+            
+            <!-- Bewerber Sektion -->
+            <li class="px-4 py-2 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider border-b border-gray-200 dark:border-gray-600 mt-2">{{ t('nav.bewerber_info') }}</li>
             <li><a href="#ausbildung" @click="scrollToSection('ausbildung')" class="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#0097b2] transition text-gray-700 dark:text-gray-300">{{ t('nav.ausbildung') }}</a></li>
             <li><a href="#qualifizierung" @click="scrollToSection('qualifizierung')" class="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#0097b2] transition text-gray-700 dark:text-gray-300">{{ t('nav.qualifizierung') }}</a></li>
             <li><a href="#fachkraefte" @click="scrollToSection('fachkraefte')" class="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-[#0097b2] transition text-gray-700 dark:text-gray-300">{{ t('nav.fachkraefte') }}</a></li>
@@ -238,18 +222,15 @@
       >
         <!-- Mobile Brand -->
         <div class="mb-8 text-center">
-          <div class="flex flex-col">
-            <span class="text-2xl font-black tracking-tight text-gray-800 dark:text-gray-200 leading-none">
-              <span class="bg-gradient-to-r from-gray-800 to-gray-600 dark:from-gray-200 dark:to-gray-400 bg-clip-text text-transparent">MAYER</span>
-              <span class="font-light text-gray-700 dark:text-gray-300"> ELEKTRO</span>
-            </span>
-            <span class="text-sm font-bold tracking-widest text-[#0097b2] leading-none mt-1">ELEKTROINSTALLATION</span>
-          </div>
+          <img 
+            :src="isDark ? '/logo_transparent_white.png' : '/logo_transparent_dark.png'" 
+            alt="Mayer Elektro Logo" 
+            class="h-20 w-auto object-contain mx-auto"
+          />
         </div>
         
         <!-- Mobile Menu Items -->
         <a href="#home" @click="scrollToSection('home'); closeMenu()" class="hover:text-[#0097b2] transition py-2">{{ t('nav.home') }}</a>
-        <a href="#jobs" @click="scrollToSection('jobs'); closeMenu()" class="hover:text-[#0097b2] transition py-2">{{ t('nav.jobs') }}</a>
         <a href="#bewerber" @click="scrollToSection('bewerber'); closeMenu()" class="hover:text-[#0097b2] transition py-2">{{ t('nav.bewerber') }}</a>
         <a href="#kunden" @click="scrollToSection('kunden'); closeMenu()" class="hover:text-[#0097b2] transition py-2">{{ t('nav.kunden') }}</a>
         <a href="#news" @click="scrollToSection('news'); closeMenu()" class="hover:text-[#0097b2] transition py-2">{{ t('nav.news') }}</a>
@@ -336,8 +317,9 @@ onUnmounted(() => {
 const scrollToSection = (sectionId) => {
   const element = document.getElementById(sectionId);
   if (element) {
-    // Berücksichtigt die Höhe der fixen Navbar (ca. 90px)
-    const navbarHeight = 80;
+    // Dynamisch die tatsächliche Navbar-Höhe ermitteln
+    const navbar = document.querySelector('nav');
+    const navbarHeight = navbar ? navbar.offsetHeight + 20 : 100; // +20px zusätzlicher Abstand
     const elementPosition = element.offsetTop - navbarHeight;
     
     window.scrollTo({
