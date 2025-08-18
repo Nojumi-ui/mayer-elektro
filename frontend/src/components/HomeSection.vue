@@ -11,14 +11,14 @@
     </div>
     
     <!-- Content -->
-    <div ref="elementRef" class="relative z-10 text-center max-w-4xl mx-auto px-6 text-white">
-      <h1 :class="['text-5xl md:text-7xl font-black tracking-tight mb-4 fade-in-up', { visible: isVisible }]">
+    <div ref="elementRef" class="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 text-white">
+      <h1 :class="['text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black tracking-normal sm:tracking-tight mb-4 fade-in-up leading-tight break-words', { visible: isVisible }]">
         <span class="bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">MAYER</span>
         <span class="text-white font-light"> ELEKTRO</span>
       </h1>
-      <h2 :class="['text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-300 mb-4 tracking-widest fade-in-up stagger-1', { visible: isVisible }]">{{ t('home.service_title') || 'ELEKTROINSTALLATION' }}</h2>
+      <h2 :class="['text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-yellow-300 mb-4 tracking-wide sm:tracking-widest fade-in-up stagger-1 leading-tight break-words', { visible: isVisible }]">{{ t('home.service_title') || 'ELEKTROINSTALLATION' }}</h2>
       <div :class="['w-24 h-1 bg-gradient-to-r from-yellow-300 to-[#0097b2] mx-auto mb-10 fade-in-up stagger-2', { visible: isVisible }]"></div>
-      <p :class="['text-lg md:text-xl lg:text-2xl font-light leading-relaxed max-w-3xl mx-auto mb-12 fade-in-up stagger-3', { visible: isVisible }]">
+      <p :class="['text-base sm:text-lg md:text-xl lg:text-2xl font-light leading-relaxed max-w-3xl mx-auto mb-12 fade-in-up stagger-3', { visible: isVisible }]">
         <span class="text-yellow-300 font-medium">{{ t('home.premium_partner') || 'Ihr Premium-Partner' }}</span> {{ t('home.for_innovative') || 'für innovative' }} 
         <span class="text-cyan-200">{{ t('home.electrotechnology') || 'Elektrotechnik' }}</span>, {{ t('home.intelligent') || 'intelligente' }} 
         <span class="text-cyan-200">{{ t('home.automation') || 'Automatisierung' }}</span> {{ t('home.and_modern') || 'und moderne' }} 

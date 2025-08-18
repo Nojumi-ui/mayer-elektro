@@ -69,8 +69,9 @@
         </ul>
 
         <!-- Theme Switcher -->
-        <div class="relative group">
+        <div class="relative">
           <button 
+            @click="toggleDesktopDropdown"
             class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200 text-gray-700 dark:text-gray-300"
             :title="$t('theme.toggle')"
           >
@@ -82,9 +83,12 @@
           </button>
           
           <!-- Theme Dropdown -->
-          <div class="absolute top-full right-0 mt-2 bg-white dark:bg-gray-800 shadow-lg rounded-lg py-2 w-40 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border dark:border-gray-700">
+          <div 
+            v-show="isDesktopDropdownOpen"
+            class="absolute top-full right-0 mt-2 bg-white dark:bg-gray-800 shadow-lg rounded-lg py-2 w-40 transition-all duration-200 z-50 border dark:border-gray-700"
+          >
             <button 
-              @click="setTheme('light')"
+              @click="setThemeAndCloseDesktop('light')"
               class="w-full text-left px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition flex items-center gap-2 text-gray-700 dark:text-gray-300"
               :class="{ 'text-[#0097b2] dark:text-[#0097b2]': !isDark }"
             >
@@ -94,7 +98,7 @@
               {{ t('theme.light') }}
             </button>
             <button 
-              @click="setTheme('dark')"
+              @click="setThemeAndCloseDesktop('dark')"
               class="w-full text-left px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition flex items-center gap-2 text-gray-700 dark:text-gray-300"
               :class="{ 'text-[#0097b2] dark:text-[#0097b2]': isDark }"
             >
@@ -107,7 +111,7 @@
             <!-- Language Switcher in Theme Dropdown -->
             <div class="border-t border-gray-200 dark:border-gray-600 my-2"></div>
             <button 
-              @click="changeLanguage('de')"
+              @click="changeLanguageAndCloseDesktop('de')"
               class="w-full text-left px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition flex items-center gap-2 text-gray-700 dark:text-gray-300"
               :class="{ 'text-[#0097b2] dark:text-[#0097b2]': currentLocale === 'de' }"
             >
@@ -115,7 +119,7 @@
               <span class="text-sm">Deutsch</span>
             </button>
             <button 
-              @click="changeLanguage('en')"
+              @click="changeLanguageAndCloseDesktop('en')"
               class="w-full text-left px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition flex items-center gap-2 text-gray-700 dark:text-gray-300"
               :class="{ 'text-[#0097b2] dark:text-[#0097b2]': currentLocale === 'en' }"
             >
@@ -129,8 +133,9 @@
       <!-- Mobile Menu Button and Switchers -->
       <div class="md:hidden flex items-center gap-2">
         <!-- Mobile Theme Switcher -->
-        <div class="relative group">
+        <div class="relative">
           <button 
+            @click="toggleMobileDropdown"
             class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200 text-gray-700 dark:text-gray-300"
             :title="$t('theme.toggle')"
           >
@@ -142,9 +147,12 @@
           </button>
           
           <!-- Mobile Theme Dropdown -->
-          <div class="absolute top-full right-0 mt-2 bg-white dark:bg-gray-800 shadow-lg rounded-lg py-2 w-40 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border dark:border-gray-700">
+          <div 
+            v-show="isMobileDropdownOpen"
+            class="absolute top-full right-0 mt-2 bg-white dark:bg-gray-800 shadow-lg rounded-lg py-2 w-40 transition-all duration-200 z-50 border dark:border-gray-700"
+          >
             <button 
-              @click="setTheme('light')"
+              @click="setThemeAndClose('light')"
               class="w-full text-left px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition flex items-center gap-2 text-gray-700 dark:text-gray-300"
               :class="{ 'text-[#0097b2] dark:text-[#0097b2]': !isDark }"
             >
@@ -154,7 +162,7 @@
               {{ t('theme.light') }}
             </button>
             <button 
-              @click="setTheme('dark')"
+              @click="setThemeAndClose('dark')"
               class="w-full text-left px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition flex items-center gap-2 text-gray-700 dark:text-gray-300"
               :class="{ 'text-[#0097b2] dark:text-[#0097b2]': isDark }"
             >
@@ -167,7 +175,7 @@
             <!-- Mobile Language Switcher in Theme Dropdown -->
             <div class="border-t border-gray-200 dark:border-gray-600 my-2"></div>
             <button 
-              @click="changeLanguage('de')"
+              @click="changeLanguageAndClose('de')"
               class="w-full text-left px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition flex items-center gap-2 text-gray-700 dark:text-gray-300"
               :class="{ 'text-[#0097b2] dark:text-[#0097b2]': currentLocale === 'de' }"
             >
@@ -175,7 +183,7 @@
               <span class="text-sm">Deutsch</span>
             </button>
             <button 
-              @click="changeLanguage('en')"
+              @click="changeLanguageAndClose('en')"
               class="w-full text-left px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition flex items-center gap-2 text-gray-700 dark:text-gray-300"
               :class="{ 'text-[#0097b2] dark:text-[#0097b2]': currentLocale === 'en' }"
             >
@@ -245,19 +253,78 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 import { useI18n } from 'vue-i18n'
 import { useTheme } from "../composables/useTheme";
 import { useLanguage } from "../composables/useLanguage";
 
 const { t } = useI18n()
 const isOpen = ref(false);
+const isMobileDropdownOpen = ref(false);
+const isDesktopDropdownOpen = ref(false);
 const { isDark, setTheme } = useTheme();
 const { currentLocale, changeLanguage } = useLanguage();
 
 const closeMenu = () => {
   isOpen.value = false;
 };
+
+const toggleMobileDropdown = () => {
+  isMobileDropdownOpen.value = !isMobileDropdownOpen.value;
+};
+
+const closeMobileDropdown = () => {
+  isMobileDropdownOpen.value = false;
+};
+
+const toggleDesktopDropdown = () => {
+  isDesktopDropdownOpen.value = !isDesktopDropdownOpen.value;
+};
+
+const closeDesktopDropdown = () => {
+  isDesktopDropdownOpen.value = false;
+};
+
+const setThemeAndClose = (theme) => {
+  setTheme(theme);
+  closeMobileDropdown();
+};
+
+const changeLanguageAndClose = (language) => {
+  changeLanguage(language);
+  closeMobileDropdown();
+};
+
+const setThemeAndCloseDesktop = (theme) => {
+  setTheme(theme);
+  closeDesktopDropdown();
+};
+
+const changeLanguageAndCloseDesktop = (language) => {
+  changeLanguage(language);
+  closeDesktopDropdown();
+};
+
+// Schließe Dropdown beim Klick außerhalb
+const handleClickOutside = (event) => {
+  const dropdown = event.target.closest('.relative');
+  if (!dropdown) {
+    if (isMobileDropdownOpen.value) {
+      closeMobileDropdown();
+    }
+    if (isDesktopDropdownOpen.value) {
+      closeDesktopDropdown();
+    }
+  }
+};
+
+onMounted(() => {
+  document.addEventListener('click', handleClickOutside);
+});
+
+onUnmounted(() => {
+  document.removeEventListener('click', handleClickOutside);
+});
 
 const scrollToSection = (sectionId) => {
   const element = document.getElementById(sectionId);
