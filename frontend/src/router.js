@@ -1,12 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "./components/Home.vue";
-import ApplicationForm from "./components/ApplicationForm.vue";
-import ApplicationFormSimple from "./components/ApplicationFormSimple.vue";
+import ApplicationFormFixed from "./components/ApplicationFormFixed.vue";
 
 const routes = [
   { path: "/", component: Home },
-  { path: "/bewerbungsformular", component: ApplicationFormSimple },
-  { path: "/bewerbungsformular-original", component: ApplicationForm },
+  { path: "/bewerbungsformular", component: ApplicationFormFixed },
   // Fallback für unbekannte Routen
   { path: "/:pathMatch(.*)*", redirect: "/" }
 ];
