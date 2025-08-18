@@ -24,7 +24,7 @@
             <p class="text-gray-600 dark:text-gray-400 mb-4">
               {{ t('news.article1.description') }}
             </p>
-            <a href="#" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.read_more') }}</a>
+            <a href="#leistungen" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.learn_more') }}</a>
           </div>
         </article>
 
@@ -32,8 +32,8 @@
         <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-2', { visible: articlesVisible }]">
           <div class="h-48 overflow-hidden">
             <img 
-              src="/img/apprentice-training.jpg" 
-              alt="Ausbildung bei Mayer Elektro" 
+              src="/img/solar-panels.jpg" 
+              alt="Photovoltaik-Anlagen Installation" 
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             >
           </div>
@@ -43,7 +43,7 @@
             <p class="text-gray-600 dark:text-gray-400 mb-4">
               {{ t('news.article2.description') }}
             </p>
-            <a href="#bewerber" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.apply_now') }}</a>
+            <a href="#leistungen" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.learn_more') }}</a>
           </div>
         </article>
 
@@ -51,8 +51,8 @@
         <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-3', { visible: articlesVisible }]">
           <div class="h-48 overflow-hidden">
             <img 
-              src="/img/automatisierung_2.jpg" 
-              alt="Industrie 4.0 Zertifizierung" 
+              src="/img/heat-pump.jpg" 
+              alt="Wärmepumpen Installation" 
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             >
           </div>
@@ -62,7 +62,7 @@
             <p class="text-gray-600 dark:text-gray-400 mb-4">
               {{ t('news.article3.description') }}
             </p>
-            <a href="#" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.read_more') }}</a>
+            <a href="#leistungen" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.learn_more') }}</a>
           </div>
         </article>
 
@@ -81,7 +81,7 @@
             <p class="text-gray-600 dark:text-gray-400 mb-4">
               {{ t('news.article4.description') }}
             </p>
-            <a href="#" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.read_more') }}</a>
+            <a href="#leistungen" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.learn_more') }}</a>
           </div>
         </article>
 
@@ -108,8 +108,8 @@
         <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-6', { visible: articlesVisible }]">
           <div class="h-48 overflow-hidden">
             <img 
-              src="/img/sicherheit.jpg" 
-              alt="ISO 9001 Qualitätszertifikat" 
+              src="/img/automatisierung_2.jpg" 
+              alt="Industrielle Automatisierung" 
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             >
           </div>
@@ -119,7 +119,7 @@
             <p class="text-gray-600 dark:text-gray-400 mb-4">
               {{ t('news.article6.description') }}
             </p>
-            <a href="#" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.view_certificate') }}</a>
+            <a href="#leistungen" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.learn_more') }}</a>
           </div>
         </article>
       </div>

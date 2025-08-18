@@ -6,12 +6,19 @@
         <!-- Logo & Company Info -->
         <div class="flex flex-col items-start">
           <div class="mb-4">
-            <div class="flex flex-col">
-              <span class="text-lg font-black tracking-tight leading-none">
-                <span class="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">MAYER</span>
-                <span class="font-light text-gray-300"> ELEKTRO</span>
-              </span>
-              <span class="text-xs font-bold tracking-widest text-[#0097b2] leading-none mt-0.5">ELEKTROINSTALLATION</span>
+            <div class="flex items-center gap-3 mb-2">
+              <img 
+                src="/favicon-muster-transparent-blau.png" 
+                alt="Mayer Elektro Logo" 
+                class="w-8 h-8 object-contain"
+              />
+              <div class="flex flex-col">
+                <span class="text-lg font-black tracking-tight leading-none">
+                  <span class="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">MAYER</span>
+                  <span class="font-light text-gray-300"> ELEKTRO</span>
+                </span>
+                <span class="text-xs font-bold tracking-widest text-[#0097b2] leading-none mt-0.5">ELEKTROINSTALLATION</span>
+              </div>
             </div>
           </div>
           <p class="text-gray-400 text-sm">

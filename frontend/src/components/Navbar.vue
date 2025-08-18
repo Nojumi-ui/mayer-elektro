@@ -1,14 +1,21 @@
 <template>
   <nav class="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 shadow dark:shadow-gray-800 z-50 transition-colors duration-200">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <!-- Brand Text -->
+      <!-- Brand with Logo -->
       <router-link to="/" class="flex items-center hover:opacity-80 transition">
-        <div class="flex flex-col">
-          <span class="text-xl font-black tracking-tight text-gray-800 dark:text-gray-200 leading-none">
-            <span class="bg-gradient-to-r from-gray-800 to-gray-600 dark:from-gray-200 dark:to-gray-400 bg-clip-text text-transparent">MAYER</span>
-            <span class="font-light text-gray-700 dark:text-gray-300"> ELEKTRO</span>
-          </span>
-          <span class="text-xs font-bold tracking-widest text-[#0097b2] leading-none mt-0.5">ELEKTROINSTALLATION</span>
+        <div class="flex items-center gap-3">
+          <img 
+            src="/favicon-muster-transparent-blau.png" 
+            alt="Mayer Elektro Logo" 
+            class="w-10 h-10 object-contain"
+          />
+          <div class="flex flex-col">
+            <span class="text-xl font-black tracking-tight text-gray-800 dark:text-gray-200 leading-none">
+              <span class="bg-gradient-to-r from-gray-800 to-gray-600 dark:from-gray-200 dark:to-gray-400 bg-clip-text text-transparent">MAYER</span>
+              <span class="font-light text-gray-700 dark:text-gray-300"> ELEKTRO</span>
+            </span>
+            <span class="text-xs font-bold tracking-widest text-[#0097b2] leading-none mt-0.5">ELEKTROINSTALLATION</span>
+          </div>
         </div>
       </router-link>
 
