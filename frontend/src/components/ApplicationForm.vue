@@ -158,10 +158,10 @@
               class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-[#0097b2] focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
             >
               <option value="">{{ t('application.select_position') }}</option>
-              <option value="Elektroniker">{{ t('application.positions.electrician') }}</option>
-              <option value="Automatisierungstechniker">{{ t('application.positions.automation_technician') }}</option>
-              <option value="Projektleiter">{{ t('application.positions.project_manager') }}</option>
-              <option value="Auszubildender">{{ t('application.positions.apprentice') }}</option>
+              <option value="Elektroniker für Energie- und Gebäudetechnik">Elektroniker für Energie- und Gebäudetechnik (m/w/d)</option>
+              <option value="Projektleiter Elektrotechnik">Projektleiter Elektrotechnik (m/w/d)</option>
+              <option value="Monteur Wärmepumpe">Monteur Wärmepumpe (m/w/d)</option>
+              <option value="Elektroniker jeglicher Richtungen">Elektroniker jeglicher Richtungen (m/w/d)</option>
               <option value="Initiativbewerbung">{{ t('application.positions.unsolicited') }}</option>
             </select>
           </div>

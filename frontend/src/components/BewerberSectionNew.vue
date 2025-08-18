@@ -90,9 +90,10 @@
             </p>
             <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1">
               <li>• VDE-Normen Updates</li>
+              <li>• Photovoltaik und erneuerbare Energien</li>
+              <li>• Wärmepumpen-Technologie</li>
+              <li>• Batteriespeichersysteme</li>
               <li>• Smart Home Technologien</li>
-              <li>• Photovoltaik-Anlagen</li>
-              <li>• E-Mobilität</li>
             </ul>
           </div>
 
@@ -107,10 +108,11 @@
               {{ t('applicants.qualification.certifications_desc') }}
             </p>
             <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1">
-              <li>• Elektrofachkraft</li>
-              <li>• SPS-Programmierung</li>
-              <li>• Arbeitsschutz</li>
-              <li>• Meisterprüfung</li>
+              <li>• Elektrofachkraft für Energie- und Gebäudetechnik</li>
+              <li>• Projektleitung Elektrotechnik</li>
+              <li>• Heizungs-, Lüftungs- und Kältetechnik</li>
+              <li>• SPS-Programmierung und Automatisierung</li>
+              <li>• Arbeitsschutz und Normen (VDE, VOB, HOAI)</li>
             </ul>
           </div>
 
