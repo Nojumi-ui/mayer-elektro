@@ -24,6 +24,16 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* Scroll-Padding für fixe Navbar */
+html {
+  scroll-padding-top: 120px;
+}
+
+/* Zusätzlicher Scroll-Offset für Sektionen */
+section[id] {
+  scroll-margin-top: 120px;
+}
+
 /* Word Breaking für lange deutsche Wörter */
 .word-break-responsive {
   word-wrap: break-word;

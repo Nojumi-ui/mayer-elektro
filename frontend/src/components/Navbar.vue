@@ -243,10 +243,13 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
 import { useI18n } from 'vue-i18n'
+import { useRouter, useRoute } from 'vue-router'
 import { useTheme } from "../composables/useTheme";
 import { useLanguage } from "../composables/useLanguage";
 
 const { t } = useI18n()
+const router = useRouter()
+const route = useRoute()
 const isOpen = ref(false);
 const isMobileDropdownOpen = ref(false);
 const isDesktopDropdownOpen = ref(false);
@@ -315,16 +318,20 @@ onUnmounted(() => {
 });
 
 const scrollToSection = (sectionId) => {
+  // Prüfe, ob wir uns auf der Hauptseite befinden
+  if (route.path !== '/') {
+    // Wenn nicht auf Hauptseite, navigiere zur Hauptseite mit Anker
+    router.push(`/#${sectionId}`);
+    return;
+  }
+  
+  // Wenn auf Hauptseite, scrolle zur Sektion
   const element = document.getElementById(sectionId);
   if (element) {
-    // Dynamisch die tatsächliche Navbar-Höhe ermitteln
-    const navbar = document.querySelector('nav');
-    const navbarHeight = navbar ? navbar.offsetHeight + 20 : 100; // +20px zusätzlicher Abstand
-    const elementPosition = element.offsetTop - navbarHeight;
-    
-    window.scrollTo({
-      top: elementPosition,
-      behavior: 'smooth'
+    // CSS scroll-margin-top übernimmt das Offset, wir nutzen nur noch scrollIntoView
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
     });
   }
 };
