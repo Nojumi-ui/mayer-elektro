@@ -1,9 +1,9 @@
 <template>
-  <section id="kunden" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-200">
+  <section id="kunden" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-200 mobile-container">
     <div class="max-w-7xl mx-auto px-6">
       <!-- Header -->
       <div ref="headerRef" class="text-center mb-16">
-        <h2 :class="['text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-200 mb-6 fade-in-up', { visible: headerVisible }]">{{ t('clients.title') }}</h2>
+        <h2 :class="['text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-200 mb-6 fade-in-up heading-break mobile-word-break', { visible: headerVisible }]">{{ t('clients.title') }}</h2>
         <p :class="['text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto fade-in-up stagger-1', { visible: headerVisible }]">
           {{ t('clients.subtitle') }}
         </p>
@@ -11,14 +11,14 @@
 
       <!-- Automatisierungstechnik Sektion -->
       <div id="automatisierung" ref="automatisierungRef" class="mb-20">
-        <h3 :class="['text-3xl font-bold text-gray-800 dark:text-gray-200 mb-8 fade-in-up', { visible: automatisierungVisible }]">
+        <h3 :class="['text-3xl font-bold text-gray-800 dark:text-gray-200 mb-8 fade-in-up heading-break mobile-word-break', { visible: automatisierungVisible }]">
           {{ t('clients.automation.title') }}
         </h3>
         
         <div class="grid md:grid-cols-2 gap-12 mb-12">
           <div :class="['fade-in-left', { visible: automatisierungVisible }]">
             <h4 class="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">{{ t('services.title') }}</h4>
-            <p class="text-gray-600 dark:text-gray-400 mb-6">
+            <p class="text-gray-600 dark:text-gray-400 mb-6 word-break-responsive">
               {{ t('clients.automation.description') }}
             </p>
             
@@ -224,16 +224,16 @@
       </div>
 
       <!-- Personaldienstleistungen Sektion -->
-      <div id="personaldienstleistungen" ref="personalRef" class="mb-20 bg-gradient-to-r from-cyan-600 to-[#0097b2] -mx-6 px-6 py-16 text-white">
+      <div id="personaldienstleistungen" ref="personalRef" class="mb-20 bg-gradient-to-r from-cyan-600 to-[#0097b2] -mx-6 px-6 py-16 text-white mobile-container">
         <div class="max-w-7xl mx-auto">
-          <h3 :class="['text-3xl font-bold mb-8 text-center fade-in-up', { visible: personalVisible }]">
+          <h3 :class="['text-3xl font-bold mb-8 text-center fade-in-up heading-break mobile-word-break', { visible: personalVisible }]">
             {{ t('clients.personnel.title') }}
           </h3>
           
           <div class="grid md:grid-cols-2 gap-12">
             <div :class="['fade-in-left', { visible: personalVisible }]">
               <h4 class="text-2xl font-semibold mb-4">{{ t('clients.personnel.subtitle') }}</h4>
-              <p class="mb-6 opacity-90">
+              <p class="mb-6 opacity-90 word-break-responsive">
                 {{ t('clients.personnel.description') }}
               </p>
               

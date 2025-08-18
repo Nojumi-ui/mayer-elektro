@@ -1,9 +1,9 @@
 <template>
-  <section id="bewerber" class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-200">
+  <section id="bewerber" class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-200 mobile-container">
     <div class="max-w-7xl mx-auto px-6">
       <!-- Header -->
       <div ref="headerRef" class="text-center mb-16">
-        <h2 :class="['text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-200 mb-6 fade-in-up', { visible: headerVisible }]">{{ t('applicants.title') }}</h2>
+        <h2 :class="['text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-200 mb-6 fade-in-up heading-break mobile-word-break', { visible: headerVisible }]">{{ t('applicants.title') }}</h2>
         <p :class="['text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto fade-in-up stagger-1', { visible: headerVisible }]">
           {{ t('applicants.subtitle') }}
         </p>
@@ -73,7 +73,7 @@
 
       <!-- Qualifizierungsangebote Sektion -->
       <div id="qualifizierung" ref="qualifizierungRef" class="mb-20">
-        <h3 :class="['text-3xl font-bold text-gray-800 dark:text-gray-200 mb-8 fade-in-up', { visible: qualifizierungVisible }]">
+        <h3 :class="['text-3xl font-bold text-gray-800 dark:text-gray-200 mb-8 fade-in-up heading-break mobile-word-break', { visible: qualifizierungVisible }]">
           {{ t('applicants.qualification.title') }}
         </h3>
         
@@ -84,8 +84,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
               </svg>
             </div>
-            <h4 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">{{ t('applicants.qualification.continuing_education') }}</h4>
-            <p class="text-gray-600 dark:text-gray-400 mb-4">
+            <h4 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 word-break-responsive mobile-word-break">{{ t('applicants.qualification.continuing_education') }}</h4>
+            <p class="text-gray-600 dark:text-gray-400 mb-4 word-break-responsive">
               {{ t('applicants.qualification.continuing_education_desc') }}
             </p>
             <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1">

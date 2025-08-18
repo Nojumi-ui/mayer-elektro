@@ -24,6 +24,54 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* Word Breaking für lange deutsche Wörter */
+.word-break-responsive {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+/* Spezielle Behandlung für Überschriften */
+.heading-break {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+/* Mobile-spezifische Wortumbrüche */
+@media (max-width: 640px) {
+  .mobile-word-break {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    line-height: 1.3;
+  }
+  
+  /* Verhindert horizontales Scrollen */
+  .mobile-container {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  /* Spezielle Behandlung für sehr lange Wörter */
+  .long-word-break {
+    word-break: break-all;
+    overflow-wrap: anywhere;
+  }
+}
+
 /* Scroll Animations */
 .fade-in-up {
   opacity: 0;

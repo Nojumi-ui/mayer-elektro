@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200 pt-28">
+  <div class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200 pt-28 mobile-container">
     <!-- Header mit Zurück-Button -->
     <div class="bg-white dark:bg-gray-800 shadow-sm border-b dark:border-gray-700">
       <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -30,7 +30,7 @@
     <div class="max-w-4xl mx-auto px-6 py-8">
       <!-- Header -->
       <div class="text-center mb-8">
-        <h1 class="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">
+        <h1 class="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4 heading-break mobile-word-break">
           {{ t('application.title') }}
         </h1>
         <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
