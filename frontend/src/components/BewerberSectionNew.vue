@@ -160,7 +160,7 @@
           <div :class="['bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition scale-in stagger-2', { visible: fachkraefteVisible }]">
             <div class="h-32 overflow-hidden rounded-lg mb-4">
               <img 
-                src="/img/electrician.jpg" 
+                src="/img/every-type-of-electrian.jpg" 
                 alt="Elektroniker jeglicher Richtungen" 
                 class="w-full h-full object-cover"
               >

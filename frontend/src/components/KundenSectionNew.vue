@@ -455,7 +455,7 @@ const selectedService = computed(() => {
         'Project management tools',
         'Standards databases and calculation software'
       ],
-      image: '/img/electrical-panel_2.jpg'
+      image: '/img/planung-engineering.jpg'
     },
     installation: {
       title: t('clients.automation.installation_details.title'),

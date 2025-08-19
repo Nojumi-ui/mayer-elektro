@@ -13,7 +13,7 @@
         <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-1', { visible: articlesVisible }]">
           <div class="h-48 overflow-hidden">
             <img 
-              src="/img/electrical-panel_2.jpg" 
+              src="/img/electrician_3.jpg" 
               alt="Neues Bürogebäude Projekt" 
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             >
@@ -108,7 +108,7 @@
         <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-6', { visible: articlesVisible }]">
           <div class="h-48 overflow-hidden">
             <img 
-              src="/img/automatisierung_2.jpg" 
+              src="/img/industrial-automation_3.jpg" 
               alt="Industrielle Automatisierung" 
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             >
@@ -281,7 +281,7 @@ const newsData = computed(() => ({
     date: t('news.article1.date'),
     category: 'Elektroinstallation',
     description: t('news.article1.description'),
-    image: '/img/electrical-panel_2.jpg',
+    image: '/img/electrician_3.jpg',
     content: `
       <p>Unser neuestes Projekt zeigt eindrucksvoll, wie moderne Elektroinstallation in Bürogebäuden aussehen kann. Das 12-stöckige Gebäude in der Hamburger Innenstadt wurde mit neuester Technik ausgestattet.</p>
       
@@ -411,7 +411,7 @@ const newsData = computed(() => ({
     date: t('news.article6.date'),
     category: 'Automatisierung',
     description: t('news.article6.description'),
-    image: '/img/automatisierung_2.jpg',
+    image: '/img/industrial-automation_3.jpg',
     content: `
       <p>Industrielle Automatisierung steigert Effizienz und Produktivität erheblich. Unsere maßgeschneiderten Lösungen helfen Unternehmen dabei, ihre Prozesse zu optimieren.</p>
       
@@ -429,7 +429,7 @@ const newsData = computed(() => ({
     ],
     additionalImages: [
       { src: '/img/plc-programming.jpg', alt: 'SPS Programmierung' },
-      { src: '/img/industrial-control.jpg', alt: 'Industrielle Steuerung' }
+      { src: '/img/automatisierung.jpg', alt: 'Industrielle Steuerung' }
     ]
   }
 }))

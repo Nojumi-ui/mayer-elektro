@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
-    <!-- Header -->
-    <div class="bg-white dark:bg-gray-800 shadow-sm">
+    <!-- Header - Added pt-24 to create space for the fixed navbar -->
+    <div class="bg-white dark:bg-gray-800 shadow-sm pt-24">
       <div class="max-w-4xl mx-auto px-6 py-8">
         <div class="flex items-center justify-between">
           <div>
