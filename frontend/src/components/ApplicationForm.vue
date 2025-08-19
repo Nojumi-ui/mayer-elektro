@@ -1,42 +1,28 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200 pt-28 mobile-container">
-    <!-- Header mit Zurück-Button -->
-    <div class="bg-white dark:bg-gray-800 shadow-sm border-b dark:border-gray-700">
-      <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-        <button 
-          @click="goBack"
-          class="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-[#0097b2] transition"
+    <!-- Header -->
+    <div class="bg-white dark:bg-gray-800 shadow-sm relative">
+      <div class="max-w-4xl mx-auto px-6 py-8">
+        <!-- Zurück-Button (absolut positioniert) -->
+        <router-link 
+          to="/" 
+          class="absolute top-4 right-4 inline-flex items-center justify-center w-10 h-10 bg-[#0097b2] text-white rounded-lg hover:bg-cyan-600 transition"
+          aria-label="Zurück zur Startseite"
         >
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
           </svg>
-          {{ t('application.back_to_home') }}
-        </button>
+        </router-link>
         
-        <!-- Logo -->
-        <div class="flex items-center justify-center">
-          <img 
-            :src="isDark ? '/logo_transparent_white.png' : '/logo_transparent_dark.png'" 
-            alt="Mayer Elektro Logo" 
-            class="h-14 w-auto object-contain"
-          />
+        <div>
+          <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 pr-14">{{ t('application.title') }}</h1>
+          <p class="text-gray-600 dark:text-gray-400 mt-2">{{ t('application.subtitle') }}</p>
         </div>
-        
-        <div class="w-20"></div> <!-- Spacer für Zentrierung -->
       </div>
     </div>
 
     <!-- Hauptinhalt -->
     <div class="max-w-4xl mx-auto px-6 py-8">
-      <!-- Header -->
-      <div class="text-center mb-8">
-        <h1 class="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4 heading-break mobile-word-break">
-          {{ t('application.title') }}
-        </h1>
-        <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          {{ t('application.subtitle') }}
-        </p>
-      </div>
 
       <!-- Bewerbungsformular -->
       <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
@@ -48,6 +34,7 @@
                 {{ t('application.first_name') }} *
               </label>
               <input 
+                id="first-name"
                 v-model="form.firstName"
                 type="text" 
                 required
@@ -60,6 +47,7 @@
                 {{ t('application.last_name') }} *
               </label>
               <input 
+                id="last-name"
                 v-model="form.lastName"
                 type="text" 
                 required
@@ -76,6 +64,7 @@
                 {{ t('application.email') }} *
               </label>
               <input 
+                id="email"
                 v-model="form.email"
                 type="email" 
                 required
@@ -88,6 +77,7 @@
                 {{ t('application.phone') }}
               </label>
               <input 
+                id="phone"
                 v-model="form.phone"
                 type="tel"
                 class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-[#0097b2] focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
@@ -102,6 +92,7 @@
               {{ t('application.address') }}
             </label>
             <input 
+              id="address"
               v-model="form.address"
               type="text"
               class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-[#0097b2] focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
@@ -115,6 +106,7 @@
                 {{ t('application.postal_code') }}
               </label>
               <input 
+                id="postal-code"
                 v-model="form.postalCode"
                 type="text"
                 class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-[#0097b2] focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
@@ -126,6 +118,7 @@
                 {{ t('application.city') }}
               </label>
               <input 
+                id="city"
                 v-model="form.city"
                 type="text"
                 class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-[#0097b2] focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
@@ -173,6 +166,7 @@
                 {{ t('application.availability') }}
               </label>
               <input 
+                id="availability"
                 v-model="form.availability"
                 type="date"
                 class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-[#0097b2] focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
@@ -183,6 +177,7 @@
                 {{ t('application.salary_expectation') }}
               </label>
               <input 
+                id="salary-expectation"
                 v-model="form.salaryExpectation"
                 type="text"
                 class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-[#0097b2] focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
@@ -196,7 +191,8 @@
             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
               {{ t('application.cover_letter') }}
             </label>
-            <textarea 
+            <textarea
+              id="cover-letter" 
               v-model="form.coverLetter"
               rows="6"
               class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-[#0097b2] focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
@@ -217,6 +213,7 @@
               </label>
               <div class="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-lg p-6 text-center hover:border-[#0097b2] transition">
                 <input 
+                  id="cv-input"
                   ref="cvInput"
                   type="file" 
                   @change="handleFileUpload($event, 'cv')"
@@ -253,7 +250,8 @@
                 {{ t('application.additional_documents') }}
               </label>
               <div class="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-lg p-6 text-center hover:border-[#0097b2] transition">
-                <input 
+                <input
+                  id="documents-input"
                   ref="documentsInput"
                   type="file" 
                   @change="handleFileUpload($event, 'documents')"
@@ -293,6 +291,7 @@
           <!-- Datenschutz -->
           <div class="flex items-start gap-3">
             <input 
+              name="privacy"
               v-model="form.privacyAccepted"
               type="checkbox" 
               id="privacy"

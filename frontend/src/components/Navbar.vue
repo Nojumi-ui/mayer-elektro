@@ -2,24 +2,28 @@
   <nav class="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 shadow dark:shadow-gray-800 z-50 transition-colors duration-200">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <!-- Brand with Logo -->
-      <router-link to="/" class="flex items-center hover:opacity-80 transition">
+      <router-link to="/" class="flex items-center hover:opacity-80 transition" aria-label="Mayer Elektro - Zur Startseite">
         <img 
           :src="isDark ? '/logo_transparent_white.png' : '/logo_transparent_dark.png'" 
-          alt="Mayer Elektro Logo" 
+          alt="Mayer Elektro - Elektroinstallation & Gebäudetechnik Hamburg" 
           class="h-16 w-auto object-contain"
+          width="240"
+          height="80"
+          loading="eager"
+          fetchpriority="high"
         />
       </router-link>
 
       <!-- Desktop Navigation -->
       <div class="hidden md:flex items-center gap-6">
         <ul class="flex gap-6 text-gray-700 dark:text-gray-300 font-medium">
-          <li><a href="#home" @click="scrollToSection('home')" class="hover:text-[#0097b2] transition">Home</a></li>
+          <li><a href="#home" @click="scrollToSection('home')" class="hover:text-[#0097b2] transition" aria-label="Zur Startseite">Home</a></li>
 
         <!-- Für Bewerber Dropdown (mit Jobs integriert) -->
         <li class="relative group">
-          <a href="#bewerber" @click="scrollToSection('bewerber')" class="hover:text-[#0097b2] transition flex items-center">
-            {{ t('nav.bewerber') }}
-            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <a href="#bewerber" @click="scrollToSection('bewerber')" class="hover:text-[#0097b2] transition flex items-center" aria-label="Informationen für Bewerber" aria-expanded="false" aria-haspopup="true">
+            {{ t('nav.bewerber') || 'Für Bewerber' }}
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </a>
@@ -41,9 +45,9 @@
 
         <!-- Für Kunden Dropdown -->
         <li class="relative group">
-          <a href="#kunden" @click="scrollToSection('kunden')" class="hover:text-[#0097b2] transition flex items-center">
-            {{ t('nav.kunden') }}
-            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <a href="#kunden" @click="scrollToSection('kunden')" class="hover:text-[#0097b2] transition flex items-center" aria-label="Informationen für Kunden" aria-expanded="false" aria-haspopup="true">
+            {{ t('nav.kunden') || 'Für Kunden' }}
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </a>
@@ -55,8 +59,8 @@
           </ul>
         </li>
 
-          <li><a href="#news" @click="scrollToSection('news')" class="hover:text-[#0097b2] transition">{{ t('nav.news') }}</a></li>
-          <li><a href="#contact" @click="scrollToSection('contact')" class="hover:text-[#0097b2] transition">{{ t('nav.kontakt') }}</a></li>
+          <li><a href="#news" @click="scrollToSection('news')" class="hover:text-[#0097b2] transition" aria-label="Neuigkeiten und Aktuelles">{{ t('nav.news') || 'News' }}</a></li>
+          <li><a href="#contact" @click="scrollToSection('contact')" class="hover:text-[#0097b2] transition" aria-label="Kontaktinformationen und Kontaktformular">{{ t('nav.kontakt') || 'Kontakt' }}</a></li>
         </ul>
 
         <!-- Theme Switcher -->
@@ -64,9 +68,12 @@
           <button 
             @click="toggleDesktopDropdown"
             class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200 text-gray-700 dark:text-gray-300"
-            :title="$t('theme.toggle')"
+            :title="$t('theme.toggle') || 'Farbschema ändern'"
+            aria-label="Farbschema ändern"
+            aria-expanded="false"
+            aria-haspopup="true"
           >
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                 d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -77,26 +84,33 @@
           <div 
             v-show="isDesktopDropdownOpen"
             class="absolute top-full right-0 mt-2 bg-white dark:bg-gray-800 shadow-lg rounded-lg py-2 w-40 transition-all duration-200 z-50 border dark:border-gray-700"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="theme-menu-button"
           >
             <button 
               @click="setThemeAndCloseDesktop('light')"
               class="w-full text-left px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition flex items-center gap-2 text-gray-700 dark:text-gray-300"
               :class="{ 'text-[#0097b2] dark:text-[#0097b2]': !isDark }"
+              role="menuitem"
+              aria-label="Helles Design aktivieren"
             >
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
               </svg>
-              {{ t('theme.light') }}
+              {{ t('theme.light') || 'Hell' }}
             </button>
             <button 
               @click="setThemeAndCloseDesktop('dark')"
               class="w-full text-left px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition flex items-center gap-2 text-gray-700 dark:text-gray-300"
               :class="{ 'text-[#0097b2] dark:text-[#0097b2]': isDark }"
+              role="menuitem"
+              aria-label="Dunkles Design aktivieren"
             >
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
               </svg>
-              {{ t('theme.dark') }}
+              {{ t('theme.dark') || 'Dunkel' }}
             </button>
             
             <!-- Language Switcher in Theme Dropdown -->
@@ -105,16 +119,22 @@
               @click="changeLanguageAndCloseDesktop('de')"
               class="w-full text-left px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition flex items-center gap-2 text-gray-700 dark:text-gray-300"
               :class="{ 'text-[#0097b2] dark:text-[#0097b2]': currentLocale === 'de' }"
+              role="menuitem"
+              aria-label="Sprache auf Deutsch umstellen"
+              lang="de"
             >
-              <span class="text-lg">🇩🇪</span>
+              <span class="text-lg" aria-hidden="true">🇩🇪</span>
               <span class="text-sm">Deutsch</span>
             </button>
             <button 
               @click="changeLanguageAndCloseDesktop('en')"
               class="w-full text-left px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition flex items-center gap-2 text-gray-700 dark:text-gray-300"
               :class="{ 'text-[#0097b2] dark:text-[#0097b2]': currentLocale === 'en' }"
+              role="menuitem"
+              aria-label="Change language to English"
+              lang="en"
             >
-              <span class="text-lg">🇬🇧</span>
+              <span class="text-lg" aria-hidden="true">🇬🇧</span>
               <span class="text-sm">English</span>
             </button>
           </div>
@@ -241,7 +261,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onBeforeUnmount } from "vue";
 import { useI18n } from 'vue-i18n'
 import { useRouter, useRoute } from 'vue-router'
 import { useTheme } from "../composables/useTheme";
@@ -313,7 +333,7 @@ onMounted(() => {
   document.addEventListener('click', handleClickOutside);
 });
 
-onUnmounted(() => {
+onBeforeUnmount(() => {
   document.removeEventListener('click', handleClickOutside);
 });
 

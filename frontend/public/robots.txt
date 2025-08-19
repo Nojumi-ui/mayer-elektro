@@ -1,0 +1,45 @@
+# www.robotstxt.org
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.mayerelektro.de/sitemap.xml
+
+# Disallow specific directories
+Disallow: /admin/
+Disallow: /api/
+Disallow: /assets/
+Disallow: /node_modules/
+Disallow: /src/
+
+# Allow important pages
+Allow: /impressum
+Allow: /datenschutz
+Allow: /agb
+Allow: /kontakt
+Allow: /stellenangebote
+Allow: /news
+
+# Crawl delay for specific bots
+User-agent: Googlebot
+Crawl-delay: 1
+
+User-agent: bingbot
+Crawl-delay: 2
+
+User-agent: Slurp
+Crawl-delay: 3
+
+User-agent: DuckDuckBot
+Crawl-delay: 2
+
+# Block specific bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

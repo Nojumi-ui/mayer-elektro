@@ -1,22 +1,31 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
-    <!-- Header - Mit Abstand für die fixe Navbar -->
-    <div class="bg-white dark:bg-gray-800 shadow-sm pt-24">
+    <MetaTags
+      title="Allgemeine Geschäftsbedingungen - Mayer Elektro Hamburg"
+      description="Die Allgemeinen Geschäftsbedingungen (AGB) der Mayer Elektro- und Gebäudetechnik GmbH in Hamburg."
+      canonical="https://www.mayerelektro.de/agb"
+    />
+    
+    <!-- Breadcrumbs -->
+    <Breadcrumbs :items="[{ text: 'Allgemeine Geschäftsbedingungen' }]" class="pt-24" />
+    
+    <!-- Header -->
+    <div class="bg-white dark:bg-gray-800 shadow-sm relative">
       <div class="max-w-4xl mx-auto px-6 py-8">
-        <div class="flex items-center justify-between">
-          <div>
-            <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Allgemeine Geschäftsbedingungen</h1>
-            <p class="text-gray-600 dark:text-gray-400 mt-2">Gültig ab Juli 2025</p>
-          </div>
-          <router-link 
-            to="/" 
-            class="inline-flex items-center px-4 py-2 bg-[#0097b2] text-white rounded-lg hover:bg-cyan-600 transition"
-          >
-            <svg class="w-5 h-5 sm:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-            </svg>
-            <span class="hidden sm:inline">Zur Startseite</span>
-          </router-link>
+        <!-- Zurück-Button (absolut positioniert) -->
+        <router-link 
+          to="/" 
+          class="absolute top-4 right-4 inline-flex items-center justify-center w-10 h-10 bg-[#0097b2] text-white rounded-lg hover:bg-cyan-600 transition"
+          aria-label="Zurück zur Startseite"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+          </svg>
+        </router-link>
+        
+        <div>
+          <h1 class="text-3xl font-bold text-gray-900 dark:text-white pr-14">Allgemeine Geschäftsbedingungen</h1>
+          <p class="text-gray-600 dark:text-gray-400 mt-2">Gültig ab Juli 2025</p>
         </div>
       </div>
     </div>
@@ -184,5 +193,9 @@
 </template>
 
 <script setup>
-// Keine Übersetzungen nötig, da der Text direkt eingebettet ist
+import Breadcrumbs from './Breadcrumbs.vue'
+import MetaTags from './MetaTags.vue'
+import { useTheme } from "../composables/useTheme";
+
+const { isDark } = useTheme();
 </script>

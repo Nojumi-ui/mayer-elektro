@@ -1,0 +1,166 @@
+/* Barrierefreiheits-Stile */
+
+/* Fokus-Stile für Tastaturnavigation */
+.user-is-tabbing *:focus {
+  outline: 3px solid #0097b2 !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 3px rgba(0, 151, 178, 0.4) !important;
+}
+
+/* Hochkontrastmodus */
+.high-contrast {
+  --bg-primary: #000000;
+  --bg-secondary: #222222;
+  --text-primary: #ffffff;
+  --text-secondary: #eeeeee;
+  --accent-color: #ffff00;
+  --link-color: #00ffff;
+  --border-color: #ffffff;
+}
+
+.high-contrast body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+.high-contrast a {
+  color: var(--link-color) !important;
+  text-decoration: underline !important;
+}
+
+.high-contrast button,
+.high-contrast .button {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border: 2px solid var(--border-color) !important;
+}
+
+.high-contrast img {
+  filter: grayscale(100%) contrast(120%) !important;
+}
+
+.high-contrast input,
+.high-contrast textarea,
+.high-contrast select {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  border: 2px solid var(--border-color) !important;
+}
+
+/* Große Schrift */
+.large-text {
+  font-size: 125% !important;
+  line-height: 1.5 !important;
+}
+
+.large-text h1 {
+  font-size: 2.5rem !important;
+}
+
+.large-text h2 {
+  font-size: 2rem !important;
+}
+
+.large-text h3 {
+  font-size: 1.75rem !important;
+}
+
+.large-text p,
+.large-text li,
+.large-text label,
+.large-text input,
+.large-text button {
+  font-size: 1.25rem !important;
+}
+
+/* Reduzierte Bewegung */
+.reduced-motion *,
+.reduced-motion *::before,
+.reduced-motion *::after {
+  animation-duration: 0.001s !important;
+  animation-delay: 0s !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001s !important;
+  transition-delay: 0s !important;
+  scroll-behavior: auto !important;
+}
+
+/* Verbesserte Lesbarkeit */
+.high-contrast p,
+.high-contrast li {
+  max-width: 70ch !important;
+  line-height: 1.6 !important;
+}
+
+/* Verbesserte Formularelemente */
+.high-contrast input:focus,
+.high-contrast textarea:focus,
+.high-contrast select:focus {
+  outline: 3px solid var(--accent-color) !important;
+  outline-offset: 2px !important;
+}
+
+/* Verbesserte Kontraste für Links */
+.high-contrast a:hover,
+.high-contrast a:focus {
+  background-color: var(--link-color) !important;
+  color: var(--bg-primary) !important;
+  text-decoration: none !important;
+}
+
+/* Skip-Link für Tastaturnavigation */
+.skip-link {
+  position: fixed;
+  top: -100px;
+  right: 20px;
+  background: #0097b2;
+  color: white;
+  padding: 10px;
+  z-index: 9999;
+  transition: top 0.3s;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Verbesserte Sichtbarkeit für Fehlermeldungen */
+.error-message {
+  color: #ff0000;
+  font-weight: bold;
+  padding: 8px;
+  border: 2px solid #ff0000;
+  background-color: #ffeeee;
+}
+
+.high-contrast .error-message {
+  color: #ffff00 !important;
+  background-color: #880000 !important;
+  border-color: #ffff00 !important;
+}
+
+/* Verbesserte Sichtbarkeit für Erfolgsmeldungen */
+.success-message {
+  color: #006600;
+  font-weight: bold;
+  padding: 8px;
+  border: 2px solid #006600;
+  background-color: #eeffee;
+}
+
+.high-contrast .success-message {
+  color: #00ff00 !important;
+  background-color: #004400 !important;
+  border-color: #00ff00 !important;
+}

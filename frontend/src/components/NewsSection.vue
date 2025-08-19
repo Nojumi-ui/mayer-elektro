@@ -259,12 +259,16 @@
       </div>
     </div>
   </section>
+  
+  <!-- Strukturierte Daten für News-Artikel -->
+  <ArticleSchema v-if="selectedNews" :article="selectedNewsArticleSchema" />
 </template>
 
 <script setup>
 import { ref, computed } from 'vue'
 import { useScrollAnimation } from '../composables/useScrollAnimation.js'
 import { useI18n } from 'vue-i18n'
+import ArticleSchema from './ArticleSchema.vue'
 
 const { t } = useI18n()
 const { isVisible: headerVisible, elementRef: headerRef } = useScrollAnimation()
@@ -437,6 +441,47 @@ const newsData = computed(() => ({
 const selectedNews = computed(() => {
   return selectedNewsId.value ? newsData.value[selectedNewsId.value] : null
 })
+
+// Strukturierte Daten für den ausgewählten Artikel
+const selectedNewsArticleSchema = computed(() => {
+  if (!selectedNews.value) return null
+  
+  return {
+    headline: selectedNews.value.title,
+    datePublished: formatDateForSchema(selectedNews.value.date),
+    dateModified: formatDateForSchema(selectedNews.value.date),
+    author: "Mayer Elektro Team",
+    description: selectedNews.value.description,
+    image: `https://www.mayerelektro.de${selectedNews.value.image}`,
+    url: `https://www.mayerelektro.de/#news`,
+    articleSection: selectedNews.value.category,
+    keywords: `Elektroinstallation, ${selectedNews.value.category}, Mayer Elektro, Hamburg`,
+    wordCount: selectedNews.value.content.split(' ').length.toString()
+  }
+})
+
+// Hilfsfunktion zum Formatieren des Datums für Schema.org
+function formatDateForSchema(dateStr) {
+  // Beispiel: "15. September 2024" -> "2024-09-15"
+  const months = {
+    'Januar': '01', 'Februar': '02', 'März': '03', 'April': '04', 'Mai': '05', 'Juni': '06',
+    'Juli': '07', 'August': '08', 'September': '09', 'Oktober': '10', 'November': '11', 'Dezember': '12'
+  }
+  
+  // Einfache Umwandlung für Demo-Zwecke
+  // In einer echten Anwendung sollte eine robustere Datumsparsing-Methode verwendet werden
+  try {
+    const parts = dateStr.split(' ')
+    const day = parts[0].replace('.', '').padStart(2, '0')
+    const month = months[parts[1]] || '01'
+    const year = parts[2] || '2025'
+    
+    return `${year}-${month}-${day}T00:00:00+02:00`
+  } catch (e) {
+    // Fallback auf aktuelles Datum
+    return new Date().toISOString()
+  }
+}
 
 const openNewsModal = (articleId) => {
   selectedNewsId.value = articleId

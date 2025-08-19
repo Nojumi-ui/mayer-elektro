@@ -4,8 +4,18 @@
     <div class="absolute inset-0 z-0">
       <img 
         src="/img/electrician.jpg" 
-        alt="Elektriker bei der Arbeit" 
+        alt="Elektriker bei der Arbeit - Mayer Elektro Hamburg" 
         class="w-full h-full object-cover"
+        width="1920"
+        height="1080"
+        loading="eager"
+        fetchpriority="high"
+        sizes="100vw"
+        srcset="/img/electrician-480w.jpg 480w, 
+                /img/electrician-768w.jpg 768w, 
+                /img/electrician-1024w.jpg 1024w, 
+                /img/electrician-1280w.jpg 1280w, 
+                /img/electrician.jpg 1920w"
       >
       <div class="absolute inset-0 bg-gradient-to-r from-cyan-600/90 to-[#0097b2]/90"></div>
     </div>
@@ -15,8 +25,9 @@
       <h1 :class="['text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black tracking-normal sm:tracking-tight mb-4 fade-in-up leading-tight break-words', { visible: isVisible }]">
         <span class="bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">MAYER</span>
         <span class="text-white font-light"> ELEKTRO</span>
+        <span class="sr-only"> - Elektroinstallation & Gebäudetechnik Hamburg</span>
       </h1>
-      <h2 :class="['text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-yellow-300 mb-4 tracking-wide sm:tracking-widest fade-in-up stagger-1 leading-tight break-words', { visible: isVisible }]">{{ t('home.service_title') || 'ELEKTROINSTALLATION' }}</h2>
+      <h2 :class="['text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-yellow-300 mb-4 tracking-wide sm:tracking-widest fade-in-up stagger-1 leading-tight break-words', { visible: isVisible }]">{{ t('home.service_title') || 'ELEKTROINSTALLATION & GEBÄUDETECHNIK HAMBURG' }}</h2>
       <div :class="['w-24 h-1 bg-gradient-to-r from-yellow-300 to-[#0097b2] mx-auto mb-10 fade-in-up stagger-2', { visible: isVisible }]"></div>
       <p :class="['text-base sm:text-lg md:text-xl lg:text-2xl font-light leading-relaxed max-w-3xl mx-auto mb-12 fade-in-up stagger-3', { visible: isVisible }]">
         <span class="text-yellow-300 font-medium">{{ t('home.premium_partner') || 'Ihr Premium-Partner' }}</span> {{ t('home.for_innovative') || 'für innovative' }} 

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Startseite -->
+  <url>
+    <loc>https://www.mayerelektro.de/</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.mayerelektro.de/logo_transparent_dark.png</image:loc>
+      <image:title>Mayer Elektro - Elektroinstallation &amp; Gebäudetechnik Hamburg</image:title>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mayerelektro.de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mayerelektro.de/en/" />
+  </url>
+
+  <!-- Bewerbungsformular -->
+  <url>
+    <loc>https://www.mayerelektro.de/bewerbungsformular</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mayerelektro.de/bewerbungsformular" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mayerelektro.de/en/application-form" />
+  </url>
+
+  <!-- Impressum -->
+  <url>
+    <loc>https://www.mayerelektro.de/impressum</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mayerelektro.de/impressum" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mayerelektro.de/en/imprint" />
+  </url>
+
+  <!-- Datenschutz -->
+  <url>
+    <loc>https://www.mayerelektro.de/datenschutz</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mayerelektro.de/datenschutz" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mayerelektro.de/en/privacy" />
+  </url>
+
+  <!-- AGB -->
+  <url>
+    <loc>https://www.mayerelektro.de/agb</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mayerelektro.de/agb" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mayerelektro.de/en/terms" />
+  </url>
+
+  <!-- Stellenangebote (Anker auf Startseite) -->
+  <url>
+    <loc>https://www.mayerelektro.de/#jobs</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mayerelektro.de/#jobs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mayerelektro.de/en/#jobs" />
+  </url>
+
+  <!-- Für Bewerber (Anker auf Startseite) -->
+  <url>
+    <loc>https://www.mayerelektro.de/#bewerber</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mayerelektro.de/#bewerber" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mayerelektro.de/en/#applicants" />
+  </url>
+
+  <!-- Für Kunden (Anker auf Startseite) -->
+  <url>
+    <loc>https://www.mayerelektro.de/#kunden</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mayerelektro.de/#kunden" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mayerelektro.de/en/#customers" />
+  </url>
+
+  <!-- News (Anker auf Startseite) -->
+  <url>
+    <loc>https://www.mayerelektro.de/#news</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mayerelektro.de/#news" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mayerelektro.de/en/#news" />
+  </url>
+
+  <!-- Kontakt (Anker auf Startseite) -->
+  <url>
+    <loc>https://www.mayerelektro.de/#contact</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mayerelektro.de/#contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mayerelektro.de/en/#contact" />
+  </url>
+
+  <!-- Dienstleistungen (Anker auf Startseite) -->
+  <url>
+    <loc>https://www.mayerelektro.de/#elektroinstallation</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mayerelektro.de/#elektroinstallation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mayerelektro.de/en/#electrical-installation" />
+  </url>
+
+  <url>
+    <loc>https://www.mayerelektro.de/#automation</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mayerelektro.de/#automation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mayerelektro.de/en/#automation" />
+  </url>
+
+  <url>
+    <loc>https://www.mayerelektro.de/#instandhaltung</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mayerelektro.de/#instandhaltung" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mayerelektro.de/en/#maintenance" />
+  </url>
+
+  <url>
+    <loc>https://www.mayerelektro.de/#personaldienstleistungen</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.mayerelektro.de/#personaldienstleistungen" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mayerelektro.de/en/#personnel-services" />
+  </url>
+</urlset>

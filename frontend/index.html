@@ -8,15 +8,96 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1" />
     <link rel="shortcut icon" href="/favicon.ico?v=1" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <title>Mayer Elektro - Moderne Gebäudetechnik</title>
-    <meta name="description" content="Mayer Elektro — Elektroinstallation, Automatisierung, Instandhaltung und Personaldienstleistungen. Professionell, zuverlässig, regional." />
-    <!-- Basic OpenGraph (can be expanded) -->
-    <meta property="og:title" content="Mayer Elektro - Moderne Gebäudetechnik" />
-    <meta property="og:description" content="Elektroinstallation, Automatisierung, Instandhaltung und Personaldienstleistungen." />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Mayer Elektro - Elektroinstallation & Gebäudetechnik Hamburg</title>
+    <meta name="description" content="Mayer Elektro in Hamburg bietet professionelle Elektroinstallation, Automatisierung, Instandhaltung und Personaldienstleistungen. Zuverlässig und regional seit über 15 Jahren." />
+    <meta name="keywords" content="Elektroinstallation Hamburg, Gebäudetechnik, Automatisierung, Elektrofachkräfte, Elektrotechnik, Instandhaltung, Elektroinstallateur" />
+    <meta name="author" content="Mayer Elektro- und Gebäudetechnik GmbH" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.mayerelektro.de/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.mayerelektro.de/" />
+    <meta property="og:title" content="Mayer Elektro - Elektroinstallation & Gebäudetechnik Hamburg" />
+    <meta property="og:description" content="Professionelle Elektroinstallation, Automatisierung, Instandhaltung und Personaldienstleistungen in Hamburg und Umgebung." />
+    <meta property="og:image" content="https://www.mayerelektro.de/logo.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.mayerelektro.de/" />
+    <meta property="twitter:title" content="Mayer Elektro - Elektroinstallation & Gebäudetechnik Hamburg" />
+    <meta property="twitter:description" content="Professionelle Elektroinstallation, Automatisierung, Instandhaltung und Personaldienstleistungen in Hamburg und Umgebung." />
+    <meta property="twitter:image" content="https://www.mayerelektro.de/logo.png" />
+    
+    <!-- Preload kritischer Ressourcen -->
+    <link rel="preload" href="/logo_transparent_dark.png" as="image" type="image/png" />
+    <link rel="preload" href="/img/electrician.jpg" as="image" type="image/jpeg" />
+    <link rel="preload" href="/src/main.js" as="script" />
+    <link rel="preload" href="/src/style.css" as="style" />
+    
+    <!-- Preconnect zu externen Domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+    
+    <!-- Strukturierte Daten für SEO (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Mayer Elektro- und Gebäudetechnik GmbH",
+      "image": "https://www.mayerelektro.de/logo.png",
+      "url": "https://www.mayerelektro.de",
+      "telephone": "+4940123456789",
+      "email": "info@mayerelektro.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Christoph-Probst-Weg 4",
+        "addressLocality": "Hamburg",
+        "postalCode": "20251",
+        "addressCountry": "DE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 53.5969,
+        "longitude": 9.9937
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/mayerelektro",
+        "https://www.linkedin.com/company/mayer-elektro"
+      ],
+      "priceRange": "€€",
+      "description": "Professionelle Elektroinstallation, Automatisierung, Instandhaltung und Personaldienstleistungen in Hamburg und Umgebung.",
+      "keywords": "Elektroinstallation, Gebäudetechnik, Automatisierung, Elektrofachkräfte, Hamburg",
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 53.5969,
+          "longitude": 9.9937
+        },
+        "geoRadius": "50000"
+      },
+      "serviceType": ["Elektroinstallation", "Automatisierung", "Instandhaltung", "Personaldienstleistungen"]
+    }
+    </script>
   </body>
 </html>
