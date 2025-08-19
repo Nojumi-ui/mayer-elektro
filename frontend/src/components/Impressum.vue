@@ -12,10 +12,10 @@
             to="/" 
             class="inline-flex items-center px-4 py-2 bg-[#0097b2] text-white rounded-lg hover:bg-cyan-600 transition"
           >
-            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5 sm:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
             </svg>
-            {{ t('imprint.back_home') }}
+            <span class="hidden sm:inline">{{ t('imprint.back_home') }}</span>
           </router-link>
         </div>
       </div>
@@ -154,10 +154,11 @@
             
             <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
               <p class="text-gray-700 dark:text-gray-300 mb-4">{{ t('imprint.dispute_text') }}</p>
-              <p class="text-gray-700 dark:text-gray-300">
+              <p class="text-gray-700 dark:text-gray-300 word-break-responsive">
                 <strong>{{ t('imprint.eu_platform') }}:</strong>
                 <a href="https://ec.europa.eu/consumers/odr/" target="_blank" class="text-[#0097b2] hover:underline ml-2">
-                  https://ec.europa.eu/consumers/odr/
+                  <span class="hidden sm:inline">https://ec.europa.eu/consumers/odr/</span>
+                  <span class="sm:hidden">EU-ODR-Plattform</span>
                 </a>
               </p>
             </div>
