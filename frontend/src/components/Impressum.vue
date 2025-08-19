@@ -65,21 +65,21 @@
                       info@mayerelektro.de
                     </a>
                   </p>
-                  <p class="text-gray-700 dark:text-gray-300">
+                  <!--p class="text-gray-700 dark:text-gray-300">
                     <a href="tel:+4940123456789" class="text-[#0097b2] hover:underline">
                       +49 (0) 40 123 456 789
                     </a>
-                  </p>
+                  </p-->
                 </div>
                 
                 <div>
                   <h3 class="font-semibold text-gray-900 dark:text-white mb-2">{{ t('imprint.managing_director') }}</h3>
-                  <p class="text-gray-700 dark:text-gray-300">Max Mayer</p>
+                  <p class="text-gray-700 dark:text-gray-300">Ghazal Maryam Mahyar</p>
                 </div>
                 
                 <div>
                   <h3 class="font-semibold text-gray-900 dark:text-white mb-2">{{ t('imprint.vat_id') }}</h3>
-                  <p class="text-gray-700 dark:text-gray-300">DE123456789</p>
+                  <p class="text-gray-700 dark:text-gray-300">DE455935115</p>
                 </div>
               </div>
             </div>

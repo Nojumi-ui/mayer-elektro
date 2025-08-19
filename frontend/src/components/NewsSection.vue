@@ -299,7 +299,7 @@ const newsData = computed(() => ({
     ],
     additionalImages: [
       { src: '/img/electrical-panel.jpg', alt: 'Schaltschrank Installation' },
-      { src: '/img/office-lighting.jpg', alt: 'Bürobeleuchtung' }
+      { src: '/img/sicherheit_2.jpg', alt: 'Bürobeleuchtung' }
     ]
   },
   article2: {
@@ -350,7 +350,7 @@ const newsData = computed(() => ({
       'Langfristige Kosteneinsparungen'
     ],
     additionalImages: [
-      { src: '/img/heat-pump-installation.jpg', alt: 'Wärmepumpe Installation' },
+      { src: '/img/heat-pump-installation_2.jpg', alt: 'Wärmepumpe Installation' },
       { src: '/img/heat-pump-indoor.jpg', alt: 'Wärmepumpe Innengerät' }
     ]
   },

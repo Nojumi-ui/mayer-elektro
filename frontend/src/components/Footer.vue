@@ -36,11 +36,11 @@
             <p>Mayer Elektro- und Gebäudetechnik GmbH</p>
             <p>Christoph-Probst-Weg 4</p>
             <p>20251 Hamburg</p>
-            <p class="mt-3">
+            <!--p class="mt-3">
               <a href="tel:+4940123456789" class="hover:text-white transition">
                 +49 (0) 40 123 456 789
               </a>
-            </p>
+            </p-->
             <p>
               <a href="mailto:info@mayerelektro.de" class="hover:text-white transition">
                 info@mayerelektro.de
