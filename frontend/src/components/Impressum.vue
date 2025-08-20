@@ -23,8 +23,8 @@
         </router-link>
         
         <div>
-          <h1 class="text-3xl font-bold text-gray-900 dark:text-white pr-14">{{ t('imprint.title') || 'Impressum' }}</h1>
-          <p class="text-gray-600 dark:text-gray-400 mt-2">{{ t('imprint.subtitle') || 'Angaben gemäß § 5 TMG' }}</p>
+          <h1 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white pr-14">{{ t('imprint.title') || 'Impressum' }}</h1>
+          <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400 mt-2">{{ t('imprint.subtitle') || 'Angaben gemäß § 5 TMG' }}</p>
         </div>
       </div>
     </div>

@@ -265,6 +265,160 @@
     },
     "footer_note": "These settings are saved in your browser."
   },
+  "privacy": {
+    "title": "Privacy Policy",
+    "meta_title": "Privacy Policy - Mayer Elektro Hamburg",
+    "meta_description": "Privacy policy of Mayer Elektro- und Gebäudetechnik GmbH. Information about how we handle your data on our website.",
+    "breadcrumb": "Privacy Policy",
+    "back_to_home": "Back to homepage",
+    "last_updated": "Last updated: July 2025",
+    "intro": {
+      "title": "Privacy at Mayer Elektro",
+      "text": "The protection of your personal data is important to us. In this privacy policy, we inform you about the processing of your personal data on our website in accordance with the General Data Protection Regulation (GDPR)."
+    },
+    "sections": {
+      "responsible": {
+        "title": "1. Data Controller",
+        "text": "The data controller for data processing on this website is:",
+        "company": "Mayer Elektro- und Gebäudetechnik GmbH",
+        "address": "Christoph-Probst-Weg 4<br>20251 Hamburg<br>Germany",
+        "contact": "Email: info{'@'}mayerelektro.de<br>Phone: +49 (0) 40 123 456 789"
+      },
+      "data_processing": {
+        "title": "2. General Information on Data Processing",
+        "text1": "We generally only process personal data of our users to the extent necessary to provide a functional website as well as our content and services. The processing of personal data of our users regularly takes place only with the user's consent or where legal permission exists.",
+        "text2": "We expressly point out that we do <strong>not operate a database</strong> for storing customer data. Data entered via our forms is forwarded directly to us by email and is not stored on our servers."
+      },
+      "website_visit": {
+        "title": "3. Visiting Our Website",
+        "text1": "When you visit our website, information is automatically sent to our website server by the browser used on your device. This information is temporarily stored in a so-called log file. The following information is collected without your intervention and stored until automated deletion:<ul><li>IP address of the requesting computer</li><li>Date and time of access</li><li>Name and URL of the retrieved file</li><li>Website from which access is made (referrer URL)</li><li>Browser used and, if applicable, the operating system of your computer</li></ul>",
+        "text2": "The aforementioned data is processed by us for the following purposes:<ul><li>Ensuring smooth connection establishment of the website</li><li>Ensuring comfortable use of our website</li><li>Evaluation of system security and stability</li></ul>",
+        "text3": "The legal basis for data processing is Art. 6 para. 1 sentence 1 lit. f GDPR. Our legitimate interest follows from the purposes listed above for data collection."
+      },
+      "contact_form": {
+        "title": "4. Contact Form and Email Contact",
+        "text1": "If you contact us via contact form or email, the data you provide (your email address, possibly your name and phone number as well as other information you provide) will be stored by us to answer your questions.",
+        "text2": "<strong>Important note:</strong> Data entered via the contact form is not stored in a database, but forwarded directly to us by email. We only store this data within the scope of email communication and delete it as soon as it is no longer required for the purpose of its collection.",
+        "text3": "The processing of this data is based on Art. 6 para. 1 lit. b GDPR, provided your inquiry is related to the fulfillment of a contract or is necessary for the implementation of pre-contractual measures. In all other cases, the processing is based on our legitimate interest in the effective processing of inquiries directed to us (Art. 6 para. 1 lit. f GDPR) or on your consent (Art. 6 para. 1 lit. a GDPR)."
+      },
+      "application_form": {
+        "title": "5. Application Form",
+        "text1": "If you use our application form, the personal data you provide (such as name, contact details, qualifications, etc.) will be processed by us for the purpose of conducting the application process.",
+        "text2": "<strong>Important note:</strong> Data entered via the application form is also not stored in a database, but forwarded directly to our HR department by email. The data is used exclusively for the application process and deleted after completion of the process, unless legal retention obligations exist or you have consented to longer storage.",
+        "text3": "The legal basis for processing your application data is primarily § 26 BDSG in conjunction with Art. 88 GDPR. According to this, the processing of data is permissible that is necessary in connection with the decision on establishing an employment relationship."
+      },
+      "no_newsletter": {
+        "title": "6. No Newsletter Function",
+        "text": "We do not offer a newsletter service on our website. Therefore, no email addresses or other personal data are collected or stored for newsletter purposes."
+      },
+      "cookies": {
+        "title": "7. Cookies and Analysis Tools",
+        "text1": "Our website only uses technically necessary cookies that are required for the operation of the website. These cookies do not store personal data and are deleted after closing your browser (session cookies).",
+        "text2": "We deliberately refrain from using tracking or analysis tools such as Google Analytics to protect your privacy."
+      },
+      "your_rights": {
+        "title": "8. Your Rights",
+        "text1": "You have the following rights regarding your personal data:<ul><li>Right to information (Art. 15 GDPR)</li><li>Right to correction or deletion (Art. 16, 17 GDPR)</li><li>Right to restriction of processing (Art. 18 GDPR)</li><li>Right to object to processing (Art. 21 GDPR)</li><li>Right to data portability (Art. 20 GDPR)</li></ul>",
+        "text2": "You also have the right to complain to a data protection supervisory authority about our processing of your personal data."
+      },
+      "changes": {
+        "title": "9. Changes to the Privacy Policy",
+        "text": "We reserve the right to adapt this privacy policy so that it always complies with current legal requirements or to implement changes to our services in the privacy policy, e.g. when introducing new services. The new privacy policy will then apply to your next visit."
+      }
+    },
+    "contact_section": {
+      "title": "Questions about privacy?",
+      "text": "If you have questions about privacy, please feel free to contact us. We are available for further information.",
+      "button": "Contact us"
+    }
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "meta_title": "Terms and Conditions - Mayer Elektro Hamburg",
+    "meta_description": "The Terms and Conditions of Mayer Elektro- und Gebäudetechnik GmbH in Hamburg.",
+    "breadcrumb": "Terms and Conditions",
+    "back_to_home": "Back to homepage",
+    "valid_from": "Valid from July 2025",
+    "intro": {
+      "title": "Terms and Conditions",
+      "text": "Below you will find our Terms and Conditions. Please read them carefully as they form the legal basis for all business relationships between you and Mayer Elektro- und Gebäudetechnik GmbH."
+    },
+    "sections_title": "Contract Terms",
+    "sections": {
+      "scope": {
+        "title": "§ 1 Scope of Application",
+        "text1": "(1) These Terms and Conditions apply to all contracts between Mayer Elektro- und Gebäudetechnik GmbH, Christoph-Probst-Weg 4, 20251 Hamburg and its customers. This includes contracts with entrepreneurs as well as with consumers, where applicable. Conflicting or deviating terms and conditions of the customer do not apply unless Mayer Elektro- und Gebäudetechnik GmbH has expressly agreed to their validity.",
+        "text2": "(2) Definitions: \"Consumer\" within the meaning of these Terms and Conditions is any natural person who concludes a legal transaction for a purpose that can predominantly neither be attributed to their commercial nor their independent professional activity. \"Entrepreneur\" is a natural or legal person or a partnership with legal capacity who acts in the exercise of their commercial or independent professional activity when concluding the contract.",
+        "text3": "(3) Insofar as the following conditions do not contain deviating regulations, the provisions of the Contract Procedures for Construction Services Part B (VOB/B) in the respectively valid version apply supplementarily to work on buildings (construction services).",
+        "text4": "(4) Service spectrum: Mayer Elektro- und Gebäudetechnik GmbH provides in particular the following services: construction management, electrical installation, maintenance, project planning, network technology as well as security and alarm technology."
+      },
+      "contract": {
+        "title": "§ 2 Contract Conclusion",
+        "text1": "(1) Offer and order: Offers from Mayer Elektro- und Gebäudetechnik GmbH (e.g. cost estimates, service descriptions) are subject to change and non-binding, unless expressly designated in writing as binding. They serve to inform the customer and do not constitute binding contract offers.",
+        "text2": "(2) Industry-standard contract conclusions: Contracts can - especially in B2B business - be concluded informally, for example orally or by email. These Terms and Conditions also apply in such cases.",
+        "text3": "(3) Electronic communication: Insofar as contracts are initiated or concluded electronically (e.g. via email or online form), the customer waives receipt of a declaration of acceptance (§ 151 BGB), provided that contract fulfillment takes place immediately."
+      },
+      "services": {
+        "title": "§ 3 Services, Execution and Deadlines",
+        "text1": "(1) Service provision: Mayer Elektro- und Gebäudetechnik GmbH provides the contractually agreed services professionally and according to the currently recognized state of technology as well as in compliance with all relevant standards and safety regulations (e.g. VDE regulations).",
+        "text2": "(2) Service changes: If the customer wishes changes or extensions to the scope of services after contract conclusion, Mayer Elektro- und Gebäudetechnik GmbH will consider these - insofar as reasonable. Any additional costs or schedule delays are to be borne by the customer, provided the reasons lie in their change request.",
+        "text3": "(3) Deadlines and dates: Specified execution or delivery deadlines are non-binding unless expressly promised as \"binding\". Execution begins as soon as possible after contract conclusion or at the individually agreed date."
+      },
+      "cooperation": {
+        "title": "§ 4 Customer's Cooperation Obligations",
+        "text1": "(1) Access and information: The customer must provide Mayer Elektro- und Gebäudetechnik GmbH with all documents, permits and information required for order execution in a timely and complete manner.",
+        "text2": "(2) Construction site preparation: The customer ensures that the workplace is freely accessible at the agreed date and is in a condition that does not conflict with the contractual services.",
+        "text3": "(3) Support and safety: The customer takes the usual precautions to protect persons and property at the place of use."
+      },
+      "prices": {
+        "title": "§ 5 Prices, Remuneration and Payment Terms",
+        "text1": "(1) Prices: The prices offered or contractually agreed by Mayer Elektro- und Gebäudetechnik GmbH are - unless otherwise stated - net, plus the statutory value added tax in the respectively valid amount. If the customer is a consumer, price information in the offer is shown as final prices (gross incl. VAT).",
+        "text2": "(2) Travel and additional costs: Required travel, travel costs, expenses or shipping costs will be charged additionally if not expressly included as a lump sum in the offer.",
+        "text3": "(3) Due date: Invoices are due for payment immediately upon receipt of the invoice without deduction, unless otherwise agreed in writing."
+      },
+      "retention": {
+        "title": "§ 6 Retention of Title",
+        "text1": "(1) Simple retention of title: Mayer Elektro- und Gebäudetechnik GmbH reserves ownership of all delivered goods, components and other physical objects (hereinafter \"goods subject to retention of title\") until full payment of the remuneration owed for them.",
+        "text2": "(2) Extended retention of title (for business customers): Business customers may resell the goods subject to retention of title in the ordinary course of business; however, pledging or transfer of ownership as security is not permitted."
+      },
+      "execution": {
+        "title": "§ 7 Execution Time, Acceptance and Transfer of Risk",
+        "text1": "(1) Service/delivery time and customer's default of acceptance: If the customer is in default with acceptance of the service or delivery (creditor's default), or if execution is delayed for reasons for which the customer is responsible, the risk of accidental loss or accidental deterioration of the service passes to the customer at the time when they fell into default.",
+        "text2": "(2) Acceptance of work services: As soon as Mayer Elektro- und Gebäudetechnik GmbH has completed the contractually owed work service (e.g. the installation or assembly of a system), it will notify the customer of completion and request acceptance."
+      },
+      "warranty": {
+        "title": "§ 8 Warranty (Defect Claims)",
+        "text1": "(1) Legal rights: Customers who are consumers are entitled to the statutory warranty rights under the German Civil Code (BGB). These Terms and Conditions do not contain any limitation of the statutory defect liability rights of consumers; rights from any manufacturer warranties granted remain unaffected.",
+        "text2": "(2) Quality of service: The basis for defect liability is the agreed quality of the delivery or service.",
+        "text3": "(3) Subsequent performance: If there is a defect in the delivered goods or work service, the customer may initially demand subsequent performance."
+      },
+      "liability": {
+        "title": "§ 9 Liability",
+        "text1": "(1) Scope of liability: Mayer Elektro- und Gebäudetechnik GmbH, its legal representatives and vicarious agents are liable to the customer in cases of intent or gross negligence without limitation according to the statutory provisions. In case of simple negligent breach of an essential contractual obligation (cardinal obligation), Mayer Elektro- und Gebäudetechnik GmbH is liable - except in cases of injury to life, body or health - limited to the contract-typical, foreseeable damage.",
+        "text2": "(2) Liability exclusions: Otherwise, the liability of Mayer Elektro- und Gebäudetechnik GmbH for simple negligence is excluded. This applies in particular to indirect damages and consequential damages, such as lost profits, business interruption damages or missed savings."
+      },
+      "data_protection": {
+        "title": "§ 10 Data Protection",
+        "text1": "(1) Mayer Elektro- und Gebäudetechnik GmbH collects, processes and uses personal data of the customer (such as name, contact details, order details) to fulfill contractual obligations and for business processing. This data processing takes place in compliance with applicable data protection laws, in particular the EU General Data Protection Regulation (GDPR) and the Federal Data Protection Act (BDSG). All personal data is treated confidentially.",
+        "text2": "(2) The customer consents that Mayer Elektro- und Gebäudetechnik GmbH stores and uses the necessary personal data for contract execution. The customer can revoke this consent at any time with effect for the future."
+      },
+      "final": {
+        "title": "§ 11 Final Provisions",
+        "text1": "(1) The law of the Federal Republic of Germany applies, excluding the UN Convention on Contracts for the International Sale of Goods (CISG).",
+        "text2": "(2) If the customer is a merchant within the meaning of the Commercial Code (HGB), a legal entity under public law or a special fund under public law, the exclusive place of jurisdiction for all disputes arising from and in connection with the contractual relationship is the registered office of Mayer Elektro- und Gebäudetechnik GmbH (Germany).",
+        "text3": "(3) Information on online dispute resolution according to Art. 14 para. 1 ODR Regulation: The European Commission provides a platform for online dispute resolution (OS). This can be accessed via the following link:",
+        "odr_link": "https://ec.europa.eu/consumers/odr/",
+        "odr_text_full": "https://ec.europa.eu/consumers/odr/",
+        "odr_text_mobile": "EU ODR Platform",
+        "text4": "(4) Should individual provisions of this contract or these Terms and Conditions be or become wholly or partially invalid or void, this shall not affect the validity of the remaining provisions."
+      }
+    },
+    "contact_section": {
+      "title": "Questions about our Terms and Conditions?",
+      "text": "If you have questions about our Terms and Conditions, please feel free to contact us. We are available for further information.",
+      "button": "Contact us"
+    }
+  },
   "footer": {
     "company_description": "Professional electrical installations and automation solutions for over 15 years.",
     "quick_links": "Quick Links",
