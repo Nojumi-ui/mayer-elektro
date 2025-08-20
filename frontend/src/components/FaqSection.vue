@@ -1,7 +1,7 @@
 <template>
   <section class="py-16 bg-gray-50 dark:bg-gray-800 transition-colors duration-200">
     <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">Häufig gestellte Fragen</h2>
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">{{ t('faq.title') }}</h2>
       
       <div class="space-y-6">
         <div 
@@ -45,14 +45,26 @@
 
 <script setup>
 import { ref, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import StructuredData from './StructuredData.vue';
+
+const { t } = useI18n();
 
 const props = defineProps({
   faqs: {
     type: Array,
-    required: true,
+    required: false,
     default: () => []
   }
+});
+
+// FAQs aus Übersetzungen laden
+const faqs = computed(() => {
+  if (props.faqs.length > 0) {
+    return props.faqs;
+  }
+  
+  return t('faq.questions');
 });
 
 // State für das aktuell geöffnete FAQ-Element
@@ -72,7 +84,7 @@ const faqSchema = computed(() => {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": props.faqs.map(faq => ({
+    "mainEntity": faqs.value.map(faq => ({
       "@type": "Question",
       "name": faq.question,
       "acceptedAnswer": {

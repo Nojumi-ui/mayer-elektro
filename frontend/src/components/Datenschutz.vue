@@ -65,7 +65,7 @@
                   <p>{{ t('privacy.sections.responsible.text') }}</p>
                   <p class="font-medium">{{ t('privacy.sections.responsible.company') }}<br>
                   <span v-html="t('privacy.sections.responsible.address')"></span></p>
-                  <p><span v-html="t('privacy.sections.responsible.contact')"></span></p>
+                  <!--p><span v-html="t('privacy.sections.responsible.contact')"></span></p-->
                 </div>
               </div>
               

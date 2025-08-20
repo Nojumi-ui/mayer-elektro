@@ -890,5 +890,65 @@
     "error_message": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
     "file_too_large": "Die Datei ist zu groß. Maximale Dateigröße: 5MB",
     "some_files_too_large": "Einige Dateien waren zu groß und wurden nicht hochgeladen."
+  },
+  "testimonials": {
+    "title": "Kundenstimmen",
+    "subtitle": "Was unsere Kunden über unsere Leistungen sagen",
+    "testimonial1": {
+      "content": "Sehr professionelle und zuverlässige Arbeit. Das Team von Mayer Elektro hat unsere komplette Büroelektrik modernisiert. Alles wurde termingerecht und sauber ausgeführt.",
+      "name": "Thomas Müller",
+      "company": "Geschäftsführer, TechSolutions GmbH"
+    },
+    "testimonial2": {
+      "content": "Ausgezeichnete Beratung und erstklassige Umsetzung unserer Smart Home Installation. Sehr empfehlenswert!",
+      "name": "Sarah Weber",
+      "company": "Privatkundin"
+    },
+    "testimonial3": {
+      "content": "Schnelle Hilfe im Notfall und faire Preise. Die Automatisierungsanlage läuft seit der Installation einwandfrei.",
+      "name": "Michael Schmidt",
+      "company": "Produktionsleiter, IndustrieWerk AG"
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "questions": [
+      {
+        "question": "Welche Leistungen bietet Mayer Elektro an?",
+        "answer": "Wir bieten ein umfassendes Spektrum an Elektrodienstleistungen: Elektroinstallationen für Wohn- und Gewerbegebäude, Automatisierungstechnik, Instandhaltung, Smart Home Systeme, Photovoltaik-Anlagen und Personaldienstleistungen."
+      },
+      {
+        "question": "Bieten Sie auch einen Notdienst an?",
+        "answer": "Ja, wir bieten einen 24/7 Notdienst für elektrische Störungen und Ausfälle. Rufen Sie uns jederzeit unter +49 (0) 40 123 456 789 an."
+      },
+      {
+        "question": "In welchen Gebieten sind Sie tätig?",
+        "answer": "Wir sind hauptsächlich in Hamburg und Umgebung tätig. Für größere Projekte arbeiten wir auch in ganz Norddeutschland."
+      },
+      {
+        "question": "Wie kann ich einen Kostenvoranschlag erhalten?",
+        "answer": "Kontaktieren Sie uns telefonisch, per E-Mail oder über unser Kontaktformular. Wir erstellen Ihnen gerne einen kostenlosen und unverbindlichen Kostenvoranschlag."
+      },
+      {
+        "question": "Sind Sie für Photovoltaik-Anlagen zertifiziert?",
+        "answer": "Ja, unser Team ist für die Installation und Wartung von Photovoltaik-Anlagen zertifiziert. Wir beraten Sie gerne zu nachhaltigen Energielösungen."
+      }
+    ]
+  },
+  "location": {
+    "title": "Unser Standort in Hamburg",
+    "subtitle": "Nehmen Sie Kontakt mit uns auf - wir freuen uns auf Ihre Anfrage",
+    "contact_info": "Kontaktinformationen",
+    "address_label": "Adresse",
+    "phone_label": "Telefon",
+    "email_label": "E-Mail",
+    "opening_hours": "Öffnungszeiten",
+    "monday_friday": "Montag - Freitag:",
+    "saturday": "Samstag:",
+    "sunday": "Sonntag:",
+    "hours_weekday": "08:00 - 17:00 Uhr",
+    "hours_saturday": "Nach Vereinbarung",
+    "hours_sunday": "Geschlossen",
+    "emergency_service": "24/7 Notdienst verfügbar"
   }
 }

@@ -2,9 +2,9 @@
   <section class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-200">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-200 mb-6">Kundenstimmen</h2>
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-200 mb-6">{{ t('testimonials.title') }}</h2>
         <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-          Was unsere Kunden über unsere Leistungen sagen
+          {{ t('testimonials.subtitle') }}
         </p>
       </div>
       
@@ -60,15 +60,46 @@
 
 <script setup>
 import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import StructuredData from './StructuredData.vue';
 import ReviewSchema from './ReviewSchema.vue';
+
+const { t } = useI18n();
 
 const props = defineProps({
   testimonials: {
     type: Array,
-    required: true,
+    required: false,
     default: () => []
   }
+});
+
+// Testimonials aus Übersetzungen laden
+const testimonials = computed(() => {
+  if (props.testimonials.length > 0) {
+    return props.testimonials;
+  }
+  
+  return [
+    {
+      content: t('testimonials.testimonial1.content'),
+      name: t('testimonials.testimonial1.name'),
+      company: t('testimonials.testimonial1.company'),
+      rating: 5
+    },
+    {
+      content: t('testimonials.testimonial2.content'),
+      name: t('testimonials.testimonial2.name'),
+      company: t('testimonials.testimonial2.company'),
+      rating: 5
+    },
+    {
+      content: t('testimonials.testimonial3.content'),
+      name: t('testimonials.testimonial3.name'),
+      company: t('testimonials.testimonial3.company'),
+      rating: 5
+    }
+  ];
 });
 
 // Strukturierte Daten für Reviews (altes Format)
@@ -77,7 +108,7 @@ const reviewSchema = computed(() => {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Mayer Elektro- und Gebäudetechnik GmbH",
-    "review": props.testimonials.map(testimonial => ({
+    "review": testimonials.value.map(testimonial => ({
       "@type": "Review",
       "reviewRating": {
         "@type": "Rating",
@@ -95,7 +126,7 @@ const reviewSchema = computed(() => {
 
 // Bewertungen für das neue ReviewSchema-Format
 const reviewsForSchema = computed(() => {
-  return props.testimonials.map(testimonial => ({
+  return testimonials.value.map(testimonial => ({
     author: testimonial.name,
     reviewBody: testimonial.content,
     ratingValue: testimonial.rating || 5,
@@ -106,12 +137,12 @@ const reviewsForSchema = computed(() => {
 
 // Aggregierte Bewertung
 const aggregateRating = computed(() => {
-  const totalRating = props.testimonials.reduce((sum, testimonial) => sum + (testimonial.rating || 5), 0);
-  const avgRating = totalRating / props.testimonials.length;
+  const totalRating = testimonials.value.reduce((sum, testimonial) => sum + (testimonial.rating || 5), 0);
+  const avgRating = totalRating / testimonials.value.length;
   
   return {
     ratingValue: parseFloat(avgRating.toFixed(1)),
-    reviewCount: props.testimonials.length,
+    reviewCount: testimonials.value.length,
     bestRating: 5,
     worstRating: 1
   };

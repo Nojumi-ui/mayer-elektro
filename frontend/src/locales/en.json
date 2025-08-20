@@ -890,5 +890,65 @@
     "error_message": "An error occurred. Please try again.",
     "file_too_large": "File is too large. Maximum file size: 5MB",
     "some_files_too_large": "Some files were too large and were not uploaded."
+  },
+  "testimonials": {
+    "title": "Customer Testimonials",
+    "subtitle": "What our customers say about our services",
+    "testimonial1": {
+      "content": "Very professional and reliable work. The Mayer Elektro team modernized our complete office electrical system. Everything was completed on time and cleanly executed.",
+      "name": "Thomas Müller",
+      "company": "Managing Director, TechSolutions GmbH"
+    },
+    "testimonial2": {
+      "content": "Excellent consultation and first-class implementation of our Smart Home installation. Highly recommended!",
+      "name": "Sarah Weber",
+      "company": "Private Customer"
+    },
+    "testimonial3": {
+      "content": "Quick help in emergencies and fair prices. The automation system has been running flawlessly since installation.",
+      "name": "Michael Schmidt",
+      "company": "Production Manager, IndustrieWerk AG"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "question": "What services does Mayer Elektro offer?",
+        "answer": "We offer a comprehensive range of electrical services: electrical installations for residential and commercial buildings, automation technology, maintenance, smart home systems, photovoltaic systems, and personnel services."
+      },
+      {
+        "question": "Do you also offer emergency services?",
+        "answer": "Yes, we offer 24/7 emergency service for electrical faults and outages. Call us anytime at +49 (0) 40 123 456 789."
+      },
+      {
+        "question": "In which areas do you operate?",
+        "answer": "We mainly operate in Hamburg and surrounding areas. For larger projects, we also work throughout Northern Germany."
+      },
+      {
+        "question": "How can I get a cost estimate?",
+        "answer": "Contact us by phone, email, or through our contact form. We'll be happy to provide you with a free and non-binding cost estimate."
+      },
+      {
+        "question": "Are you certified for photovoltaic systems?",
+        "answer": "Yes, our team is certified for the installation and maintenance of photovoltaic systems. We're happy to advise you on sustainable energy solutions."
+      }
+    ]
+  },
+  "location": {
+    "title": "Our Location in Hamburg",
+    "subtitle": "Get in touch with us - we look forward to your inquiry",
+    "contact_info": "Contact Information",
+    "address_label": "Address",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "opening_hours": "Opening Hours",
+    "monday_friday": "Monday - Friday:",
+    "saturday": "Saturday:",
+    "sunday": "Sunday:",
+    "hours_weekday": "08:00 - 17:00",
+    "hours_saturday": "By appointment",
+    "hours_sunday": "Closed",
+    "emergency_service": "24/7 emergency service available"
   }
 }

@@ -2,9 +2,9 @@
   <section class="py-16 bg-white dark:bg-gray-900 transition-colors duration-200">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-4">Unser Standort in Hamburg</h2>
+        <h2 class="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-4">{{ t('location.title') }}</h2>
         <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-          Besuchen Sie uns in unseren Geschäftsräumen oder kontaktieren Sie uns für einen Termin
+          {{ t('location.subtitle') }}
         </p>
       </div>
       
@@ -26,7 +26,7 @@
         <!-- Business Info -->
         <div class="space-y-8">
           <div>
-            <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">Kontaktinformationen</h3>
+            <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">{{ t('location.contact_info') }}</h3>
             
             <div class="space-y-4">
               <div class="flex items-start">
@@ -37,7 +37,7 @@
                   </svg>
                 </div>
                 <div>
-                  <h4 class="font-medium text-gray-800 dark:text-gray-200">Adresse</h4>
+                  <h4 class="font-medium text-gray-800 dark:text-gray-200">{{ t('location.address_label') }}</h4>
                   <address class="not-italic text-gray-600 dark:text-gray-400 mt-1">
                     Mayer Elektro- und Gebäudetechnik GmbH<br>
                     Christoph-Probst-Weg 4<br>
@@ -52,12 +52,12 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                   </svg>
                 </div>
-                <div>
-                  <h4 class="font-medium text-gray-800 dark:text-gray-200">Telefon</h4>
+                <!--div>
+                  <h4 class="font-medium text-gray-800 dark:text-gray-200">{{ t('location.phone_label') }}</h4>
                   <p class="text-gray-600 dark:text-gray-400 mt-1">
                     <a href="tel:+4940123456789" class="hover:text-[#0097b2] transition">+49 (0) 40 123 456 789</a>
                   </p>
-                </div>
+                </div-->
               </div>
               
               <div class="flex items-start">
@@ -67,7 +67,7 @@
                   </svg>
                 </div>
                 <div>
-                  <h4 class="font-medium text-gray-800 dark:text-gray-200">E-Mail</h4>
+                  <h4 class="font-medium text-gray-800 dark:text-gray-200">{{ t('location.email_label') }}</h4>
                   <p class="text-gray-600 dark:text-gray-400 mt-1">
                     <a href="mailto:info@mayerelektro.de" class="hover:text-[#0097b2] transition">info@mayerelektro.de</a>
                   </p>
@@ -77,23 +77,23 @@
           </div>
           
           <div>
-            <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">Öffnungszeiten</h3>
+            <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">{{ t('location.opening_hours') }}</h3>
             
             <div class="space-y-2">
               <div class="flex justify-between">
-                <span class="text-gray-600 dark:text-gray-400">Montag - Freitag:</span>
-                <span class="text-gray-800 dark:text-gray-200 font-medium">08:00 - 17:00 Uhr</span>
+                <span class="text-gray-600 dark:text-gray-400">{{ t('location.monday_friday') }}</span>
+                <span class="text-gray-800 dark:text-gray-200 font-medium">{{ t('location.hours_weekday') }}</span>
               </div>
               <div class="flex justify-between">
-                <span class="text-gray-600 dark:text-gray-400">Samstag:</span>
-                <span class="text-gray-800 dark:text-gray-200 font-medium">Nach Vereinbarung</span>
+                <span class="text-gray-600 dark:text-gray-400">{{ t('location.saturday') }}</span>
+                <span class="text-gray-800 dark:text-gray-200 font-medium">{{ t('location.hours_saturday') }}</span>
               </div>
               <div class="flex justify-between">
-                <span class="text-gray-600 dark:text-gray-400">Sonntag:</span>
-                <span class="text-gray-800 dark:text-gray-200 font-medium">Geschlossen</span>
+                <span class="text-gray-600 dark:text-gray-400">{{ t('location.sunday') }}</span>
+                <span class="text-gray-800 dark:text-gray-200 font-medium">{{ t('location.hours_sunday') }}</span>
               </div>
               <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-                <span class="text-[#0097b2] font-medium">24/7 Notdienst verfügbar</span>
+                <span class="text-[#0097b2] font-medium">{{ t('location.emergency_service') }}</span>
               </div>
             </div>
           </div>
@@ -108,8 +108,11 @@
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n';
 import StructuredData from './StructuredData.vue';
 import LocalBusinessSchema from './LocalBusinessSchema.vue';
+
+const { t } = useI18n();
 
 // Strukturierte Daten für lokales Geschäft (altes Format)
 const localBusinessSchema = {

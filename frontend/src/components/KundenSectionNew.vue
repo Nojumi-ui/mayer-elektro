@@ -491,7 +491,7 @@ const selectedService = computed(() => {
         'Phoenix Contact PLCnext',
         'Profinet, Profibus, Ethernet/IP communication'
       ],
-      image: '/img/automatisierung_2.jpg'
+      image: '/img/monatge-installation.jpg'
     },
     service: {
       title: t('clients.automation.service_details.title'),
