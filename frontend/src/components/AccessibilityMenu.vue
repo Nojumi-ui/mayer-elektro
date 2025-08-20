@@ -7,12 +7,12 @@
       @click="toggleMenu" 
       class="accessibility-toggle"
       aria-expanded="isOpen"
-      aria-label="Barrierefreiheits-Einstellungen"
+      :aria-label="t('accessibility.button_label')"
     >
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
       </svg>
-      <span class="sr-only">Barrierefreiheits-Einstellungen</span>
+      <span class="sr-only">{{ t('accessibility.button_label') }}</span>
     </button>
     
     <!-- Barrierefreiheits-Menü -->
@@ -23,11 +23,11 @@
       aria-labelledby="accessibility-title"
     >
       <div class="accessibility-panel-header">
-        <h2 id="accessibility-title" class="text-lg font-semibold">Barrierefreiheits-Einstellungen</h2>
+        <h2 id="accessibility-title" class="text-lg font-semibold">{{ t('accessibility.title') }}</h2>
         <button 
           @click="toggleMenu" 
           class="close-button"
-          aria-label="Barrierefreiheits-Menü schließen"
+          :aria-label="t('accessibility.close_label')"
         >
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -44,10 +44,10 @@
               @change="toggleHighContrast()"
               class="form-checkbox"
             >
-            <span class="ml-2">Hochkontrastmodus</span>
+            <span class="ml-2">{{ t('accessibility.high_contrast.title') }}</span>
           </label>
           <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            Verbessert den Kontrast für bessere Lesbarkeit (Alt + C)
+            {{ t('accessibility.high_contrast.description') }}
           </p>
         </div>
         
@@ -59,10 +59,10 @@
               @change="toggleLargeText()"
               class="form-checkbox"
             >
-            <span class="ml-2">Große Schrift</span>
+            <span class="ml-2">{{ t('accessibility.large_text.title') }}</span>
           </label>
           <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            Vergrößert die Schrift für bessere Lesbarkeit (Alt + L)
+            {{ t('accessibility.large_text.description') }}
           </p>
         </div>
         
@@ -74,17 +74,17 @@
               @change="toggleReducedMotion()"
               class="form-checkbox"
             >
-            <span class="ml-2">Reduzierte Bewegung</span>
+            <span class="ml-2">{{ t('accessibility.reduced_motion.title') }}</span>
           </label>
           <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            Reduziert Animationen und Bewegungen (Alt + M)
+            {{ t('accessibility.reduced_motion.description') }}
           </p>
         </div>
       </div>
       
       <div class="accessibility-panel-footer">
         <p class="text-sm text-gray-600 dark:text-gray-400">
-          Diese Einstellungen werden in Ihrem Browser gespeichert.
+          {{ t('accessibility.footer_note') }}
         </p>
       </div>
     </div>
@@ -93,7 +93,11 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { useI18n } from 'vue-i18n';
 import { useAccessibility } from '../composables/useAccessibility';
+
+// i18n
+const { t } = useI18n();
 
 // Barrierefreiheits-Funktionen
 const { 

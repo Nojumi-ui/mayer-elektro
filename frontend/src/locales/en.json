@@ -247,6 +247,24 @@
     "subscribe_button": "Subscribe",
     "privacy_note": "Your data will be treated confidentially and will not be passed on to third parties."
   },
+  "accessibility": {
+    "title": "Accessibility Settings",
+    "button_label": "Accessibility Settings",
+    "close_label": "Close accessibility menu",
+    "high_contrast": {
+      "title": "High Contrast Mode",
+      "description": "Improves contrast for better readability (Alt + C)"
+    },
+    "large_text": {
+      "title": "Large Text",
+      "description": "Increases text size for better readability (Alt + L)"
+    },
+    "reduced_motion": {
+      "title": "Reduced Motion",
+      "description": "Reduces animations and movements (Alt + M)"
+    },
+    "footer_note": "These settings are saved in your browser."
+  },
   "footer": {
     "company_description": "Professional electrical installations and automation solutions for over 15 years.",
     "quick_links": "Quick Links",

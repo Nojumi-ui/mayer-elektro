@@ -247,6 +247,24 @@
     "subscribe_button": "Anmelden",
     "privacy_note": "Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben."
   },
+  "accessibility": {
+    "title": "Barrierefreiheits-Einstellungen",
+    "button_label": "Barrierefreiheits-Einstellungen",
+    "close_label": "Barrierefreiheits-Menü schließen",
+    "high_contrast": {
+      "title": "Hochkontrastmodus",
+      "description": "Verbessert den Kontrast für bessere Lesbarkeit (Alt + C)"
+    },
+    "large_text": {
+      "title": "Große Schrift",
+      "description": "Vergrößert die Schrift für bessere Lesbarkeit (Alt + L)"
+    },
+    "reduced_motion": {
+      "title": "Reduzierte Bewegung",
+      "description": "Reduziert Animationen und Bewegungen (Alt + M)"
+    },
+    "footer_note": "Diese Einstellungen werden in Ihrem Browser gespeichert."
+  },
   "footer": {
     "company_description": "Professionelle Elektroinstallationen und Automatisierungslösungen seit über 15 Jahren.",
     "quick_links": "Quick Links",

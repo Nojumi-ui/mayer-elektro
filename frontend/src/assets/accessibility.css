@@ -15,6 +15,8 @@
   --text-secondary: #eeeeee;
   --accent-color: #ffff00;
   --link-color: #00ffff;
+  --link-hover-bg: #00ffff;
+  --link-hover-text: #000000;
   --border-color: #ffffff;
 }
 
@@ -23,9 +25,19 @@
   color: var(--text-primary) !important;
 }
 
-.high-contrast a {
+.high-contrast a:not([class*="bg-"]):not([role="button"]):not(.btn) {
   color: var(--link-color) !important;
   text-decoration: underline !important;
+  background-color: transparent !important;
+}
+
+.high-contrast a:not([class*="bg-"]):not([role="button"]):not(.btn):hover,
+.high-contrast a:not([class*="bg-"]):not([role="button"]):not(.btn):focus {
+  background-color: var(--link-hover-bg) !important;
+  color: var(--link-hover-text) !important;
+  text-decoration: none !important;
+  padding: 2px 4px !important;
+  border-radius: 2px !important;
 }
 
 .high-contrast button,
@@ -35,7 +47,82 @@
   border: 2px solid var(--border-color) !important;
 }
 
-.high-contrast img {
+/* Logo-Bilder bleiben unverändert - ZUERST definieren */
+.high-contrast .logo,
+.high-contrast img[alt*="logo"],
+.high-contrast img[src*="logo"],
+.high-contrast img[class*="logo"],
+.high-contrast img[alt*="Mayer Elektro"],
+.high-contrast img[src*="logo_transparent"] {
+  filter: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  background-color: transparent !important;
+}
+
+/* Navbar-spezifische Logo-Korrekturen */
+.high-contrast nav img[alt*="Mayer Elektro"],
+.high-contrast .navbar img[alt*="Mayer Elektro"],
+.high-contrast router-link img[alt*="Mayer Elektro"] {
+  filter: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+/* Sehr spezifische Logo-Regel für alle Fälle */
+html.high-contrast nav img,
+html.high-contrast nav router-link img,
+html.high-contrast nav a img {
+  filter: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  background: transparent !important;
+  mix-blend-mode: normal !important;
+}
+
+/* Router-Link Container für Logo */
+html.high-contrast nav router-link,
+html.high-contrast nav a[aria-label*="Mayer Elektro"] {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: flex !important;
+}
+
+/* Navigation-Bilder (Logos) im Hochkontrastmodus */
+html.high-contrast nav img {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  background: transparent !important;
+}
+
+/* Nur dunkle Logos invertieren (die mit "dark" im Namen) */
+html.high-contrast nav img[src*="dark"] {
+  filter: invert(1) !important;
+}
+
+/* Weiße Logos bleiben unverändert */
+html.high-contrast nav img[src*="white"] {
+  filter: none !important;
+}
+
+/* Im normalen Modus: Logos bleiben unverändert */
+html:not(.high-contrast) nav img {
+  /* Normale Logo-Stile bleiben unverändert */
+}
+
+/* Spezielle Behandlung für transparente Logos */
+html.high-contrast img[src*="transparent"] {
+  filter: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  background: transparent !important;
+}
+
+/* Alle anderen Bilder bekommen Filter */
+.high-contrast img:not(.logo):not([alt*="logo"]):not([src*="logo"]):not([alt*="Mayer Elektro"]):not([src*="logo_transparent"]) {
   filter: grayscale(100%) contrast(120%) !important;
 }
 
@@ -100,13 +187,7 @@
   outline-offset: 2px !important;
 }
 
-/* Verbesserte Kontraste für Links */
-.high-contrast a:hover,
-.high-contrast a:focus {
-  background-color: var(--link-color) !important;
-  color: var(--bg-primary) !important;
-  text-decoration: none !important;
-}
+/* Verbesserte Kontraste für Links - bereits oben definiert */
 
 /* Skip-Link für Tastaturnavigation */
 .skip-link {
@@ -163,4 +244,393 @@
   color: #00ff00 !important;
   background-color: #004400 !important;
   border-color: #00ff00 !important;
+}
+
+/* Spezifische Regeln für AccessibilityMenu */
+.high-contrast .accessibility-panel {
+  background-color: var(--bg-primary) !important;
+  border: 2px solid var(--border-color) !important;
+}
+
+.high-contrast .accessibility-panel-header {
+  background-color: var(--bg-secondary) !important;
+  border-bottom-color: var(--border-color) !important;
+}
+
+.high-contrast .accessibility-panel-header h2 {
+  color: var(--text-primary) !important;
+}
+
+.high-contrast .accessibility-panel-content {
+  background-color: var(--bg-primary) !important;
+}
+
+.high-contrast .accessibility-option label {
+  color: var(--text-primary) !important;
+}
+
+.high-contrast .accessibility-option label span {
+  color: var(--text-primary) !important;
+}
+
+.high-contrast .accessibility-option p {
+  color: var(--text-secondary) !important;
+}
+
+.high-contrast .accessibility-panel-footer {
+  background-color: var(--bg-secondary) !important;
+  border-top-color: var(--border-color) !important;
+}
+
+.high-contrast .accessibility-panel-footer p {
+  color: var(--text-secondary) !important;
+}
+
+.high-contrast .close-button {
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.high-contrast .close-button:hover {
+  background-color: var(--bg-secondary) !important;
+  color: var(--accent-color) !important;
+}
+
+/* Verbesserte Checkbox-Stile für Hochkontrast */
+.high-contrast .form-checkbox {
+  background-color: var(--bg-primary) !important;
+  border: 2px solid var(--border-color) !important;
+}
+
+.high-contrast .form-checkbox:checked {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+.high-contrast .form-checkbox:checked::after {
+  border-color: var(--bg-primary) !important;
+}
+
+/* Allgemeine Verbesserungen für Labels und Spans */
+.high-contrast label,
+.high-contrast span:not(.sr-only) {
+  color: var(--text-primary) !important;
+}
+
+.high-contrast h1,
+.high-contrast h2,
+.high-contrast h3,
+.high-contrast h4,
+.high-contrast h5,
+.high-contrast h6 {
+  color: var(--text-primary) !important;
+}
+
+/* Spezifische Überschreibungen für Tailwind-Klassen */
+.high-contrast .text-gray-600,
+.high-contrast .text-gray-400,
+.high-contrast .text-gray-700,
+.high-contrast .text-gray-300,
+.high-contrast .text-gray-800,
+.high-contrast .text-gray-200,
+.high-contrast .text-gray-900,
+.high-contrast .text-gray-100 {
+  color: var(--text-secondary) !important;
+}
+
+.high-contrast .text-lg,
+.high-contrast .font-semibold {
+  color: var(--text-primary) !important;
+}
+
+/* Zusätzliche Spezifität für AccessibilityMenu-Texte */
+html.high-contrast .accessibility-panel .text-lg.font-semibold,
+html.high-contrast .accessibility-panel h2 {
+  color: var(--text-primary) !important;
+}
+
+html.high-contrast .accessibility-option label span,
+html.high-contrast .accessibility-option label {
+  color: var(--text-primary) !important;
+}
+
+html.high-contrast .accessibility-option .text-sm {
+  color: var(--text-secondary) !important;
+}
+
+html.high-contrast .accessibility-panel-footer .text-sm {
+  color: var(--text-secondary) !important;
+}
+
+/* Dark-Mode-Überschreibungen für Hochkontrast */
+.high-contrast .dark\:text-gray-400,
+.high-contrast .dark\:text-gray-300,
+.high-contrast .dark\:text-gray-200,
+.high-contrast .dark\:text-gray-100 {
+  color: var(--text-secondary) !important;
+}
+
+.high-contrast .dark\:bg-gray-800,
+.high-contrast .dark\:bg-gray-900,
+.high-contrast .dark\:bg-gray-700 {
+  background-color: var(--bg-primary) !important;
+}
+
+/* Spezifische Textelemente für Hochkontrast - NICHT alle Elemente */
+html.high-contrast .text-sm:not(button *):not(.btn *):not([class*="bg-"]) {
+  color: var(--text-secondary) !important;
+}
+
+html.high-contrast .text-xs:not(button *):not(.btn *):not([class*="bg-"]) {
+  color: var(--text-secondary) !important;
+}
+
+html.high-contrast input,
+html.high-contrast textarea,
+html.high-contrast select {
+  color: var(--text-primary) !important;
+  background-color: var(--bg-primary) !important;
+}
+
+/* Spezifische Button-Stile für Hochkontrast */
+/* Hauptbuttons mit bg-[#0097b2] oder bg-primary */
+html.high-contrast button[class*="0097b2"],
+html.high-contrast button[class*="bg-primary"],
+html.high-contrast a[class*="0097b2"],
+html.high-contrast a[class*="bg-primary"],
+html.high-contrast .router-link[class*="0097b2"],
+html.high-contrast .router-link[class*="bg-primary"] {
+  background-color: var(--accent-color) !important;
+  color: var(--bg-primary) !important;
+  border: 2px solid var(--accent-color) !important;
+}
+
+/* Hover-Zustände für Buttons */
+html.high-contrast button[class*="0097b2"]:hover,
+html.high-contrast button[class*="bg-primary"]:hover,
+html.high-contrast a[class*="0097b2"]:hover,
+html.high-contrast a[class*="bg-primary"]:hover {
+  background-color: var(--bg-primary) !important;
+  color: var(--accent-color) !important;
+  border: 2px solid var(--accent-color) !important;
+}
+
+/* Für weiße/helle Buttons */
+html.high-contrast button[class*="bg-white"],
+html.high-contrast button[class*="bg-gray-50"],
+html.high-contrast button[class*="bg-gray-100"],
+html.high-contrast a[class*="bg-white"],
+html.high-contrast a[class*="bg-gray-50"],
+html.high-contrast a[class*="bg-gray-100"] {
+  background-color: var(--text-primary) !important;
+  color: var(--bg-primary) !important;
+  border: 2px solid var(--text-primary) !important;
+}
+
+/* Für andere farbige Buttons */
+html.high-contrast button[class*="bg-red"],
+html.high-contrast button[class*="bg-green"],
+html.high-contrast button[class*="bg-blue"]:not([class*="0097b2"]),
+html.high-contrast a[class*="bg-red"],
+html.high-contrast a[class*="bg-green"],
+html.high-contrast a[class*="bg-blue"]:not([class*="0097b2"]) {
+  background-color: var(--accent-color) !important;
+  color: var(--bg-primary) !important;
+  border: 2px solid var(--accent-color) !important;
+}
+
+/* Disabled-Zustände */
+html.high-contrast button:disabled,
+html.high-contrast button[disabled] {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-secondary) !important;
+  border: 2px solid var(--text-secondary) !important;
+  opacity: 0.6 !important;
+}
+
+/* Allgemeine Regel für alle Buttons mit text-white */
+html.high-contrast button[class*="text-white"],
+html.high-contrast a[class*="text-white"] {
+  background-color: var(--accent-color) !important;
+  color: var(--bg-primary) !important;
+  border: 2px solid var(--accent-color) !important;
+}
+
+html.high-contrast button[class*="text-white"]:hover,
+html.high-contrast a[class*="text-white"]:hover {
+  background-color: var(--bg-primary) !important;
+  color: var(--accent-color) !important;
+  border: 2px solid var(--accent-color) !important;
+}
+
+/* FAQ-Buttons sind KEINE normalen Buttons - sie bleiben transparent */
+html.high-contrast button[aria-expanded] {
+  background-color: transparent !important;
+  color: inherit !important;
+  border: none !important;
+}
+
+html.high-contrast button[aria-expanded]:hover,
+html.high-contrast button[aria-expanded]:focus {
+  background-color: var(--bg-secondary) !important;
+  outline: 2px solid var(--accent-color) !important;
+}
+
+/* Dropdown-Buttons (Theme/Language Switcher) sind KEINE normalen Buttons */
+html.high-contrast button[role="menuitem"],
+html.high-contrast .dropdown button,
+html.high-contrast nav button:not([class*="bg-"]):not([type="submit"]) {
+  background-color: transparent !important;
+  color: var(--text-primary) !important;
+  border: none !important;
+}
+
+html.high-contrast button[role="menuitem"]:hover,
+html.high-contrast .dropdown button:hover,
+html.high-contrast nav button:not([class*="bg-"]):not([type="submit"]):hover {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Spezifische Navbar-Dropdown-Buttons */
+html.high-contrast nav .relative button,
+html.high-contrast nav [class*="dropdown"] button {
+  background-color: transparent !important;
+  color: var(--text-primary) !important;
+  border: none !important;
+}
+
+/* Spans in Dropdown-Buttons (für Sprachauswahl) */
+html.high-contrast nav button span,
+html.high-contrast button[role="menuitem"] span {
+  color: var(--text-primary) !important;
+}
+
+/* Mobile Menu Button */
+html.high-contrast nav button svg {
+  color: var(--text-primary) !important;
+}
+
+/* Sicherheitsregel nur für echte Action-Buttons */
+html.high-contrast button[type="submit"],
+html.high-contrast button[class*="bg-"],
+html.high-contrast a[role="button"],
+html.high-contrast a[class*="bg-"],
+html.high-contrast .btn {
+  background-color: var(--accent-color) !important;
+  color: var(--bg-primary) !important;
+  border: 2px solid var(--accent-color) !important;
+}
+
+/* Normale Links (ohne Button-Styling) behalten Link-Farben */
+html.high-contrast a:not([class*="bg-"]):not([role="button"]):not(.btn):not([class*="button"]) {
+  color: var(--link-color) !important;
+  background-color: transparent !important;
+}
+
+/* Spezifische Korrekturen für problematische Bereiche */
+/* FAQ-Sektion spezifische Korrekturen */
+html.high-contrast section[class*="bg-gray-50"] {
+  background-color: var(--bg-primary) !important;
+}
+
+html.high-contrast div[class*="bg-white"]:not(nav):not(.navbar) {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+/* Navbar-spezifische Hintergründe - NUR im Hochkontrastmodus */
+html.high-contrast nav,
+html.high-contrast nav[class*="bg-white"],
+html.high-contrast .navbar {
+  background-color: var(--bg-primary) !important;
+  border-bottom: 2px solid var(--border-color) !important;
+}
+
+/* Sicherstellen, dass Navbar im normalen Modus unverändert bleibt */
+html:not(.high-contrast) nav {
+  /* Normale Navbar-Stile bleiben unverändert */
+}
+
+/* Dropdown-Container in der Navbar */
+html.high-contrast nav .absolute,
+html.high-contrast nav [class*="dropdown"],
+html.high-contrast nav ul[class*="absolute"] {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+/* FAQ-Überschrift */
+html.high-contrast h2[class*="text-gray-900"] {
+  color: var(--text-primary) !important;
+}
+
+/* FAQ-Fragen (h3 in Buttons) */
+html.high-contrast button h3[class*="text-gray-800"],
+html.high-contrast h3[class*="text-gray-800"] {
+  color: var(--text-primary) !important;
+}
+
+/* FAQ-Antworten */
+html.high-contrast p[class*="text-gray-600"] {
+  color: var(--text-secondary) !important;
+}
+
+/* FAQ-Icons */
+html.high-contrast svg[class*="text-gray-500"] {
+  color: var(--text-secondary) !important;
+}
+
+/* Allgemeine Tailwind-Klassen überschreiben */
+html.high-contrast .text-gray-800,
+html.high-contrast .text-gray-900,
+html.high-contrast .text-gray-700 {
+  color: var(--text-primary) !important;
+}
+
+html.high-contrast .text-gray-600,
+html.high-contrast .text-gray-500,
+html.high-contrast .text-gray-400 {
+  color: var(--text-secondary) !important;
+}
+
+/* FAQ-Bereiche und andere Inhaltsbereiche - Links */
+html.high-contrast .faq a,
+html.high-contrast .content a,
+html.high-contrast .text-content a,
+html.high-contrast p a,
+html.high-contrast li a {
+  color: var(--link-color) !important;
+  background-color: transparent !important;
+  text-decoration: underline !important;
+}
+
+html.high-contrast .faq a:hover,
+html.high-contrast .content a:hover,
+html.high-contrast .text-content a:hover,
+html.high-contrast p a:hover,
+html.high-contrast li a:hover {
+  background-color: var(--link-hover-bg) !important;
+  color: var(--link-hover-text) !important;
+  text-decoration: none !important;
+  padding: 2px 4px !important;
+  border-radius: 2px !important;
+}
+
+/* Externe Links (wie EU-Streitschlichtung) */
+html.high-contrast a[href*="europa.eu"],
+html.high-contrast a[href*="http"]:not([class*="bg-"]) {
+  color: var(--link-color) !important;
+  background-color: transparent !important;
+  text-decoration: underline !important;
+}
+
+html.high-contrast a[href*="europa.eu"]:hover,
+html.high-contrast a[href*="http"]:not([class*="bg-"]):hover {
+  background-color: var(--link-hover-bg) !important;
+  color: var(--link-hover-text) !important;
+  text-decoration: none !important;
+  padding: 2px 4px !important;
+  border-radius: 2px !important;
 }
