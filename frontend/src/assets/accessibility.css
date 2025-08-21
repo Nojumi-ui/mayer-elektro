@@ -47,590 +47,309 @@
   border: 2px solid var(--border-color) !important;
 }
 
-/* Logo-Bilder bleiben unverändert - ZUERST definieren */
-.high-contrast .logo,
-.high-contrast img[alt*="logo"],
-.high-contrast img[src*="logo"],
-.high-contrast img[class*="logo"],
-.high-contrast img[alt*="Mayer Elektro"],
-.high-contrast img[src*="logo_transparent"] {
-  filter: none !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  background-color: transparent !important;
+.high-contrast .bg-white,
+.high-contrast .bg-gray-50,
+.high-contrast .bg-gray-100 {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
 }
 
-/* Navbar-spezifische Logo-Korrekturen */
-.high-contrast nav img[alt*="Mayer Elektro"],
-.high-contrast .navbar img[alt*="Mayer Elektro"],
-.high-contrast router-link img[alt*="Mayer Elektro"] {
-  filter: none !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  display: block !important;
-}
-
-/* Sehr spezifische Logo-Regel für alle Fälle */
-html.high-contrast nav img,
-html.high-contrast nav router-link img,
-html.high-contrast nav a img {
-  filter: none !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  display: block !important;
-  background: transparent !important;
-  mix-blend-mode: normal !important;
-}
-
-/* Router-Link Container für Logo */
-html.high-contrast nav router-link,
-html.high-contrast nav a[aria-label*="Mayer Elektro"] {
-  opacity: 1 !important;
-  visibility: visible !important;
-  display: flex !important;
-}
-
-/* Navigation-Bilder (Logos) im Hochkontrastmodus */
-html.high-contrast nav img {
-  opacity: 1 !important;
-  visibility: visible !important;
-  display: block !important;
-  background: transparent !important;
-}
-
-/* Nur dunkle Logos invertieren (die mit "dark" im Namen) */
-html.high-contrast nav img[src*="dark"] {
-  filter: invert(1) !important;
-}
-
-/* Weiße Logos bleiben unverändert */
-html.high-contrast nav img[src*="white"] {
-  filter: none !important;
-}
-
-/* Im normalen Modus: Logos bleiben unverändert */
-html:not(.high-contrast) nav img {
-  /* Normale Logo-Stile bleiben unverändert */
-}
-
-/* Spezielle Behandlung für transparente Logos */
-html.high-contrast img[src*="transparent"] {
-  filter: none !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  background: transparent !important;
-}
-
-/* Alle anderen Bilder bekommen Filter */
-.high-contrast img:not(.logo):not([alt*="logo"]):not([src*="logo"]):not([alt*="Mayer Elektro"]):not([src*="logo_transparent"]) {
-  filter: grayscale(100%) contrast(120%) !important;
-}
-
-.high-contrast input,
-.high-contrast textarea,
-.high-contrast select {
+.high-contrast .bg-gray-900,
+.high-contrast .bg-gray-800,
+.high-contrast .bg-gray-700 {
   background-color: var(--bg-primary) !important;
   color: var(--text-primary) !important;
-  border: 2px solid var(--border-color) !important;
 }
 
-/* Große Schrift */
-.large-text {
-  font-size: 125% !important;
-  line-height: 1.5 !important;
+.high-contrast .text-gray-600,
+.high-contrast .text-gray-700,
+.high-contrast .text-gray-800,
+.high-contrast .text-gray-900 {
+  color: var(--text-primary) !important;
 }
 
-.large-text h1 {
+.high-contrast .text-gray-300,
+.high-contrast .text-gray-400,
+.high-contrast .text-gray-500 {
+  color: var(--text-secondary) !important;
+}
+
+.high-contrast .border,
+.high-contrast .border-gray-200,
+.high-contrast .border-gray-300 {
+  border-color: var(--border-color) !important;
+}
+
+/* Große Schrift - für alle Inhalte AUSSER Navigation und Accessibility-Menü */
+/* Desktop Schriftgrößen */
+.large-text h1:not(nav h1):not(.accessibility-menu h1) {
+  font-size: 3rem !important;
+}
+
+.large-text h2:not(nav h2):not(.accessibility-menu h2) {
   font-size: 2.5rem !important;
 }
 
-.large-text h2 {
+.large-text h3:not(nav h3):not(.accessibility-menu h3) {
   font-size: 2rem !important;
 }
 
-.large-text h3 {
-  font-size: 1.75rem !important;
+.large-text h4:not(nav h4):not(.accessibility-menu h4) {
+  font-size: 1.5rem !important;
 }
 
-.large-text p,
-.large-text li,
-.large-text label,
-.large-text input,
-.large-text button {
+.large-text h5:not(nav h5):not(.accessibility-menu h5) {
   font-size: 1.25rem !important;
+}
+
+.large-text p:not(nav p):not(.accessibility-menu p),
+.large-text li:not(nav li):not(.accessibility-menu li),
+.large-text label:not(nav label):not(.accessibility-menu label),
+.large-text span:not(.sr-only):not(nav span):not(.accessibility-menu span) {
+  font-size: 1.25rem !important;
+}
+
+.large-text input:not(nav input):not(.accessibility-menu input),
+.large-text textarea:not(nav textarea):not(.accessibility-menu textarea),
+.large-text select:not(nav select):not(.accessibility-menu select),
+.large-text button:not(nav button):not(.accessibility-menu button):not(.accessibility-toggle) {
+  font-size: 1.125rem !important;
+  min-height: 44px !important;
+}
+
+/* Mobile Anpassungen für große Schrift */
+@media (max-width: 768px) {
+  /* Mobile Schriftgrößen - moderater */
+  .large-text h1:not(nav h1):not(.accessibility-menu h1) {
+    font-size: 1.875rem !important; /* 30px */
+    line-height: 1.2 !important;
+  }
+
+  .large-text h2:not(nav h2):not(.accessibility-menu h2) {
+    font-size: 1.625rem !important; /* 26px */
+    line-height: 1.3 !important;
+  }
+
+  .large-text h3:not(nav h3):not(.accessibility-menu h3) {
+    font-size: 1.375rem !important; /* 22px */
+    line-height: 1.3 !important;
+  }
+
+  .large-text h4:not(nav h4):not(.accessibility-menu h4) {
+    font-size: 1.25rem !important; /* 20px */
+    line-height: 1.4 !important;
+  }
+
+  .large-text h5:not(nav h5):not(.accessibility-menu h5) {
+    font-size: 1.125rem !important; /* 18px */
+    line-height: 1.4 !important;
+  }
+
+  .large-text p:not(nav p):not(.accessibility-menu p),
+  .large-text li:not(nav li):not(.accessibility-menu li),
+  .large-text label:not(nav label):not(.accessibility-menu label),
+  .large-text span:not(.sr-only):not(nav span):not(.accessibility-menu span) {
+    font-size: 1.125rem !important; /* 18px */
+    line-height: 1.5 !important;
+  }
+
+  .large-text input:not(nav input):not(.accessibility-menu input),
+  .large-text textarea:not(nav textarea):not(.accessibility-menu textarea),
+  .large-text select:not(nav select):not(.accessibility-menu select),
+  .large-text button:not(nav button):not(.accessibility-menu button):not(.accessibility-toggle) {
+    font-size: 1rem !important; /* 16px */
+    min-height: 44px !important;
+  }
+
+  /* Container-Anpassungen für mobile große Schrift */
+  .large-text .max-w-7xl,
+  .large-text .max-w-6xl,
+  .large-text .max-w-5xl,
+  .large-text .max-w-4xl,
+  .large-text .max-w-3xl {
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Padding-Anpassungen */
+  .large-text .py-20 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .large-text .py-16 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  /* Grid zu Block auf mobilen Geräten - NICHT in Navigation */
+  .large-text .grid:not(nav .grid):not(.accessibility-menu .grid) {
+    display: block !important;
+  }
+
+  .large-text .grid:not(nav .grid):not(.accessibility-menu .grid) > * {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .large-text .grid:not(nav .grid):not(.accessibility-menu .grid) > *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Wortumbrüche für deutsche Texte - NICHT in Navigation */
+  .large-text h1:not(nav h1):not(.accessibility-menu h1),
+  .large-text h2:not(nav h2):not(.accessibility-menu h2),
+  .large-text h3:not(nav h3):not(.accessibility-menu h3),
+  .large-text h4:not(nav h4):not(.accessibility-menu h4),
+  .large-text h5:not(nav h5):not(.accessibility-menu h5),
+  .large-text h6:not(nav h6):not(.accessibility-menu h6) {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    -webkit-hyphens: auto !important;
+    -moz-hyphens: auto !important;
+    -ms-hyphens: auto !important;
+  }
+
+  .large-text p:not(nav p):not(.accessibility-menu p),
+  .large-text li:not(nav li):not(.accessibility-menu li),
+  .large-text span:not(nav span):not(.accessibility-menu span),
+  .large-text label:not(nav label):not(.accessibility-menu label) {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    -webkit-hyphens: auto !important;
+    -moz-hyphens: auto !important;
+    -ms-hyphens: auto !important;
+  }
+
+  /* Spezielle Behandlung für sehr lange Wörter */
+  .large-text .word-break-responsive,
+  .large-text .heading-break,
+  .large-text .mobile-word-break {
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  /* Button-Text Umbruch nur für Content-Buttons */
+  .large-text button:not(nav button):not(.accessibility-menu button):not(.accessibility-toggle) {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    text-align: center !important;
+  }
+
+  /* Bilder responsive - NICHT Navigation-Logos */
+  .large-text img:not(nav img):not(.accessibility-menu img) {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Card-Höhen anpassen */
+  .large-text .h-48 {
+    height: auto !important;
+    min-height: 12rem !important;
+  }
+
+  .large-text .h-80 {
+    height: auto !important;
+    min-height: 16rem !important;
+  }
 }
 
 /* Reduzierte Bewegung */
 .reduced-motion *,
 .reduced-motion *::before,
 .reduced-motion *::after {
-  animation-duration: 0.001s !important;
-  animation-delay: 0s !important;
+  animation-duration: 0.01ms !important;
   animation-iteration-count: 1 !important;
-  transition-duration: 0.001s !important;
-  transition-delay: 0s !important;
+  transition-duration: 0.01ms !important;
   scroll-behavior: auto !important;
 }
 
-/* Verbesserte Lesbarkeit */
-.high-contrast p,
-.high-contrast li {
-  max-width: 70ch !important;
-  line-height: 1.6 !important;
+.reduced-motion .fade-in-up,
+.reduced-motion .fade-in-left,
+.reduced-motion .fade-in-right,
+.reduced-motion .scale-in {
+  opacity: 1 !important;
+  transform: none !important;
 }
 
-/* Verbesserte Formularelemente */
-.high-contrast input:focus,
-.high-contrast textarea:focus,
-.high-contrast select:focus {
-  outline: 3px solid var(--accent-color) !important;
-  outline-offset: 2px !important;
-}
-
-/* Verbesserte Kontraste für Links - bereits oben definiert */
-
-/* Skip-Link für Tastaturnavigation */
+/* Skip-Link */
 .skip-link {
-  position: fixed;
-  top: -100px;
-  right: 20px;
+  position: absolute;
+  top: -40px;
+  left: 6px;
   background: #0097b2;
   color: white;
-  padding: 10px;
-  z-index: 9999;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 0 0 4px 4px;
+  z-index: 10000;
+  font-weight: bold;
   transition: top 0.3s;
-  border-radius: 0 0 8px 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
 }
 
 .skip-link:focus {
   top: 0;
 }
 
-.skip-link:focus {
-  top: 0;
+/* Screen Reader Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
-/* Verbesserte Sichtbarkeit für Fehlermeldungen */
-.error-message {
-  color: #ff0000;
-  font-weight: bold;
-  padding: 8px;
-  border: 2px solid #ff0000;
-  background-color: #ffeeee;
+/* Accessibility Menu - nur bei large-text Ausnahmen */
+.large-text .accessibility-menu,
+.large-text .accessibility-menu *,
+.large-text .accessibility-toggle,
+.large-text .accessibility-panel,
+.large-text .accessibility-panel * {
+  font-size: inherit !important;
+  line-height: inherit !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  white-space: inherit !important;
 }
 
-.high-contrast .error-message {
-  color: #ffff00 !important;
-  background-color: #880000 !important;
-  border-color: #ffff00 !important;
+/* Navigation - nur bei large-text Ausnahmen */
+.large-text nav,
+.large-text nav *,
+.large-text .navbar,
+.large-text .navbar * {
+  font-size: inherit !important;
+  line-height: inherit !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  white-space: inherit !important;
 }
 
-/* Verbesserte Sichtbarkeit für Erfolgsmeldungen */
-.success-message {
-  color: #006600;
-  font-weight: bold;
-  padding: 8px;
-  border: 2px solid #006600;
-  background-color: #eeffee;
+/* Sicherstellen, dass Checkboxen in Accessibility-Panel sichtbar bleiben */
+.accessibility-panel .form-checkbox {
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px !important;
+  min-height: 18px !important;
+  flex-shrink: 0 !important;
 }
 
-.high-contrast .success-message {
-  color: #00ff00 !important;
-  background-color: #004400 !important;
-  border-color: #00ff00 !important;
+/* Accessibility-Panel Größe begrenzen */
+.accessibility-panel {
+  max-width: 320px !important;
+  max-height: 80vh !important;
+  overflow-y: auto !important;
 }
 
-/* Spezifische Regeln für AccessibilityMenu */
-.high-contrast .accessibility-panel {
-  background-color: var(--bg-primary) !important;
-  border: 2px solid var(--border-color) !important;
-}
-
-.high-contrast .accessibility-panel-header {
-  background-color: var(--bg-secondary) !important;
-  border-bottom-color: var(--border-color) !important;
-}
-
-.high-contrast .accessibility-panel-header h2 {
-  color: var(--text-primary) !important;
-}
-
-.high-contrast .accessibility-panel-content {
-  background-color: var(--bg-primary) !important;
-}
-
-.high-contrast .accessibility-option label {
-  color: var(--text-primary) !important;
-}
-
-.high-contrast .accessibility-option label span {
-  color: var(--text-primary) !important;
-}
-
-.high-contrast .accessibility-option p {
-  color: var(--text-secondary) !important;
-}
-
-.high-contrast .accessibility-panel-footer {
-  background-color: var(--bg-secondary) !important;
-  border-top-color: var(--border-color) !important;
-}
-
-.high-contrast .accessibility-panel-footer p {
-  color: var(--text-secondary) !important;
-}
-
-.high-contrast .close-button {
-  color: var(--text-primary) !important;
-  border: 1px solid var(--border-color) !important;
-}
-
-.high-contrast .close-button:hover {
-  background-color: var(--bg-secondary) !important;
-  color: var(--accent-color) !important;
-}
-
-/* Verbesserte Checkbox-Stile für Hochkontrast */
-.high-contrast .form-checkbox {
-  background-color: var(--bg-primary) !important;
-  border: 2px solid var(--border-color) !important;
-}
-
-.high-contrast .form-checkbox:checked {
-  background-color: var(--accent-color) !important;
-  border-color: var(--accent-color) !important;
-}
-
-.high-contrast .form-checkbox:checked::after {
-  border-color: var(--bg-primary) !important;
-}
-
-/* Allgemeine Verbesserungen für Labels und Spans */
-.high-contrast label,
-.high-contrast span:not(.sr-only) {
-  color: var(--text-primary) !important;
-}
-
-.high-contrast h1,
-.high-contrast h2,
-.high-contrast h3,
-.high-contrast h4,
-.high-contrast h5,
-.high-contrast h6 {
-  color: var(--text-primary) !important;
-}
-
-/* Spezifische Überschreibungen für Tailwind-Klassen */
-.high-contrast .text-gray-600,
-.high-contrast .text-gray-400,
-.high-contrast .text-gray-700,
-.high-contrast .text-gray-300,
-.high-contrast .text-gray-800,
-.high-contrast .text-gray-200,
-.high-contrast .text-gray-900,
-.high-contrast .text-gray-100 {
-  color: var(--text-secondary) !important;
-}
-
-.high-contrast .text-lg,
-.high-contrast .font-semibold {
-  color: var(--text-primary) !important;
-}
-
-/* Zusätzliche Spezifität für AccessibilityMenu-Texte */
-html.high-contrast .accessibility-panel .text-lg.font-semibold,
-html.high-contrast .accessibility-panel h2 {
-  color: var(--text-primary) !important;
-}
-
-html.high-contrast .accessibility-option label span,
-html.high-contrast .accessibility-option label {
-  color: var(--text-primary) !important;
-}
-
-html.high-contrast .accessibility-option .text-sm {
-  color: var(--text-secondary) !important;
-}
-
-html.high-contrast .accessibility-panel-footer .text-sm {
-  color: var(--text-secondary) !important;
-}
-
-/* Dark-Mode-Überschreibungen für Hochkontrast */
-.high-contrast .dark\:text-gray-400,
-.high-contrast .dark\:text-gray-300,
-.high-contrast .dark\:text-gray-200,
-.high-contrast .dark\:text-gray-100 {
-  color: var(--text-secondary) !important;
-}
-
-.high-contrast .dark\:bg-gray-800,
-.high-contrast .dark\:bg-gray-900,
-.high-contrast .dark\:bg-gray-700 {
-  background-color: var(--bg-primary) !important;
-}
-
-/* Spezifische Textelemente für Hochkontrast - NICHT alle Elemente */
-html.high-contrast .text-sm:not(button *):not(.btn *):not([class*="bg-"]) {
-  color: var(--text-secondary) !important;
-}
-
-html.high-contrast .text-xs:not(button *):not(.btn *):not([class*="bg-"]) {
-  color: var(--text-secondary) !important;
-}
-
-html.high-contrast input,
-html.high-contrast textarea,
-html.high-contrast select {
-  color: var(--text-primary) !important;
-  background-color: var(--bg-primary) !important;
-}
-
-/* Spezifische Button-Stile für Hochkontrast */
-/* Hauptbuttons mit bg-[#0097b2] oder bg-primary */
-html.high-contrast button[class*="0097b2"],
-html.high-contrast button[class*="bg-primary"],
-html.high-contrast a[class*="0097b2"],
-html.high-contrast a[class*="bg-primary"],
-html.high-contrast .router-link[class*="0097b2"],
-html.high-contrast .router-link[class*="bg-primary"] {
-  background-color: var(--accent-color) !important;
-  color: var(--bg-primary) !important;
-  border: 2px solid var(--accent-color) !important;
-}
-
-/* Hover-Zustände für Buttons */
-html.high-contrast button[class*="0097b2"]:hover,
-html.high-contrast button[class*="bg-primary"]:hover,
-html.high-contrast a[class*="0097b2"]:hover,
-html.high-contrast a[class*="bg-primary"]:hover {
-  background-color: var(--bg-primary) !important;
-  color: var(--accent-color) !important;
-  border: 2px solid var(--accent-color) !important;
-}
-
-/* Für weiße/helle Buttons */
-html.high-contrast button[class*="bg-white"],
-html.high-contrast button[class*="bg-gray-50"],
-html.high-contrast button[class*="bg-gray-100"],
-html.high-contrast a[class*="bg-white"],
-html.high-contrast a[class*="bg-gray-50"],
-html.high-contrast a[class*="bg-gray-100"] {
-  background-color: var(--text-primary) !important;
-  color: var(--bg-primary) !important;
-  border: 2px solid var(--text-primary) !important;
-}
-
-/* Für andere farbige Buttons */
-html.high-contrast button[class*="bg-red"],
-html.high-contrast button[class*="bg-green"],
-html.high-contrast button[class*="bg-blue"]:not([class*="0097b2"]),
-html.high-contrast a[class*="bg-red"],
-html.high-contrast a[class*="bg-green"],
-html.high-contrast a[class*="bg-blue"]:not([class*="0097b2"]) {
-  background-color: var(--accent-color) !important;
-  color: var(--bg-primary) !important;
-  border: 2px solid var(--accent-color) !important;
-}
-
-/* Disabled-Zustände */
-html.high-contrast button:disabled,
-html.high-contrast button[disabled] {
-  background-color: var(--bg-secondary) !important;
-  color: var(--text-secondary) !important;
-  border: 2px solid var(--text-secondary) !important;
-  opacity: 0.6 !important;
-}
-
-/* Allgemeine Regel für alle Buttons mit text-white */
-html.high-contrast button[class*="text-white"],
-html.high-contrast a[class*="text-white"] {
-  background-color: var(--accent-color) !important;
-  color: var(--bg-primary) !important;
-  border: 2px solid var(--accent-color) !important;
-}
-
-html.high-contrast button[class*="text-white"]:hover,
-html.high-contrast a[class*="text-white"]:hover {
-  background-color: var(--bg-primary) !important;
-  color: var(--accent-color) !important;
-  border: 2px solid var(--accent-color) !important;
-}
-
-/* FAQ-Buttons sind KEINE normalen Buttons - sie bleiben transparent */
-html.high-contrast button[aria-expanded] {
-  background-color: transparent !important;
-  color: inherit !important;
-  border: none !important;
-}
-
-html.high-contrast button[aria-expanded]:hover,
-html.high-contrast button[aria-expanded]:focus {
-  background-color: var(--bg-secondary) !important;
-  outline: 2px solid var(--accent-color) !important;
-}
-
-/* Dropdown-Buttons (Theme/Language Switcher) sind KEINE normalen Buttons */
-html.high-contrast button[role="menuitem"],
-html.high-contrast .dropdown button,
-html.high-contrast nav button:not([class*="bg-"]):not([type="submit"]) {
-  background-color: transparent !important;
-  color: var(--text-primary) !important;
-  border: none !important;
-}
-
-html.high-contrast button[role="menuitem"]:hover,
-html.high-contrast .dropdown button:hover,
-html.high-contrast nav button:not([class*="bg-"]):not([type="submit"]):hover {
-  background-color: var(--bg-secondary) !important;
-  color: var(--text-primary) !important;
-}
-
-/* Spezifische Navbar-Dropdown-Buttons */
-html.high-contrast nav .relative button,
-html.high-contrast nav [class*="dropdown"] button {
-  background-color: transparent !important;
-  color: var(--text-primary) !important;
-  border: none !important;
-}
-
-/* Spans in Dropdown-Buttons (für Sprachauswahl) */
-html.high-contrast nav button span,
-html.high-contrast button[role="menuitem"] span {
-  color: var(--text-primary) !important;
-}
-
-/* Mobile Menu Button */
-html.high-contrast nav button svg {
-  color: var(--text-primary) !important;
-}
-
-/* Sicherheitsregel nur für echte Action-Buttons */
-html.high-contrast button[type="submit"],
-html.high-contrast button[class*="bg-"],
-html.high-contrast a[role="button"],
-html.high-contrast a[class*="bg-"],
-html.high-contrast .btn {
-  background-color: var(--accent-color) !important;
-  color: var(--bg-primary) !important;
-  border: 2px solid var(--accent-color) !important;
-}
-
-/* Normale Links (ohne Button-Styling) behalten Link-Farben */
-html.high-contrast a:not([class*="bg-"]):not([role="button"]):not(.btn):not([class*="button"]) {
-  color: var(--link-color) !important;
-  background-color: transparent !important;
-}
-
-/* Spezifische Korrekturen für problematische Bereiche */
-/* FAQ-Sektion spezifische Korrekturen */
-html.high-contrast section[class*="bg-gray-50"] {
-  background-color: var(--bg-primary) !important;
-}
-
-html.high-contrast div[class*="bg-white"]:not(nav):not(.navbar) {
-  background-color: var(--bg-secondary) !important;
-  border: 1px solid var(--border-color) !important;
-}
-
-/* Navbar-spezifische Hintergründe - NUR im Hochkontrastmodus */
-html.high-contrast nav,
-html.high-contrast nav[class*="bg-white"],
-html.high-contrast .navbar {
-  background-color: var(--bg-primary) !important;
-  border-bottom: 2px solid var(--border-color) !important;
-}
-
-/* Sicherstellen, dass Navbar im normalen Modus unverändert bleibt */
-html:not(.high-contrast) nav {
-  /* Normale Navbar-Stile bleiben unverändert */
-}
-
-/* Dropdown-Container in der Navbar */
-html.high-contrast nav .absolute,
-html.high-contrast nav [class*="dropdown"],
-html.high-contrast nav ul[class*="absolute"] {
-  background-color: var(--bg-secondary) !important;
-  border: 1px solid var(--border-color) !important;
-  color: var(--text-primary) !important;
-}
-
-/* FAQ-Überschrift */
-html.high-contrast h2[class*="text-gray-900"] {
-  color: var(--text-primary) !important;
-}
-
-/* FAQ-Fragen (h3 in Buttons) */
-html.high-contrast button h3[class*="text-gray-800"],
-html.high-contrast h3[class*="text-gray-800"] {
-  color: var(--text-primary) !important;
-}
-
-/* FAQ-Antworten */
-html.high-contrast p[class*="text-gray-600"] {
-  color: var(--text-secondary) !important;
-}
-
-/* FAQ-Icons */
-html.high-contrast svg[class*="text-gray-500"] {
-  color: var(--text-secondary) !important;
-}
-
-/* Allgemeine Tailwind-Klassen überschreiben */
-html.high-contrast .text-gray-800,
-html.high-contrast .text-gray-900,
-html.high-contrast .text-gray-700 {
-  color: var(--text-primary) !important;
-}
-
-html.high-contrast .text-gray-600,
-html.high-contrast .text-gray-500,
-html.high-contrast .text-gray-400 {
-  color: var(--text-secondary) !important;
-}
-
-/* FAQ-Bereiche und andere Inhaltsbereiche - Links */
-html.high-contrast .faq a,
-html.high-contrast .content a,
-html.high-contrast .text-content a,
-html.high-contrast p a,
-html.high-contrast li a {
-  color: var(--link-color) !important;
-  background-color: transparent !important;
-  text-decoration: underline !important;
-}
-
-html.high-contrast .faq a:hover,
-html.high-contrast .content a:hover,
-html.high-contrast .text-content a:hover,
-html.high-contrast p a:hover,
-html.high-contrast li a:hover {
-  background-color: var(--link-hover-bg) !important;
-  color: var(--link-hover-text) !important;
-  text-decoration: none !important;
-  padding: 2px 4px !important;
-  border-radius: 2px !important;
-}
-
-/* Externe Links (wie EU-Streitschlichtung) */
-html.high-contrast a[href*="europa.eu"],
-html.high-contrast a[href*="http"]:not([class*="bg-"]) {
-  color: var(--link-color) !important;
-  background-color: transparent !important;
-  text-decoration: underline !important;
-}
-
-html.high-contrast a[href*="europa.eu"]:hover,
-html.high-contrast a[href*="http"]:not([class*="bg-"]):hover {
-  background-color: var(--link-hover-bg) !important;
-  color: var(--link-hover-text) !important;
-  text-decoration: none !important;
-  padding: 2px 4px !important;
-  border-radius: 2px !important;
+@media (max-width: 480px) {
+  .accessibility-panel {
+    max-width: calc(100vw - 40px) !important;
+    right: 20px !important;
+  }
 }
