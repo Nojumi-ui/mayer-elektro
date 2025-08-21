@@ -10,7 +10,7 @@
 
       <div ref="articlesRef" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
         <!-- News Artikel 1 -->
-        <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-1', { visible: articlesVisible }]">
+        <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-1 flex flex-col h-full', { visible: articlesVisible }]">
           <div class="h-48 overflow-hidden">
             <img 
               src="/img/electrician_3.jpg" 
@@ -18,18 +18,20 @@
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             >
           </div>
-          <div class="p-6">
+          <div class="p-6 flex flex-col flex-grow">
             <div class="text-sm text-[#0097b2] font-semibold mb-2">{{ t('news.article1.date') }}</div>
             <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">{{ t('news.article1.title') }}</h3>
-            <p class="text-gray-600 dark:text-gray-400 mb-4">
+            <p class="text-gray-600 dark:text-gray-400 mb-4 flex-grow">
               {{ t('news.article1.description') }}
             </p>
-            <button @click="openNewsModal('article1')" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.learn_more') }}</button>
+            <div class="mt-auto">
+              <button @click="openNewsModal('article1')" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.learn_more') }}</button>
+            </div>
           </div>
         </article>
 
         <!-- News Artikel 2 -->
-        <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-2', { visible: articlesVisible }]">
+        <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-2 flex flex-col h-full', { visible: articlesVisible }]">
           <div class="h-48 overflow-hidden">
             <img 
               src="/img/solar-panels.jpg" 
@@ -37,18 +39,20 @@
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             >
           </div>
-          <div class="p-6">
+          <div class="p-6 flex flex-col flex-grow">
             <div class="text-sm text-[#0097b2] font-semibold mb-2">{{ t('news.article2.date') }}</div>
             <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">{{ t('news.article2.title') }}</h3>
-            <p class="text-gray-600 dark:text-gray-400 mb-4">
+            <p class="text-gray-600 dark:text-gray-400 mb-4 flex-grow">
               {{ t('news.article2.description') }}
             </p>
-            <button @click="openNewsModal('article2')" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.learn_more') }}</button>
+            <div class="mt-auto">
+              <button @click="openNewsModal('article2')" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.learn_more') }}</button>
+            </div>
           </div>
         </article>
 
         <!-- News Artikel 3 -->
-        <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-3', { visible: articlesVisible }]">
+        <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-3 flex flex-col h-full', { visible: articlesVisible }]">
           <div class="h-48 overflow-hidden">
             <img 
               src="/img/heat-pump.jpg" 
@@ -56,18 +60,20 @@
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             >
           </div>
-          <div class="p-6">
+          <div class="p-6 flex flex-col flex-grow">
             <div class="text-sm text-[#0097b2] font-semibold mb-2">{{ t('news.article3.date') }}</div>
             <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">{{ t('news.article3.title') }}</h3>
-            <p class="text-gray-600 dark:text-gray-400 mb-4">
+            <p class="text-gray-600 dark:text-gray-400 mb-4 flex-grow">
               {{ t('news.article3.description') }}
             </p>
-            <button @click="openNewsModal('article3')" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.learn_more') }}</button>
+            <div class="mt-auto">
+              <button @click="openNewsModal('article3')" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.learn_more') }}</button>
+            </div>
           </div>
         </article>
 
         <!-- News Artikel 4 -->
-        <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-4', { visible: articlesVisible }]">
+        <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-4 flex flex-col h-full', { visible: articlesVisible }]">
           <div class="h-48 overflow-hidden">
             <img 
               src="/img/smart-home.jpg" 
@@ -75,18 +81,20 @@
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             >
           </div>
-          <div class="p-6">
+          <div class="p-6 flex flex-col flex-grow">
             <div class="text-sm text-[#0097b2] font-semibold mb-2">{{ t('news.article4.date') }}</div>
             <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">{{ t('news.article4.title') }}</h3>
-            <p class="text-gray-600 dark:text-gray-400 mb-4">
+            <p class="text-gray-600 dark:text-gray-400 mb-4 flex-grow">
               {{ t('news.article4.description') }}
             </p>
-            <button @click="openNewsModal('article4')" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.learn_more') }}</button>
+            <div class="mt-auto">
+              <button @click="openNewsModal('article4')" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.learn_more') }}</button>
+            </div>
           </div>
         </article>
 
         <!-- News Artikel 5 -->
-        <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-5', { visible: articlesVisible }]">
+        <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-5 flex flex-col h-full', { visible: articlesVisible }]">
           <div class="h-48 overflow-hidden">
             <img 
               src="/img/technician-at-work_2.jpg" 
@@ -94,18 +102,20 @@
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             >
           </div>
-          <div class="p-6">
+          <div class="p-6 flex flex-col flex-grow">
             <div class="text-sm text-[#0097b2] font-semibold mb-2">{{ t('news.article5.date') }}</div>
             <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">{{ t('news.article5.title') }}</h3>
-            <p class="text-gray-600 dark:text-gray-400 mb-4">
+            <p class="text-gray-600 dark:text-gray-400 mb-4 flex-grow">
               {{ t('news.article5.description') }}
             </p>
-            <a href="#contact" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.contact_emergency') }}</a>
+            <div class="mt-auto">
+              <a href="#contact" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.contact_emergency') }}</a>
+            </div>
           </div>
         </article>
 
         <!-- News Artikel 6 -->
-        <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-6', { visible: articlesVisible }]">
+        <article :class="['bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition fade-in-up stagger-6 flex flex-col h-full', { visible: articlesVisible }]">
           <div class="h-48 overflow-hidden">
             <img 
               src="/img/industrial-automation_3.jpg" 
@@ -113,13 +123,15 @@
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             >
           </div>
-          <div class="p-6">
+          <div class="p-6 flex flex-col flex-grow">
             <div class="text-sm text-[#0097b2] font-semibold mb-2">{{ t('news.article6.date') }}</div>
             <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">{{ t('news.article6.title') }}</h3>
-            <p class="text-gray-600 dark:text-gray-400 mb-4">
+            <p class="text-gray-600 dark:text-gray-400 mb-4 flex-grow">
               {{ t('news.article6.description') }}
             </p>
-            <button @click="openNewsModal('article6')" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.learn_more') }}</button>
+            <div class="mt-auto">
+              <button @click="openNewsModal('article6')" class="text-[#0097b2] font-semibold hover:underline">{{ t('news.learn_more') }}</button>
+            </div>
           </div>
         </article>
       </div>
