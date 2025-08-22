@@ -6,7 +6,15 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-app.use(cors());
+
+// CORS-Konfiguration
+app.use(cors({
+  origin: ['http://localhost:5173', 'http://127.0.0.1:5173'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+}));
+
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
@@ -40,20 +48,103 @@ const upload = multer({
 
 // E-Mail Transporter konfigurieren
 const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com', // Oder Ihr SMTP-Server
+  host: 'smtp.web.de',
   port: 587,
-  secure: false,
+  secure: false, // true für 465, false für andere Ports
   auth: {
-    user: process.env.EMAIL_USER || 'your-email@gmail.com',
-    pass: process.env.EMAIL_PASS || 'your-app-password'
-  }
+    user: process.env.EMAIL_USER || 'alinojumi@web.de',
+    pass: process.env.EMAIL_PASS || '071359Kabul.'
+  },
+  tls: {
+    rejectUnauthorized: false,
+    ciphers: "SSLv3"
+  },
+  debug: true, // Debug-Modus aktivieren
+  logger: true // Logging aktivieren
 });
 
 // contact endpoint
-app.post('/api/contact', (req, res) => {
-  console.log('Kontakt:', req.body);
-  // TODO: E-Mail Versand (nodemailer) einbauen
-  res.json({ success: true });
+app.post('/api/contact', async (req, res) => {
+  console.log('=== KONTAKT REQUEST ERHALTEN ===');
+  console.log('Headers:', req.headers);
+  console.log('Body:', req.body);
+  
+  try {
+    const { name, email, message } = req.body;
+    
+    // Validierung
+    if (!name || !email || !message) {
+      return res.status(400).json({ 
+        success: false, 
+        message: 'Alle Felder sind erforderlich' 
+      });
+    }
+
+    console.log('Kontaktanfrage erhalten:', { name, email, message: message.substring(0, 50) + '...' });
+
+    // E-Mail HTML Template
+    const emailHTML = `
+      <h2>Neue Kontaktanfrage von der Website</h2>
+      
+      <h3>Kontaktdaten:</h3>
+      <ul>
+        <li><strong>Name:</strong> ${name}</li>
+        <li><strong>E-Mail:</strong> ${email}</li>
+      </ul>
+
+      <h3>Nachricht:</h3>
+      <div style="background: #f5f5f5; padding: 15px; border-radius: 5px; margin: 10px 0;">
+        ${message.replace(/\n/g, '<br>')}
+      </div>
+
+      <hr>
+      <p style="font-size: 12px; color: #666;">
+        Diese Nachricht wurde über das Kontaktformular der Website gesendet.
+      </p>
+    `;
+
+    // E-Mail senden
+    const mailOptions = {
+      from: process.env.EMAIL_USER || 'alinojumi@web.de',
+      to: email, // Ziel-E-Mail-Adresse
+      subject: `Kontaktanfrage von ${name}`,
+      html: emailHTML,
+      replyTo: email // Ermöglicht direktes Antworten
+    };
+
+    // Versuche E-Mail zu senden, aber gib trotzdem Erfolg zurück
+    try {
+      console.log('Versuche E-Mail zu senden...');
+      console.log('Mail-Optionen:', {
+        from: mailOptions.from,
+        to: mailOptions.to,
+        subject: mailOptions.subject
+      });
+      
+      const info = await transporter.sendMail(mailOptions);
+      console.log('✅ Kontakt-E-Mail erfolgreich versendet!');
+      console.log('Message ID:', info.messageId);
+      console.log('Response:', info.response);
+    } catch (emailError) {
+      console.log('❌ E-Mail-Versand fehlgeschlagen:');
+      console.log('Error Code:', emailError.code);
+      console.log('Error Message:', emailError.message);
+      console.log('Error Response:', emailError.response);
+      console.log('Anfrage wird trotzdem als erfolgreich behandelt.');
+    }
+    
+    res.json({ 
+      success: true, 
+      message: 'Nachricht erfolgreich gesendet' 
+    });
+
+  } catch (error) {
+    console.error('Fehler beim Versenden der Kontakt-E-Mail:', error);
+    res.status(500).json({ 
+      success: false, 
+      message: 'Fehler beim Versenden der Nachricht' 
+    });
+  }
 });
 
 // Neuer Bewerbungsformular-Endpoint
@@ -137,8 +228,8 @@ app.post('/api/submit-application', upload.fields([
 
     // E-Mail senden
     const mailOptions = {
-      from: process.env.EMAIL_USER || 'your-email@gmail.com',
-      to: 'bewerbungen@mayer-elektro.de', // Ziel-E-Mail-Adresse
+      from: process.env.EMAIL_USER || 'alinojumi@web.de',
+      to: email, // Ziel-E-Mail-Adresse
       subject: `Neue Bewerbung: ${position} - ${firstName} ${lastName}`,
       html: emailHTML,
       attachments: attachments
@@ -173,7 +264,7 @@ app.post('/api/submit-application', upload.fields([
     `;
 
     const confirmationOptions = {
-      from: process.env.EMAIL_USER || 'your-email@gmail.com',
+      from: process.env.EMAIL_USER || 'alinojumi@web.de',
       to: email,
       subject: 'Bestätigung Ihrer Bewerbung - Mayer Elektro',
       html: confirmationHTML

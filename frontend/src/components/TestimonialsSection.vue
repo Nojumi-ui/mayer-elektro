@@ -84,19 +84,19 @@ const testimonials = computed(() => {
     {
       content: t('testimonials.testimonial1.content'),
       name: t('testimonials.testimonial1.name'),
-      company: t('testimonials.testimonial1.company'),
+      position: t('testimonials.testimonial1.company'),
       rating: 5
     },
     {
       content: t('testimonials.testimonial2.content'),
       name: t('testimonials.testimonial2.name'),
-      company: t('testimonials.testimonial2.company'),
+      position: t('testimonials.testimonial2.company'),
       rating: 5
     },
     {
       content: t('testimonials.testimonial3.content'),
       name: t('testimonials.testimonial3.name'),
-      company: t('testimonials.testimonial3.company'),
+      position: t('testimonials.testimonial3.company'),
       rating: 5
     }
   ];

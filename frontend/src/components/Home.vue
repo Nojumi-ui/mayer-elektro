@@ -30,8 +30,8 @@
     <BewerberSectionNew />
     <KundenSectionNew />
     <NewsSection />
-    <TestimonialsSection :testimonials="testimonialItems" />
-    <FaqSection :faqs="faqItems" />
+    <TestimonialsSection />
+    <FaqSection />
     <LocalBusinessInfo />
     <ContactSection />
   </div>
@@ -57,51 +57,9 @@ import EventSchema from "./EventSchema.vue";
 
 const route = useRoute()
 
-// Testimonial-Daten
-const testimonialItems = [
-  {
-    content: "Mayer Elektro hat unsere Büroräume komplett neu verkabelt und eine moderne Beleuchtungsanlage installiert. Die Arbeit wurde schnell, sauber und professionell erledigt. Wir sind sehr zufrieden mit dem Ergebnis und können das Unternehmen uneingeschränkt weiterempfehlen.",
-    name: "Thomas Müller",
-    position: "Geschäftsführer, TM Consulting GmbH",
-    rating: 5
-  },
-  {
-    content: "Die Installation unserer Photovoltaikanlage durch Mayer Elektro verlief reibungslos. Von der Beratung bis zur Inbetriebnahme wurden wir kompetent betreut. Die Anlage läuft einwandfrei und die Einsparungen sind sogar höher als ursprünglich kalkuliert.",
-    name: "Sabine Weber",
-    position: "Privatkundin",
-    rating: 5
-  },
-  {
-    content: "Als Industriebetrieb sind wir auf zuverlässige Elektroinstallationen angewiesen. Mayer Elektro ist seit Jahren unser Partner für Wartung und Instandhaltung. Die Reaktionszeiten sind kurz, die Mitarbeiter kompetent und die Preise fair.",
-    name: "Dr. Frank Schmidt",
-    position: "Technischer Leiter, Hamburg Manufacturing",
-    rating: 5
-  }
-];
+// Testimonial-Daten werden jetzt direkt in der TestimonialsSection-Komponente verwaltet
 
-// FAQ-Daten
-const faqItems = [
-  {
-    question: "Welche Elektroinstallationsleistungen bietet Mayer Elektro an?",
-    answer: "Wir bieten ein umfassendes Spektrum an Elektroinstallationsleistungen für Privat- und Gewerbekunden in Hamburg und Umgebung. Dazu gehören Neuinstallationen, Renovierungen, Erweiterungen, Beleuchtungssysteme, Sicherheitstechnik, Smart Home-Lösungen und vieles mehr."
-  },
-  {
-    question: "Bietet Mayer Elektro auch Notdienste an?",
-    answer: "Ja, wir bieten einen 24/7-Notdienst für unsere Kunden an. Bei elektrischen Notfällen können Sie uns jederzeit kontaktieren, und wir schicken schnellstmöglich einen qualifizierten Elektriker zu Ihnen."
-  },
-  {
-    question: "Wie kann ich mich bei Mayer Elektro bewerben?",
-    answer: "Sie können sich über unser Online-Bewerbungsformular bewerben oder uns Ihre Bewerbungsunterlagen per E-Mail an karriere@mayerelektro.de senden. Wir suchen regelmäßig qualifizierte Elektrofachkräfte und bieten auch Ausbildungsplätze an."
-  },
-  {
-    question: "Führt Mayer Elektro auch Photovoltaik-Installationen durch?",
-    answer: "Ja, wir sind Experten für die Installation, Wartung und Reparatur von Photovoltaikanlagen. Wir beraten Sie gerne zu nachhaltigen Energielösungen für Ihr Zuhause oder Unternehmen."
-  },
-  {
-    question: "In welchem Gebiet ist Mayer Elektro tätig?",
-    answer: "Wir sind hauptsächlich in Hamburg und im Umkreis von ca. 50 km tätig. Bei größeren Projekten sind wir aber auch überregional für unsere Kunden im Einsatz."
-  }
-];
+// FAQ-Daten werden jetzt direkt in der FaqSection-Komponente verwaltet
 
 // Strukturierte Daten für SEO
 const structuredData = {

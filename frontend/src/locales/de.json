@@ -235,10 +235,16 @@
     }
   },
   "contact": {
+    "title": "Kontakt",
     "name_placeholder": "Ihr Name",
     "email_placeholder": "Ihre E-Mail",
     "message_placeholder": "Ihre Nachricht",
-    "send_button": "Nachricht senden"
+    "send_button": "Nachricht senden",
+    "send_message": "Nachricht senden",
+    "sending_button": "Wird gesendet...",
+    "success_message": "Vielen Dank! Ihre Nachricht wurde erfolgreich versendet. Wir melden uns bald bei Ihnen.",
+    "error_message": "Entschuldigung, beim Versenden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "network_error": "Verbindungsfehler. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut."
   },
   "newsletter": {
     "title": "Newsletter abonnieren",
@@ -649,14 +655,6 @@
     "contact_us": "Kontaktieren Sie uns für weitere Informationen oder ein unverbindliches Angebot.",
     "contact_button": "Kontakt aufnehmen",
     "close": "Schließen"
-  },
-  "contact": {
-    "title": "Kontakt",
-    "name_placeholder": "Ihr Name",
-    "email_placeholder": "Ihre E-Mail",
-    "message_placeholder": "Ihre Nachricht",
-    "send_message": "Nachricht senden",
-    "send_button": "Senden"
   },
   "imprint": {
     "title": "Impressum",
