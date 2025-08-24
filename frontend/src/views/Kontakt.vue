@@ -39,6 +39,7 @@ import { reactive, ref } from 'vue'
 import axios from 'axios'
 import { onMounted } from 'vue'
 import { revealOnScroll } from '../utils/scroll-trigger'
+import { API_ENDPOINTS } from '../config/api'
 
 onMounted(() => revealOnScroll('.reveal'))
 
@@ -48,7 +49,7 @@ const status = ref(null)
 async function submit() {
   status.value = null
   try {
-    const res = await axios.post('http://localhost:4000/api/contact', form)
+    const res = await axios.post(API_ENDPOINTS.CONTACT, form)
     if (res.data && res.data.success) {
       status.value = { success: true, message: 'Vielen Dank — Ihre Nachricht wurde gesendet.' }
       form.name = form.email = form.subject = form.message = ''

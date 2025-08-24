@@ -1,0 +1,16 @@
+{
+    "::1": {
+        "contact": {
+            "count": 1,
+            "first_request": 1756059533,
+            "last_request": 1756059533,
+            "window": 3600
+        },
+        "application": {
+            "count": 1,
+            "first_request": 1756059581,
+            "last_request": 1756059581,
+            "window": 3600
+        }
+    }
+}

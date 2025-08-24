@@ -43,6 +43,7 @@ import { reactive, ref } from 'vue'
 import axios from 'axios'
 import { onMounted } from 'vue'
 import { revealOnScroll } from '../utils/scroll-trigger'
+import { API_ENDPOINTS } from '../config/api'
 
 onMounted(() => revealOnScroll('.reveal'))
 
@@ -83,7 +84,7 @@ async function submit() {
   form.files.forEach(f => fd.append('files', f))
 
   try {
-    const res = await axios.post('http://localhost:4000/api/apply', fd, { headers: { 'Content-Type': 'multipart/form-data' }})
+    const res = await axios.post(API_ENDPOINTS.APPLY, fd, { headers: { 'Content-Type': 'multipart/form-data' }})
     if (res.data && res.data.success) {
       status.value = { success: true, message: 'Bewerbung gesendet — wir melden uns.' }
       // Reset form
